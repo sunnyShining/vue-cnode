@@ -1,0 +1,28 @@
+{
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules"
+  ],
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "allowJs": true,
+    "module": "esnext",
+    // 与 Vue 的浏览器支持保持一致
+    "target": "es6",
+    // 这可以对 `this` 上的数据属性进行更严格的推断
+    "strict": true,
+    "moduleResolution": "node",
+    "isolatedModules": true,
+    "lib": [
+      "dom",
+      "es5",
+      "es2015.promise"
+    ],
+    "sourceMap": true,
+    "pretty": true,
+    "strictFunctionTypes": false
+  }
+}
