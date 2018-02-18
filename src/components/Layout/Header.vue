@@ -12,6 +12,7 @@
                     <li><router-link to="/getstart">新手入门</router-link></li>
                     <li><router-link to="/api">API</router-link></li>
                     <li><router-link to="/about">关于</router-link></li>
+                    <li v-if="!islogin"><a>登陆</a></li>
                     <li v-if="islogin"><a>设置</a></li>
                     <li v-if="islogin"><a>退出</a></li>
                 </ul>
