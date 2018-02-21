@@ -167,19 +167,22 @@ export default {
     //         });
     //     });
     // },
-    // // post /accesstoken 验证 accessToken 的正确性
-    // accesstoken(options = {}) {
-    //     return new Promise((resolve, reject) => {
-    //         utils.http.request({
-    //             method: 'POST',
-    //             url: urls.accesstoken,
-    //             qs: options,
-    //             mask: true,
-    //         }, (data) => {
-    //             resolve(data);
-    //         });
-    //     });
-    // },
+    // post /accesstoken 验证 accessToken 的正确性
+    accesstoken(options = {}) {
+        let opt: Options = {
+            method: 'POST',
+            spin: true,
+            headers: {},
+            mask: true,
+            url: urls.accesstoken,
+            qs: options
+        };
+        return new Promise((resolve, reject) => {
+            utils.http.request(opt, (data: object) => {
+                resolve(data);
+            });
+        });
+    },
     // // get /message/count 获取未读消息数
     // count(options = {}) {
     //     return new Promise((resolve, reject) => {

@@ -23,9 +23,9 @@
                             {{ item.visit_count }}
                         </span>
                     </span>
-                    <a class="last_time pull-right">
+                    <router-link class="last_time pull-right" :to="'/detail/' + item.id">
                         <span class="last_active_time">{{ item.last_reply_at | fromNow }}</span>
-                    </a>
+                    </router-link>
                     <div class="topic_title_wrapper">
                         <span v-if="item.top" class="put_top">置顶&nbsp;</span>
                         <span v-else-if="item.good" class="put_good">精华&nbsp;</span>
@@ -34,9 +34,9 @@
                         <span v-else-if="item.tab === 'job'" class="topiclist-tab">工作&nbsp;</span>
                         <span v-else-if="item.tab === 'dev'" class="topiclist-tab">测试&nbsp;</span>
                         <span v-else></span>
-                        <a class="topic_title"  :title="item.title">
+                        <router-link class="topic_title" :to="'/detail/' + item.id" :title="item.title">
                             {{ item.title }}
-                        </a>
+                        </router-link>
                     </div>
                 </div>
             </div>

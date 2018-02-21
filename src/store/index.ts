@@ -10,8 +10,8 @@ import Vue from 'vue';
 import Vuex, { Commit, Dispatch } from 'vuex';
 // import actions from './actions';
 // import getters from './getters';
-import feed from './modules/feed';
 import home from './modules/home';
+import app from './modules/app';
 import createLogger from 'vuex/dist/logger';
 
 Vue.use(Vuex);
@@ -22,8 +22,8 @@ export default new Vuex.Store({
 	// actions,
 	// getters,
   	modules: {
-  		feed,
-  		home,
+		  home,
+		  app,
   	},
   	strict: debug,
   	plugins: debug ? [createLogger({})] : [],
