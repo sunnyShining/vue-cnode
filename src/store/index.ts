@@ -1,8 +1,17 @@
+/**
+ * @author sunny
+ * @email 17765293970@163.com
+ * @create date 2018-02-21 04:41:43
+ * @modify date 2018-02-21 04:41:43
+ * @desc store入口
+ */
+
 import Vue from 'vue';
 import Vuex, { Commit, Dispatch } from 'vuex';
 // import actions from './actions';
 // import getters from './getters';
 import feed from './modules/feed';
+import home from './modules/home';
 import createLogger from 'vuex/dist/logger';
 
 Vue.use(Vuex);
@@ -14,6 +23,7 @@ export default new Vuex.Store({
 	// getters,
   	modules: {
   		feed,
+  		home,
   	},
   	strict: debug,
   	plugins: debug ? [createLogger({})] : [],

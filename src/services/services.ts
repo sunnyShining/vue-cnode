@@ -1,10 +1,10 @@
 /**
  * @author sunny
  * @email 17765293970@163.com
- * @create date 2018-02-18 10:15:39
- * @modify date 2018-02-18 10:15:39
+ * @create date 2018-02-21 04:39:38
+ * @modify date 2018-02-21 04:39:38
  * @desc 接口请求
-*/
+ */
 
 import utils, { Options } from '../utils/http';
 import urls from './urls';
@@ -20,7 +20,7 @@ export default {
             mask: true,
             url: urls.topics,
             qs: options
-        }
+        };
         return new Promise((resolve, reject) => {
             utils.http.request(opt, (data: object) => {
                 resolve(data);

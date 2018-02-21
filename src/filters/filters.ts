@@ -1,17 +1,15 @@
 /**
  * @author sunny
  * @email 17765293970@163.com
- * @create date 2018-01-27 10:18:39
- * @modify date 2018-01-27 10:18:39
- * @desc 工具类
-*/
+ * @create date 2018-02-21 06:32:37
+ * @modify date 2018-02-21 06:32:37
+ * @desc 过滤器
+ */
 
-export function fromNow (time) {
+export function fromNow (time: string) {
     let now = new Date();
-    now = now.getTime();
     let last = new Date(time);
-    last = last.getTime();
-    let latToNow = now - last;
+    let latToNow = now.getTime() - last.getTime();
     let returnTime;
     if (latToNow / 1000 < 60) {
         returnTime = `${Math.round(latToNow / 1000)} 秒前`;

@@ -1,24 +1,24 @@
 /**
  * @author sunny
  * @email 17765293970@163.com
- * @create date 2017-02-18 10:01:04
- * @modify date 2017-02-18 10:01:04
- * @desc 域名
-*/
+ * @create date 2018-02-21 04:34:39
+ * @modify date 2018-02-21 04:34:39
+ * @desc 域名初始化
+ */
 
-function hostName() {
+function hostName () {
     if (process.env.NODE_ENV === 'development') {
         return {
-            api: 'https://www.vue-js.com/api/v1',
+            api: 'https://cnodejs.org/api/v1',
         };
     } else if (process.env.NODE_ENV === 'production') {
         return {
-            api: 'https://www.vue-js.com/api/v1',
+            api: 'https://cnodejs.org/api/v1',
         };
     } else {
         return {
-            api: 'https://www.vue-js.com/api/v1'
-        }
+            api: 'https://cnodejs.org/api/v1',
+        };
     }
 }
 const host: {api: string} = hostName();

@@ -1,10 +1,10 @@
 /**
  * @author sunny
  * @email 17765293970@163.com
- * @create date 2018-02-18 10:18:39
- * @modify date 2018-02-18 10:18:39
- * @desc 接口请求工具
-*/
+ * @create date 2018-02-21 04:40:08
+ * @modify date 2018-02-21 04:40:08
+ * @desc ajax
+ */
 
 import axios from 'axios';
 // import Loading from '../components/Loading/index';
@@ -37,7 +37,7 @@ axios.interceptors.response.use(function (response) {
         let error = {
             success: false,
             error_msg: '系统错误，请稍后重试！'
-        }
+        };
         return Promise.reject(error);
     }
 }, function (error) {
@@ -45,7 +45,7 @@ axios.interceptors.response.use(function (response) {
     let err = {
         success: false,
         error_msg: '系统错误，请稍后重试！'
-    }
+    };
     // Do something with response error
     return Promise.reject(error.response.data || err);
 });
@@ -64,7 +64,7 @@ export default {
                     params: options.qs,
                     headers: options.headers
                 }).then((res) => {
-                    cb(res.data)
+                    cb(res.data);
                 }).catch((err) => {
                     if (!err.success && !options.mask) {
                         // Toast.info(err.error_msg);
