@@ -15,7 +15,7 @@ export default {
     topics(options = {}) {
         let opt: Options = {
             method: 'GET',
-            loading: true,
+            spin: true,
             headers: {},
             mask: true,
             url: urls.topics,

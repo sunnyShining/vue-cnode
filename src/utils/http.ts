@@ -7,21 +7,21 @@
  */
 
 import axios from 'axios';
-// import Loading from '../components/Loading/index';
-// import Toast from '../components/Toast/index';
+import Loading from '../components/Loading/index';
+import Warning from '../components/Warning/index';
 
 export interface Options {
     method: string;
-    loading: boolean;
+    spin: boolean;
     headers: object;
     url: string;
     mask: boolean;
     qs: object;
 }
-// let notLoading = false;
+let spin = true;
 // 请求拦截
 axios.interceptors.request.use(function (config) {
-    // !notLoading && Loading.open();
+    spin && Loading.open();
     return config;
 }, function (error) {
     return Promise.reject(error);
@@ -30,7 +30,7 @@ axios.interceptors.request.use(function (config) {
 // 响应拦截（一般拦截登录，还有loading等）
 axios.interceptors.response.use(function (response) {
     // Do something with response data
-    // !notLoading && Loading.close();
+    spin && Loading.close();
     if (response.status >= 200 && response.status < 300) {
         return Promise.resolve(response);
     } else {
@@ -41,7 +41,7 @@ axios.interceptors.response.use(function (response) {
         return Promise.reject(error);
     }
 }, function (error) {
-    // !notLoading && Loading.close();
+    spin && Loading.close();
     let err = {
         success: false,
         error_msg: '系统错误，请稍后重试！'
@@ -51,11 +51,10 @@ axios.interceptors.response.use(function (response) {
 });
 
 export default {
-
     http: {
         request (options: Options, cb: Function) {
             options.method = options.method && options.method.toLocaleUpperCase();
-            // notLoading = options.notLoading;
+            spin = options.spin;
             if (!options.headers) {
                 options.headers = {};
             }
@@ -67,7 +66,7 @@ export default {
                     cb(res.data);
                 }).catch((err) => {
                     if (!err.success && !options.mask) {
-                        // Toast.info(err.error_msg);
+                        Warning.info(err.error_msg);
                     }
                     cb(err);
                 });
@@ -80,7 +79,7 @@ export default {
                     cb(res.data);
                 }).catch((err) => {
                     if (!err.success && !options.mask) {
-                        // Toast.info(err.error_msg);
+                        Warning.info(err.error_msg);
                     }
                     cb(err);
                 });
