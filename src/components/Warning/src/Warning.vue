@@ -31,7 +31,8 @@
 		left: 0;
 		display: flex;
 		justify-content: center;
-		align-items: center;
+        align-items: center;
+        z-index: 9999;
         .text{
             background-color: #000;
             color: #fff;

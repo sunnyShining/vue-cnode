@@ -62,7 +62,7 @@
                             // await getInfo({
                             //     username: accessInfo.loginname
                             // });
-                            // Dialog.close();
+                            Dialog.close();
                             Warning.info('登录成功！');
                             window.localStorage.setItem('accesstoken', accesstoken);
                             setTimeout(() => {
@@ -74,7 +74,7 @@
                     }
                 },
                 cancelCallBack(accesstoken: string) {
-                    // Dialog.close();
+                    Dialog.close();
                 },
             });
         }

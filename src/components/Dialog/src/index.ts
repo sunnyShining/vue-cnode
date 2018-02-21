@@ -58,5 +58,8 @@ let getDialogInstance = (options: any) => {
 export default {
     open(options = {}) {
         getDialogInstance(options);
-    }
+    },
+    close () {
+		instance.visible = false;
+	}
 };

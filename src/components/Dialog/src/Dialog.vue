@@ -8,7 +8,7 @@
                 </div>
                 <div class="dialog-input-btn">
                     <input class="dialog-input-btn-cancel f-c666666 dialog-b-right" type="button" @click="cancel" :value="cancelButtonText" />
-                    <input class="dialog-input-btn-confirm f-cf37937" type="button" @click="confirm" :value="confirmButtonText" />
+                    <input class="dialog-input-btn-confirm f-cgreen" type="button" @click="confirm" :value="confirmButtonText" />
                 </div>
             </div>
             <div v-else class="dialog-container">
@@ -20,11 +20,11 @@
                     </div>
                 </div>
                 <div v-if="showOneBtn" class="dialog-btn">
-                    <input type="button" :style="{width: '100%'}" class="dialog-one-btn f-cf37937" :value="oneBtnText" @click="oneBtn" />
+                    <input type="button" :style="{width: '100%'}" class="dialog-one-btn f-cgreen" :value="oneBtnText" @click="oneBtn" />
                 </div>
                 <div v-else class="dialog-btn">
                     <input class="dialog-btn-cancel f-c666666 dialog-b-right" type="button" @click="cancel" :value="cancelButtonText" />
-                    <input class="dialog-btn-confirm f-cf37937" type="button" @click="confirm" :value="confirmButtonText" />
+                    <input class="dialog-btn-confirm f-cgreen" type="button" @click="confirm" :value="confirmButtonText" />
                 </div>
             </div>
         </div>
@@ -84,17 +84,14 @@
         showInputTestError: boolean = false;
         cancel(): void {
             let { cancelCallBack } = this.$props;
-            this.visible = false;
             cancelCallBack && cancelCallBack();
         }
         confirm(): void {
             let { confirmCallBack, inputValue } = this.$props;
-            this.visible = false;
             confirmCallBack && confirmCallBack(inputValue);
         }
         oneBtn(): void {
             let { oneBtnCallBack } = this.$props;
-            this.visible = false;
             oneBtnCallBack && oneBtnCallBack();
         }
         changeBtnColor(): void {}
@@ -194,11 +191,11 @@
         font-size: 16px;
         border: none;
         background: none;
-        color: #f37937
+        color: green
     }
 
-    .f-cf37937 {
-        color: #f37937
+    .f-cgreen {
+        color: green
     }
     .f-cdadada{
     color: #dadada;
