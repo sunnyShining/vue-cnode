@@ -9,10 +9,46 @@ const CopyWebpackPlugin = require('copy-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin')
 const portfinder = require('portfinder')
+const opn = require('opn')
+const execSync = require('child_process').execSync
 
 const HOST = process.env.HOST
 const PORT = process.env.PORT && Number(process.env.PORT)
 
+function startBrowserProcess(url) {
+  // If we're on OS X, the user hasn't specifically
+  // requested a different browser, we can try opening
+  // Chrome with AppleScript. This lets us reuse an
+  // existing tab when possible instead of creating a new one.
+  const shouldTryOpenChromeWithAppleScript = process.platform === 'darwin'
+
+  if (shouldTryOpenChromeWithAppleScript) {
+    try {
+      // Try our best to reuse existing tab
+      // on OS X Google Chrome with AppleScript
+      execSync('ps cax | grep "Google Chrome"');
+      execSync('osascript openChrome.applescript "' + encodeURI(url) + '"', {
+        cwd: __dirname,
+        stdio: 'ignore',
+      });
+      return true;
+    } catch (err) {
+      console.log(err)
+      // Ignore errors.
+    }
+  }
+
+  // Fallback to opn
+  // (It will always open new tab)
+  if (config.dev.autoOpenBrowser) {
+    try {
+      opn(url).catch(() => {}); // Prevent `unhandledRejection` error.
+      return true;
+    } catch (err) {
+      return false;
+    }
+  }
+}
 const devWebpackConfig = merge(baseWebpackConfig, {
   module: {
     rules: utils.styleLoaders({ sourceMap: config.dev.cssSourceMap, usePostCSS: true })
@@ -33,7 +69,8 @@ const devWebpackConfig = merge(baseWebpackConfig, {
     compress: true,
     host: HOST || config.dev.host,
     port: PORT || config.dev.port,
-    open: config.dev.autoOpenBrowser,
+    // open: config.dev.autoOpenBrowser,
+    open: false,
     overlay: config.dev.errorOverlay
       ? { warnings: false, errors: true }
       : false,
@@ -87,7 +124,17 @@ module.exports = new Promise((resolve, reject) => {
         onErrors: config.dev.notifyOnErrors
         ? utils.createNotifierCallback()
         : undefined
-      }))
+      }),
+      function () {
+        this.plugin("done", (stats) => {
+          if (stats.compilation.errors && stats.compilation.errors.length) {
+            console.log(stats.compilation.errors)
+            process.exit(1)
+          }
+          startBrowserProcess(`http://${devWebpackConfig.devServer.host}:${port}`)
+        })
+      }
+      )
 
       resolve(devWebpackConfig)
     }
