@@ -128,8 +128,8 @@ module.exports = new Promise((resolve, reject) => {
       function () {
         this.plugin("done", (stats) => {
           if (stats.compilation.errors && stats.compilation.errors.length) {
-            console.log(stats.compilation.errors)
-            process.exit(1)
+            // console.log(stats.compilation.errors)
+            // process.exit(1)
           }
           startBrowserProcess(`http://${devWebpackConfig.devServer.host}:${port}`)
         })

@@ -27,22 +27,26 @@ export default {
             });
         });
     },
-    // // get /topic/:id 主题详情
-    // topic(options = {}) {
-    //     let url = `${urls.topic}${options.id}`;
-    //     return new Promise((resolve, reject) => {
-    //         utils.http.request({
-    //             method: 'GET',
-    //             url,
-    //             qs: {
-    //                 accesstoken: options.accesstoken,
-    //                 mdrender: options.mdrender,
-    //             },
-    //         }, (data) => {
-    //             resolve(data);
-    //         });
-    //     });
-    // },
+    // get /topic/:id 主题详情
+    topic(options: {id: string; accesstoken: string; mdrender: boolean}) {
+        let opt: Options = {
+            method: 'GET',
+            spin: true,
+            headers: {},
+            mask: true,
+            url: `${urls.topic}${options.id}`,
+            qs: {
+                accesstoken: options.accesstoken,
+                mdrender: options.mdrender,
+            }
+        };
+        let url = `${urls.topic}${options.id}`;
+        return new Promise((resolve, reject) => {
+            utils.http.request(opt, (data: object) => {
+                resolve(data);
+            });
+        });
+    },
     // // post /topics 新建主题
     // newTopics(options = {}) {
     //     if (options.tab === '') {

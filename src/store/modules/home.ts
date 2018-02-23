@@ -19,7 +19,7 @@ const state: State = {
 };
 
 const actions = {
-    async getTopic (context: { commit: Commit, state: State }, params: object = { }) {
+    async getTopics (context: { commit: Commit, state: State }, params: object = {}) {
         let data = await services.topics(params);
         context.commit(types.GET_TOPICS, data);
   },

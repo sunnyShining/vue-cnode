@@ -64,7 +64,7 @@
             Pagination,
         },
         filters: {
-          fromNow,  
+          fromNow,
         }
     })
     export default class Home extends Vue {
@@ -84,7 +84,7 @@
             this.fetchTopics(options);
         }
         fetchTopics(options: Options): void{
-            this.$store.dispatch('getTopic', options);
+            this.$store.dispatch('getTopics', options);
         }
         changeTag(tag: string) {
             let total: number = 0;
