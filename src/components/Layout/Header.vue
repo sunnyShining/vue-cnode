@@ -7,14 +7,14 @@
                 </router-link>
                 <ul class="nav pull-right">
                     <li><router-link to="/home">首页</router-link></li>
-                    <li v-if="islogin"><router-link to="/messages"><span class="big messages_count">1</span>未读消息</router-link></li>
-                    <li v-if="islogin"><router-link to="/create/new">发布话题</router-link></li>
+                    <li v-if="accessInfo.success"><router-link to="/messages"><span v-if="count.data" class="big messages_count">{{ count.data  }}</span>未读消息</router-link></li>
+                    <li v-if="accessInfo.success"><router-link to="/create/new">发布话题</router-link></li>
                     <li><router-link to="/getstart">新手入门</router-link></li>
                     <li><router-link to="/api">API</router-link></li>
                     <li><router-link to="/about">关于</router-link></li>
-                    <li v-if="!islogin" @click="signIn"><a>登陆</a></li>
-                    <li v-if="islogin"><a>设置</a></li>
-                    <li v-if="islogin"><a>退出</a></li>
+                    <li v-if="!accessInfo.success" @click="signIn"><a>登陆</a></li>
+                    <li v-if="accessInfo.success" @click="setting"><a>设置</a></li>
+                    <li v-if="accessInfo.success" @click="logout"><a>退出</a></li>
                 </ul>
                 <a class="btn btn-navbar" id="responsive-sidebar-trigger">
                     <span class="icon-bar"></span>
@@ -34,7 +34,12 @@
 
     @Component({})
     export default class Header extends Vue {
-        islogin: boolean = false;
+        get accessInfo(): object {
+            return this.$store.state.app.accessInfo;
+        }
+        get count(): object {
+            return this.$store.state.app.count;
+        }
         signIn(): void {
             let self = this;
             Dialog.open({
@@ -46,12 +51,7 @@
                         Warning.info('accesstoken不能为空！');
                     } else {
                         await self.$store.dispatch('accesstoken', {accesstoken});
-                        // const { getAccess } = self.$props;
-                        // await getAccess({
-                        //     accesstoken
-                        // });
                         let accessInfo = self.$store.state.app.accessInfo;
-                        console.log(accessInfo);
                         // const { accessInfo, changeAccesstoken, getInfo, getMessage } = self.$props;
                         if (accessInfo.success) {
                             self.$store.dispatch('changeAccesstoken', {accesstoken});
@@ -74,6 +74,38 @@
                     }
                 },
                 cancelCallBack(accesstoken: string) {
+                    Dialog.close();
+                },
+            });
+        }
+        logout(): void {
+            let _this = this;
+            Dialog.open({
+                showInput: false,
+                message: '确定要退出吗？',
+                confirmButtonText: '确定',
+                confirmCallBack: async function () {
+                    window.localStorage.removeItem('accesstoken');
+                    await _this.$store.dispatch('accesstoken', {accesstoken: ''});
+                    await _this.$store.dispatch('changeAccesstoken', {accesstoken: ''});
+                    Dialog.close();
+                    Warning.info('登出成功！');
+                    setTimeout(() => {
+                        window.location.reload();
+                    }, 1000);
+                },
+                cancelCallBack() {
+                    Dialog.close();
+                },
+            });
+        }
+        setting(): void {
+            Dialog.open({
+                showInput: false,
+                message: '请移步cnode官网修改个人信息！',
+                showOneBtn: true,
+                oneBtnText: '我知道了',
+                oneBtnCallBack() {
                     Dialog.close();
                 },
             });

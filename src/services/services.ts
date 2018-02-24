@@ -8,12 +8,12 @@
 
 import utils, { Options } from '../utils/http';
 import urls from './urls';
-// import Toast from '../components/Toast/index';
+import Warning from '../components/Warning/index';
 
 export default {
     // get /topics 主题首页
     topics(options = {}) {
-        let opt: Options = {
+        const opt: Options = {
             method: 'GET',
             spin: true,
             headers: {},
@@ -29,7 +29,7 @@ export default {
     },
     // get /topic/:id 主题详情
     topic(options: {id: string; accesstoken: string; mdrender: boolean}) {
-        let opt: Options = {
+        const opt: Options = {
             method: 'GET',
             spin: true,
             headers: {},
@@ -40,7 +40,6 @@ export default {
                 mdrender: options.mdrender,
             }
         };
-        let url = `${urls.topic}${options.id}`;
         return new Promise((resolve, reject) => {
             utils.http.request(opt, (data: object) => {
                 resolve(data);
@@ -81,30 +80,38 @@ export default {
     //         });
     //     });
     // },
-    // // post /topic_collect/collect 收藏主题
-    // collect(options = {}) {
-    //     return new Promise((resolve, reject) => {
-    //         utils.http.request({
-    //             method: 'POST',
-    //             url: urls.collect,
-    //             qs: options,
-    //         }, (data) => {
-    //             resolve(data);
-    //         });
-    //     });
-    // },
-    // // post /topic_collect/de_collect 取消主题
-    // deCollect(options = {}) {
-    //     return new Promise((resolve, reject) => {
-    //         utils.http.request({
-    //             method: 'POST',
-    //             url: urls.deCollect,
-    //             qs: options,
-    //         }, (data) => {
-    //             resolve(data);
-    //         });
-    //     });
-    // },
+    // post /topic_collect/collect 收藏主题
+    collect(options = {}) {
+        const opt: Options = {
+            method: 'POST',
+            spin: true,
+            headers: {},
+            mask: true,
+            url: urls.collect,
+            qs: options,
+        };
+        return new Promise((resolve, reject) => {
+            utils.http.request(opt, (data: any) => {
+                resolve(data);
+            });
+        });
+    },
+    // post /topic_collect/de_collect 取消主题
+    deCollect(options = {}) {
+        const opt: Options = {
+            method: 'POST',
+            spin: true,
+            headers: {},
+            mask: true,
+            url: urls.deCollect,
+            qs: options,
+        };
+        return new Promise((resolve, reject) => {
+            utils.http.request(opt, (data: any) => {
+                resolve(data);
+            });
+        });
+    },
     // // get /topic_collect/:loginname 用户所收藏的主题
     // userCollect(options = {}) {
     //     let url = `${urls.userCollect}${options.username}`;
@@ -118,62 +125,70 @@ export default {
     //         });
     //     });
     // },
-    // // post /topic/:topic_id/replies 新建评论
-    // replies(options = {}) {
-    //     let url = `${urls.replies}${options.topicId}/replies`;
-    //     let qs = {
-    //         content: options.content,
-    //         accesstoken: options.accesstoken
-    //     };
-    //     if (options.reply_id) {
-    //         qs.reply_id = options.reply_id
-    //     }
-    //     return new Promise((resolve, reject) => {
-    //         utils.http.request({
-    //             method: 'POST',
-    //             url,
-    //             qs,
-    //         }, (data) => {
-    //             resolve(data);
-    //         });
-    //     });
-    // },
-    // // post /reply/:reply_id/ups 为评论点赞
-    // ups(options = {}) {
-    //     let url = `${urls.ups}${options.reply_id}/ups`
-    //     return new Promise((resolve, reject) => {
-    //         utils.http.request({
-    //             method: 'POST',
-    //             url,
-    //             qs: {accesstoken: options.accesstoken},
-    //         } , (data) => {
-    //             if (data.action === 'down') {
-    //                 Toast.info('取消点赞');
-    //             } else {
-    //                 Toast.info('点赞成功');
-    //             }
-    //             resolve(data);
-    //         });
-    //     });
-    // },
-    // // get /user/:loginname 用户详情
-    // user(options = {}) {
-    //     let url = `${urls.user}${options.username}`;
-    //     return new Promise((resolve, reject) => {
-    //         utils.http.request({
-    //             method: 'GET',
-    //             url,
-    //             qs: {},
-    //             mask: true,
-    //             notLoading: true
-    //         }, (data) => {
-    //             resolve(data);
-    //         });
-    //     });
-    // },
+    // post /topic/:topic_id/replies 新建评论
+    replies(options: {topicId: string; content: string; accesstoken: string; reply_id: any}) {
+        let url = `${urls.replies}${options.topicId}/replies`;
+        let qs = {
+            content: options.content,
+            accesstoken: options.accesstoken
+        } as any;
+        if (options.reply_id) {
+            qs.reply_id = options.reply_id;
+        }
+        const opt: Options = {
+            method: 'POST',
+            spin: true,
+            headers: {},
+            mask: true,
+            url: `${urls.replies}${options.topicId}/replies`,
+            qs,
+        };
+        return new Promise((resolve, reject) => {
+            utils.http.request(opt, (data: any) => {
+                resolve(data);
+            });
+        });
+    },
+    // post /reply/:reply_id/ups 为评论点赞
+    ups(options: {reply_id: string; accesstoken: string}) {
+        const opt: Options = {
+            method: 'POST',
+            spin: true,
+            headers: {},
+            mask: true,
+            url: `${urls.ups}${options.reply_id}/ups`,
+            qs: { accesstoken: options.accesstoken },
+        };
+        return new Promise((resolve, reject) => {
+            utils.http.request(opt, (data: any) => {
+                if (data.action === 'down') {
+                    Warning.info('取消点赞');
+                } else {
+                    Warning.info('点赞成功');
+                }
+                resolve(data);
+            });
+        });
+    },
+    // get /user/:loginname 用户详情
+    user(options: {username: string}) {
+        const opt: Options = {
+            method: 'GET',
+            spin: false,
+            headers: {},
+            mask: true,
+            url: `${urls.user}${options.username}`,
+            qs: {}
+        };
+        return new Promise((resolve, reject) => {
+            utils.http.request(opt, (data: object) => {
+                resolve(data);
+            });
+        });
+    },
     // post /accesstoken 验证 accessToken 的正确性
     accesstoken(options = {}) {
-        let opt: Options = {
+        const opt: Options = {
             method: 'POST',
             spin: true,
             headers: {},
@@ -187,18 +202,22 @@ export default {
             });
         });
     },
-    // // get /message/count 获取未读消息数
-    // count(options = {}) {
-    //     return new Promise((resolve, reject) => {
-    //         utils.http.request({
-    //             method: 'GET',
-    //             url: urls.count,
-    //             qs: options,
-    //         }, (data) => {
-    //             resolve(data);
-    //         });
-    //     });
-    // },
+    // get /message/count 获取未读消息数
+    count(options = {}) {
+        const opt: Options = {
+            method: 'GET',
+            spin: true,
+            headers: {},
+            mask: true,
+            url: urls.count,
+            qs: options
+        };
+        return new Promise((resolve, reject) => {
+            utils.http.request(opt, (data: object) => {
+                resolve(data);
+            });
+        });
+    },
     // // get /messages 获取已读和未读消息
     // messages(options = {}) {
     //     return new Promise((resolve, reject) => {

@@ -11,9 +11,9 @@
         <div class="inner no-padding">
             <div id="topic_list">
                 <div v-for="(item, index) in topics" class="cell" :key="index">
-                    <a class="user_avatar pull-left">
+                    <router-link class="user_avatar pull-left" :to="'/user/' + (item.author && item.author.loginname)">
                         <img :src="item.author.avatar_url" :title="item.author.loginname" :alt="item.author.loginname" />
-                    </a>
+                    </router-link>
                     <span class="reply_count pull-left">
                         <span class="count_of_replies" title="回复数">
                             {{ item.reply_count }}
@@ -83,10 +83,11 @@
             };
             this.fetchTopics(options);
         }
-        fetchTopics(options: Options): void{
-            this.$store.dispatch('getTopics', options);
+        async fetchTopics(options: Options) {
+            await this.$store.dispatch('getTopics', options);
+            this.changeSider();
         }
-        changeTag(tag: string) {
+        changeTag(tag: string): void {
             let total: number = 0;
             switch(tag) {
                 case 'all':
@@ -121,7 +122,7 @@
             };
             this.fetchTopics(options);
         }
-        handlePage(page: number) {
+        handlePage(page: number): void {
             if (page !== this.currentPage){
                 let options = {
                     page,
@@ -132,6 +133,19 @@
                 this.fetchTopics(options);
                 window.scrollTo(0, 0);
                 this.currentPage = page;
+            }
+        }
+        changeSider (): void {
+            const accessInfo = this.$store.state.app.accessInfo;
+            let showInfo = accessInfo.success ? true : false;
+            this.$store.dispatch('authorOrNot', {
+                showInfo,
+                isAuthor: false,
+            });
+            if (accessInfo && accessInfo.loginname !== '' && accessInfo.loginname) {
+                this.$store.dispatch('getInfo', {
+                    username: accessInfo.loginname
+                });
             }
         }
     };

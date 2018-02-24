@@ -1,12 +1,47 @@
 <template>
     <div id="sidebar">
-        <div class="panel">
+        <div v-if="info && showInfo">
+            <div class="panel">
+                <div class="header">
+                    <span class="col_fade">{{ isAuthor? '作者' : '个人信息' }}</span>
+                </div>
+                <div class="inner">
+                    <div class="user_card">
+                        <div>
+                            <a class="user_avatar" to="/user/${info.loginname">
+                                <img :src="info.avatar_url" :alt="info.loginname" title="info.loginname" />
+                            </a>
+                            <span class="user_name"><router-link class="dark" :to="'/user/' + info.loginname">{{ info.loginname }}</router-link></span>
+                            <div class="board clearfix">
+                                <div class="floor">
+                                    <span class="big">积分: {{ info.score ? info.score : 0 }} </span>
+                                </div>
+                            </div>
+                            <div class="space clearfix"></div>
+                            <span class="signature">
+                                “
+                                    sunshine
+                                ”
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel">
+                <div class="inner">
+                    <router-link :to="'/create/new'" id="create_topic_btn">
+                        <span class="span-success">发布话题</span>
+                    </router-link>
+                </div>
+            </div>
+        </div>
+        <div class="panel" v-else>
             <div class="inner">
                 <p>CNode：Node.js专业中文社区</p>
                 <div>
                     您可以&nbsp;
                     <a>
-                        <span class="span-info">输入accesstoken登录</span>
+                        <span class="span-info" @click="signIn">输入accesstoken登录</span>
                     </a>
                 </div>
             </div>
@@ -74,8 +109,58 @@
 <script lang="ts">
     import Vue from 'vue';
     import Component from 'vue-class-component';
+    import Dialog from '../Dialog/index';
+    import Warning from '../Warning/index';
 
     @Component({})
     export default class Sider extends Vue {
+        get info(): object {
+            return this.$store.state.app.info;
+        }
+        get showInfo(): boolean {
+            return this.$store.state.app.showInfo;
+        }
+        get isAuthor(): boolean {
+            return this.$store.state.app.isAuthor;
+        }
+        signIn(): void {
+            let self = this;
+            Dialog.open({
+                showInput: true,
+                inputPlaceholder: '请输入accesstoken',
+                confirmButtonText: '登陆',
+                confirmCallBack: async function (accesstoken: string) {
+                    if (accesstoken === '' || !accesstoken) {
+                        Warning.info('accesstoken不能为空！');
+                    } else {
+                        await self.$store.dispatch('accesstoken', {accesstoken});
+                        let accessInfo = self.$store.state.app.accessInfo;
+                        console.log(accessInfo);
+                        // const { accessInfo, changeAccesstoken, getInfo, getMessage } = self.$props;
+                        if (accessInfo.success) {
+                            self.$store.dispatch('changeAccesstoken', {accesstoken});
+                            // await getMessage({
+                            //     accesstoken,
+                            //     mdrender: true
+                            // });
+                            // await getInfo({
+                            //     username: accessInfo.loginname
+                            // });
+                            Dialog.close();
+                            Warning.info('登录成功！');
+                            window.localStorage.setItem('accesstoken', accesstoken);
+                            setTimeout(() => {
+                                window.location.reload();
+                            }, 1000);
+                        } else {
+                            Warning.info('accesstoken不正确，请重新输入！');
+                        }
+                    }
+                },
+                cancelCallBack(accesstoken: string) {
+                    Dialog.close();
+                },
+            });
+        }
     };
 </script>

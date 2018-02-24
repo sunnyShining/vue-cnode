@@ -22,7 +22,19 @@ const actions = {
     async getTopic (context: { commit: Commit, state: State }, params: {id: string; accesstoken: string; mdrender: boolean}) {
         let data = await services.topic(params);
         context.commit(types.GET_TOPIC, data);
-  },
+    },
+    // async ups (context: { commit: Commit, state: State }, params: {reply_id: string; accesstoken: string}) {
+    //     await services.ups(params);
+    // },
+    // async collect (context: { commit: Commit, state: State }, params: object) {
+    //     await services.collect(params);
+    // },
+    // async deCollect (context: { commit: Commit, state: State }, params: object) {
+    //     await services.deCollect(params);
+    // },
+    // async replies (context: { commit: Commit, state: State }, params: {topicId: string; content: string; accesstoken: string; reply_id: any}) {
+    //     await services.replies(params);
+    // }
 };
 
 const mutations = {

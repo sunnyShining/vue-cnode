@@ -16,14 +16,19 @@
                       发布于 {{ topic.create_at | fromNow }}
                     </span>
                     <span>
-                      作者 <a to="/user/ topic.author.loginname">{{ topic.author && topic.author.loginname }}</a>
+                      作者 <router-link :to="'/user/' + (topic.author &&topic.author.loginname)">{{ topic.author && topic.author.loginname }}</router-link>
                     </span>
                     <span>
                       {{ topic.visit_count }} 次浏览
                     </span>
                     <span> 来自 {{ topic.tab | tab }} </span>
-                    <input v-if="topic.is_collect" class="span-common  pull-right collect_btn" type="submit" value="取消收藏" action="de_collect" />
-                    <input v-else class="span-common span-success pull-right collect_btn" type="submit" value="收藏" action="collect" />
+                    <input v-if="topic.is_collect && accessInfo.success" class="span-common  pull-right collect_btn" type="submit" @click="decollect" value="取消收藏" action="de_collect" />
+                    <input v-if="!topic.is_collect && accessInfo.success" class="span-common span-success pull-right collect_btn" type="submit" value="收藏" action="collect" @click="collect" />
+                </div>
+                <div id="manage_topic" v-if="topic.author && topic.author.loginname === accessInfo.loginname">
+                    <router-link :to="'/create/' + id">
+                        <i class="fa fa-lg fa-pencil-square-o" title="编辑"></i>
+                    </router-link>
                 </div>
             </div>
             <div class="inner topic">
@@ -38,17 +43,17 @@
             </div>
             <div v-for="(item, index) in topic.replies" :key="index" :class="['cell reply_area reply_item', {'reply_highlight': item.is_uped}]" :reply_id="item.id" reply_to_id="" :id="item.id">
                 <div class="author_content">
-                    <a to="/user/item.author.loginname" class="user_avatar">
+                    <router-link :to="'/user/' + item.author.loginname" class="user_avatar">
                         <img :src="item.author.avatar_url" alt="" title="" />
-                    </a>
+                    </router-link>
                     <div class="user_info">
-                        <a class="dark reply_author" to="/user/item.author.loginname">{{ item.author.loginname }}</a>
+                        <router-link class="dark reply_author" :to="'/user/' + item.author.loginname">{{ item.author.loginname }}</router-link>
                         <a class="reply_time" :href="'#' + item.id">{{ index + 1 }}楼•{{ item.create_at | fromNow}}</a>
                         <span v-if="item.author.loginname === topic.author.loginname" class="reply_by_author">作者</span>
                     </div>
                     <div class="user_action">
                         <span>
-                            <i :class="['fa up_btn fa-thumbs-o-up', {'uped': item.is_uped}]" title="喜欢"></i>
+                            <i :class="['fa up_btn fa-thumbs-o-up', {'uped': item.is_uped}]" title="喜欢" @click="ups(item.id)"></i>
                             <span class="up-count">
                               &nbsp;{{ item.ups ? item.ups.length : 0 }}
                             </span>
@@ -72,6 +77,9 @@
     import Vue from 'vue';
     import Component from 'vue-class-component';
     import { fromNow } from '../../filters/filters';
+    import Dialog from '../../components/Dialog/index';
+    import Warning from '../../components/Warning/index';
+    import services from '../../services/services';
 
     @Component({
         filters: {
@@ -100,21 +108,136 @@
         }
     })
     export default class Home extends Vue {
-        get topic(): object {
+        id: string = '';
+        get topic (): object {
             return this.$store.state.detail.topic;
         }
-        created(): void {
+        get accessInfo (): object {
+            return this.$store.state.app.accessInfo;
+        }
+        created (): void {
             let id = this.$route.params.id;
+            this.id = id;
             const { accesstoken } = this.$store.state.app;
             this.fetchTopic({
                 id,
                 accesstoken,
                 mdrender: true
             });
-            // this.$store.dispatch('getTopics', options);
         }
-        fetchTopic(options: {id: string; accesstoken: string; mdrender: boolean}): void {
-            this.$store.dispatch('getTopic', options);
+        async fetchTopic (options: {id: string; accesstoken: string; mdrender: boolean}) {
+            await this.$store.dispatch('getTopic', options);
+            // 侧边栏
+            const topic = this.$store.state.detail.topic;
+            this.changeSider(true, true, topic.author.loginname);
+        }
+        ups (reply_id: string): void {
+            const accessInfo = this.$store.state.app.accessInfo;
+            const accesstoken = this.$store.state.app.accesstoken;
+            if (accessInfo.success) {
+                const options = {
+                    reply_id,
+                    accesstoken,
+                };
+                services.ups(options).then((data) => {
+                    const id = this.$route.params.id;
+                    this.fetchTopic({
+                        id,
+                        accesstoken,
+                        mdrender: true
+                    });
+                }, error => {
+                    console.log(error);
+                });
+            } else {
+                this.signIn();
+            }
+        }
+        collect (): void {
+            const { accessInfo, accesstoken } = this.$store.state.app;
+            const id = this.$route.params.id;
+            const options = {
+                topic_id: id,
+                accesstoken,
+            };
+            if (accessInfo.success) {
+                services.collect(options).then((data) => {
+                    this.fetchTopic({
+                        id,
+                        accesstoken,
+                        mdrender: true
+                    });
+                }, error => {
+                    console.log(error);
+                })
+            } else {
+                this.signIn();
+            }
+        }
+        decollect (): void {
+            const id = this.$route.params.id;
+            const { accessInfo, accesstoken } = this.$store.state.app;
+            const options = {
+                topic_id: id,
+                accesstoken,
+            };
+            if (accessInfo.success) {
+                services.deCollect(options).then((data) => {
+                    this.fetchTopic({
+                        id,
+                        accesstoken,
+                        mdrender: true
+                    });
+                }, error => {
+                    console.log(error);
+                });
+            } else {
+                this.signIn();
+            }
+        }
+        signIn (): void {
+            let self = this;
+            Dialog.open({
+                showInput: true,
+                inputPlaceholder: '请输入accesstoken',
+                confirmButtonText: '登陆',
+                confirmCallBack: async function (accesstoken: string) {
+                    if (accesstoken === '' || !accesstoken) {
+                        Warning.info('accesstoken不能为空！');
+                    } else {
+                        await self.$store.dispatch('accesstoken', {accesstoken});
+                        let accessInfo = self.$store.state.app.accessInfo;
+                        // const { accessInfo, changeAccesstoken, getInfo, getMessage } = self.$props;
+                        if (accessInfo.success) {
+                            self.$store.dispatch('changeAccesstoken', {accesstoken});
+                            // await getMessage({
+                            //     accesstoken,
+                            //     mdrender: true
+                            // });
+                            // await getInfo({
+                            //     username: accessInfo.loginname
+                            // });
+                            Dialog.close();
+                            Warning.info('登录成功！');
+                            window.localStorage.setItem('accesstoken', accesstoken);
+                        } else {
+                            Warning.info('accesstoken不正确，请重新输入！');
+                        }
+                    }
+                },
+                cancelCallBack(accesstoken: string) {
+                    Dialog.close();
+                },
+            });
+        }
+        changeSider (showInfo: boolean, isAuthor: boolean, name: string): void {
+            this.$store.dispatch('authorOrNot', {
+                showInfo,
+                isAuthor,
+            });
+            this.$store.dispatch('getInfo', {
+                username: name
+            });
         }
     };
 </script>
