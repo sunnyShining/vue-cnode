@@ -8,9 +8,9 @@
                 <div class="inner">
                     <div class="user_card">
                         <div>
-                            <a class="user_avatar" to="/user/${info.loginname">
+                            <router-link class="user_avatar" :to="'/user/' + info.loginname">
                                 <img :src="info.avatar_url" :alt="info.loginname" title="info.loginname" />
-                            </a>
+                            </router-link>
                             <span class="user_name"><router-link class="dark" :to="'/user/' + info.loginname">{{ info.loginname }}</router-link></span>
                             <div class="board clearfix">
                                 <div class="floor">

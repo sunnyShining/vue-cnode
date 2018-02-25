@@ -9,6 +9,7 @@ import Api from '@/pages/api/api.vue';
 import Create from '@/pages/create/create.vue';
 import Messages from '@/pages/messages/messages.vue';
 import UserTopic from '@/pages/userTopic/userTopic.vue';
+import NoFound from '@/pages/noFound/noFound.vue';
 
 Vue.use(Router);
 
@@ -60,8 +61,13 @@ export default new Router({
 	      	component: UserTopic,
 	    },
 	    {
+	      	path: '/noFound',
+	      	name: 'noFound',
+	      	component: NoFound,
+	    },
+	    {
         	path: '*',
-        	redirect: '/home',
+        	redirect: '/NoFound',
     	},
 	],
 });

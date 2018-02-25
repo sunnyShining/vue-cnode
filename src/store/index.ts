@@ -14,6 +14,7 @@ import createLogger from 'vuex/dist/logger';
 import home from './modules/home';
 import app from './modules/app';
 import detail from './modules/detail';
+import user from './modules/user';
 
 Vue.use(Vuex);
 
@@ -24,8 +25,9 @@ export default new Vuex.Store({
 	// getters,
   	modules: {
         app,
-	      home,
+	    home,
         detail,
+        user,
   	},
   	strict: debug,
   	plugins: debug ? [createLogger({})] : [],

@@ -112,19 +112,22 @@ export default {
             });
         });
     },
-    // // get /topic_collect/:loginname 用户所收藏的主题
-    // userCollect(options = {}) {
-    //     let url = `${urls.userCollect}${options.username}`;
-    //     return new Promise((resolve, reject) => {
-    //         utils.http.request({
-    //             method: 'GET',
-    //             url,
-    //             qs: {},
-    //         }, (data) => {
-    //             resolve(data);
-    //         });
-    //     });
-    // },
+    // get /topic_collect/:loginname 用户所收藏的主题
+    userCollect(options: {username: string}) {
+        const opt: Options = {
+            method: 'GET',
+            spin: true,
+            headers: {},
+            mask: true,
+            url: `${urls.userCollect}${options.username}`,
+            qs: {},
+        };
+        return new Promise((resolve, reject) => {
+            utils.http.request(opt, (data: any) => {
+                resolve(data);
+            });
+        });
+    },
     // post /topic/:topic_id/replies 新建评论
     replies(options: {topicId: string; content: string; accesstoken: string; reply_id: any}) {
         let url = `${urls.replies}${options.topicId}/replies`;

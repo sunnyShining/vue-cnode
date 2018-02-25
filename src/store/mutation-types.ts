@@ -7,3 +7,7 @@ export const GET_INFO = 'GET_INFO';
 export const AUTH_OR_NOT = 'AUTH_OR_NOT';
 
 export const GET_TOPIC = 'GET_TOPIC';
+
+export const GET_USER = 'GET_USER';
+export const GET_COLLECT = 'GET_COLLECT';
+// export const GET_RECENT = 'GET_RECENT';
