@@ -39,7 +39,7 @@
                 <router-link class="user_avatar pull-left" :to="'/user/' + item.author.loginname">
                     <img :src="item.author.avatar_url" alt="" :title="item.author.loginname" />
                 </router-link>
-                <router-link class="last_time pull-right" :to="'/topic/' + item.id">
+                <router-link class="last_time pull-right" :to="'/detail/' + item.id">
                     <span class="last_active_time">{{ item.last_reply_at | fromNow }}</span>
                 </router-link>
                 <div class="topic_title_wrapper">
@@ -49,7 +49,7 @@
                     <span v-else-if="item.tab === 'ask'" class="topiclist-tab">&nbsp;问答&nbsp;</span>
                     <span v-else-if="item.tab === 'job'" class="topiclist-tab">&nbsp;工作&nbsp;</span>
                     <span v-else-if="item.tab === 'dev'" class="topiclist-tab">&nbsp;测试&nbsp;</span>
-                    <router-link class="topic_title" :to="'/topic/' + item.id" :title="item.title">
+                    <router-link class="topic_title" :to="'/detail/' + item.id" :title="item.title">
                         &nbsp;{{ item.title }}
                     </router-link>
                 </div>
@@ -63,10 +63,10 @@
                 <span class="col_fade">最近参与的话题</span>
             </div>
             <div class="cell" v-for="(item, index) in userInfo.recent_replies" :key="index">
-                <router-link class="user_avatar pull-left" :to="'/topic/' + item.id">
+                <router-link class="user_avatar pull-left" :to="'/detail/' + item.id">
                     <img :src="item.author && item.author.avatar_url" alt="" :title="item.author && item.author.loginname" />
                 </router-link>
-                <router-link class="last_time pull-right" :to="'/topic/' + item.id">
+                <router-link class="last_time pull-right" :to="'/detail/' + item.id">
                     <span class="last_active_time">{{ item.last_reply_at | fromNow }}</span>
                 </router-link>
                 <div class="topic_title_wrapper">
@@ -76,7 +76,7 @@
                     <span v-else-if="item.tab === 'ask'" class="topiclist-tab">&nbsp;问答&nbsp;</span>
                     <span v-else-if="item.tab === 'job'" class="topiclist-tab">&nbsp;工作&nbsp;</span>
                     <span v-else-if="item.tab === 'dev'" class="topiclist-tab">&nbsp;测试&nbsp;</span>
-                    <router-link class="topic_title" :to="'/topic/' + item.id" :title="item.title">
+                    <router-link class="topic_title" :to="'/detail/' + item.id" :title="item.title">
                         &nbsp;{{ item.title }}
                     </router-link>
                 </div>
