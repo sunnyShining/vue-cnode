@@ -31,7 +31,6 @@
             const accesstoken = window.localStorage.getItem('accesstoken');
             await this.$store.dispatch('accesstoken', {accesstoken});
             let accessInfo = this.$store.state.app.accessInfo;
-            console.log(accessInfo);
             // const { getAccess } = this.props;
             // await getAccess({
             //     accesstoken
