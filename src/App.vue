@@ -31,18 +31,13 @@
             const accesstoken = window.localStorage.getItem('accesstoken');
             await this.$store.dispatch('accesstoken', {accesstoken});
             let accessInfo = this.$store.state.app.accessInfo;
-            // const { getAccess } = this.props;
-            // await getAccess({
-            //     accesstoken
-            // });
-            // const { accessInfo, changeAccesstoken, getMessage } = this.props;
             if (accessInfo.success) {
                 this.$store.dispatch('changeAccesstoken', {accesstoken});
                 await this.$store.dispatch('getMessageCount', {accesstoken});
-                // await getMessage({
-                //     accesstoken,
-                //     mdrender: true
-                // });
+                await this.$store.dispatch('getMessage', {
+                    accesstoken,
+                    mdrender: true
+                });
             }
         }
     };

@@ -25,7 +25,7 @@ export default new Vuex.Store({
 	// getters,
   	modules: {
         app,
-	    home,
+	      home,
         detail,
         user,
   	},

@@ -58,16 +58,40 @@
                               &nbsp;{{ item.ups ? item.ups.length : 0 }}
                             </span>
                         </span>
-                        <!-- {
-                            accessInfo.success ?
-                            <span>
-                                &nbsp;<i class="fa fa-reply reply2_btn" title="回复" onClick={() => {this.reply(item.id, item.author.loginname)}}></i>
-                            </span>: null
-                        } -->
+                            <span v-if="accessInfo.success">
+                                &nbsp;<i class="fa fa-reply reply2_btn" title="回复" @click="reply(item.id, item.author.loginname)"></i>
+                            </span>
                     </div>
                 </div>
                 <div class="reply_content from-i5ting">
                     <div v-html="item.content" />
+                </div>
+                <div class="clearfix">
+                    <div class="reply2_area">
+                            <div v-if="replyId === item.id" class="markdown_editor in_editor">
+                                <div class="markdown_in_editor">
+                                    <mavon-editor v-model="reply1" :subfield="false" :placeholder="' '" />
+                                    <div class="editor_buttons">
+                                        <input class="span-primary submit_btn" type="button" @click="replyCallback1" value="回复">
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel" v-if="accessInfo.success">
+                <div class="header">
+                    <span class="col_fade">添加回复</span>
+                </div>
+                <div class="inner reply">
+                    <div class="markdown_editor in_editor">
+                        <div class="markdown_in_editor">
+                            <mavon-editor v-model="reply2" :subfield="false" :placeholder="' '" />
+                            <div class="editor_buttons">
+                                <input class="span-primary submit_btn" type="button" @click="replyCallback2" value="回复">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -109,6 +133,9 @@
     })
     export default class Home extends Vue {
         id: string = '';
+        replyId: string = '';
+        reply1: string = '';
+        reply2: string = '';
         get topic (): object {
             return this.$store.state.detail.topic;
         }
@@ -237,6 +264,53 @@
             });
             this.$store.dispatch('getInfo', {
                 username: name
+            });
+        }
+        reply(reply_id: string, loginname: string) {
+            this.replyId = this.replyId === '' ? reply_id : '';
+            this.reply1 = `@${loginname} `;
+        }
+        replyCallback1 () {
+            const { accesstoken } = this.$store.state.app;
+            let options = {
+                reply_id: this.replyId,
+                accesstoken,
+                content: this.reply1,
+                topicId: this.id,
+            };
+            services.replies(options).then((data: any) => {
+                if(data.success) {
+                    this.fetchTopic({
+                        id: this.id,
+                        accesstoken,
+                        mdrender: true
+                    });
+                    this.reply1 = '';
+                    this.replyId = '';
+                }
+            }, error => {
+                console.log(error);
+            });
+        }
+        replyCallback2 () {
+            const { accesstoken } = this.$store.state.app;
+            let options = {
+                accesstoken,
+                content: this.reply2,
+                topicId: this.id,
+                reply_id: undefined,
+            };
+            services.replies(options).then((data: any) => {
+                if(data.success) {
+                    this.fetchTopic({
+                        id: this.id,
+                        accesstoken,
+                        mdrender: true
+                    });
+                    this.reply2 = '';
+                }
+            }, error => {
+                console.log(error);
             });
         }
     };

@@ -17,7 +17,7 @@ export default {
             method: 'GET',
             spin: true,
             headers: {},
-            mask: true,
+            mask: false,
             url: urls.topics,
             qs: options
         };
@@ -33,7 +33,7 @@ export default {
             method: 'GET',
             spin: true,
             headers: {},
-            mask: true,
+            mask: false,
             url: `${urls.topic}${options.id}`,
             qs: {
                 accesstoken: options.accesstoken,
@@ -46,47 +46,45 @@ export default {
             });
         });
     },
-    // // post /topics 新建主题
-    // newTopics(options = {}) {
-    //     if (options.tab === '') {
-    //         Toast.info('请选择版块');
-    //         return;
-    //     } else if (options.title === '') {
-    //         Toast.info('标题不能为空！');
-    //         return;
-    //     } else if (options.content === '') {
-    //         Toast.info('内容不能为空！');
-    //         return;
-    //     }
-    //     return new Promise((resolve, reject) => {
-    //         utils.http.request({
-    //             method: 'POST',
-    //             url: urls.newTopics,
-    //             qs: options,
-    //         }, (data) => {
-    //             resolve(data);
-    //         });
-    //     });
-    // },
-    // // post /topics/update 编辑主题
-    // update(options = {}) {
-    //     return new Promise((resolve, reject) => {
-    //         utils.http.request({
-    //             method: 'POST',
-    //             url: urls.update,
-    //             qs: options,
-    //         }, (data) => {
-    //             resolve(data);
-    //         });
-    //     });
-    // },
+    // post /topics 新建主题
+    newTopics(options = {}) {
+        const opt: Options = {
+            method: 'POST',
+            spin: true,
+            headers: {},
+            mask: false,
+            url: urls.newTopics,
+            qs: options,
+        };
+        return new Promise((resolve, reject) => {
+            utils.http.request(opt, (data: any) => {
+                resolve(data);
+            });
+        });
+    },
+    // post /topics/update 编辑主题
+    update(options = {}) {
+        const opt: Options = {
+            method: 'POST',
+            spin: true,
+            headers: {},
+            mask: false,
+            url: urls.update,
+            qs: options,
+        };
+        return new Promise((resolve, reject) => {
+            utils.http.request(opt, (data: any) => {
+                resolve(data);
+            });
+        });
+    },
     // post /topic_collect/collect 收藏主题
     collect(options = {}) {
         const opt: Options = {
             method: 'POST',
             spin: true,
             headers: {},
-            mask: true,
+            mask: false,
             url: urls.collect,
             qs: options,
         };
@@ -102,7 +100,7 @@ export default {
             method: 'POST',
             spin: true,
             headers: {},
-            mask: true,
+            mask: false,
             url: urls.deCollect,
             qs: options,
         };
@@ -118,7 +116,7 @@ export default {
             method: 'GET',
             spin: true,
             headers: {},
-            mask: true,
+            mask: false,
             url: `${urls.userCollect}${options.username}`,
             qs: {},
         };
@@ -142,7 +140,7 @@ export default {
             method: 'POST',
             spin: true,
             headers: {},
-            mask: true,
+            mask: false,
             url: `${urls.replies}${options.topicId}/replies`,
             qs,
         };
@@ -158,16 +156,18 @@ export default {
             method: 'POST',
             spin: true,
             headers: {},
-            mask: true,
+            mask: false,
             url: `${urls.ups}${options.reply_id}/ups`,
             qs: { accesstoken: options.accesstoken },
         };
         return new Promise((resolve, reject) => {
             utils.http.request(opt, (data: any) => {
-                if (data.action === 'down') {
-                    Warning.info('取消点赞');
-                } else {
-                    Warning.info('点赞成功');
+                if (data.success) {
+                    if (data.action === 'down') {
+                        Warning.info('取消点赞');
+                    } else {
+                        Warning.info('点赞成功');
+                    }
                 }
                 resolve(data);
             });
@@ -179,7 +179,7 @@ export default {
             method: 'GET',
             spin: false,
             headers: {},
-            mask: true,
+            mask: false,
             url: `${urls.user}${options.username}`,
             qs: {}
         };
@@ -221,46 +221,52 @@ export default {
             });
         });
     },
-    // // get /messages 获取已读和未读消息
-    // messages(options = {}) {
-    //     return new Promise((resolve, reject) => {
-    //         utils.http.request({
-    //             method: 'GET',
-    //             url: urls.messages,
-    //             qs: options,
-    //             mask: true,
-    //         }, (data) => {
-    //             resolve(data);
-    //         });
-    //     });
-    // },
-    // // post /message/mark_all 标记全部已读
-    // markAll(options = {}) {
-    //     return new Promise((resolve, reject) => {
-    //         utils.http.request({
-    //             method: 'POST',
-    //             url: urls.markAll,
-    //             qs: options,
-    //             mask: true,
-    //         }, (data) => {
-    //             resolve(data);
-    //         });
-    //     });
-    // },
-    // // post /message/mark_one/:msg_id 标记单个消息为已读
-    // markOne(options = {}) {
-    //     return new Promise((resolve, reject) => {
-    //         utils.http.request({
-    //             method: 'POST',
-    //             url: urls.markOne,
-    //             qs: options,
-    //         }).then((data) => {
-    //             resolve(data);
-    //         }).catch((error) => {
-    //             reject(error);
-    //             // 交予全局处理
-    //             // message.error(error.msg);
-    //         });
-    //     });
-    // },
+    // get /messages 获取已读和未读消息
+    messages(options = {}) {
+        const opt: Options = {
+            method: 'GET',
+            spin: true,
+            headers: {},
+            mask: true,
+            url: urls.messages,
+            qs: options
+        };
+        return new Promise((resolve, reject) => {
+            utils.http.request(opt, (data: any) => {
+                resolve(data);
+            });
+        });
+    },
+    // post /message/mark_all 标记全部已读
+    markAll(options = {}) {
+        const opt: Options = {
+            method: 'POST',
+            spin: true,
+            headers: {},
+            mask: true,
+            url: urls.markAll,
+            qs: options
+        };
+        return new Promise((resolve, reject) => {
+            utils.http.request(opt, (data: any) => {
+                resolve(data);
+            });
+        });
+    },
+    // post /message/mark_one/:msg_id 标记单个消息为已读
+    markOne(options = {}) {
+        const opt: Options = {
+            method: 'POST',
+            spin: true,
+            headers: {},
+            mask: false,
+            url: urls.markOne,
+            qs: options
+        };
+        return new Promise((resolve, reject) => {
+            utils.http.request(opt, (data: any) => {
+                resolve(data);
+            });
+        });
+    },
 };

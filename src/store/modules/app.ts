@@ -25,6 +25,8 @@ interface State {
     info: object;
     isAuthor: boolean;
     showInfo: boolean;
+    hasRead: any;
+    hasnotRead: any;
 }
 
 const state: State = {
@@ -34,10 +36,6 @@ const state: State = {
         loginname: '',
         avatar_url: '',
         id: '',
-    },
-    count: {
-        success: false,
-        data: 0,
     },
     info: {
         avatar_url: '',
@@ -49,7 +47,13 @@ const state: State = {
         score: 0
     },
     isAuthor: false,
-    showInfo: false
+    showInfo: false,
+    count: {
+        success: false,
+        data: 0,
+    },
+    hasRead: [],
+    hasnotRead: [],
 };
 
 const actions = {
@@ -60,16 +64,20 @@ const actions = {
     changeAccesstoken (context: { commit: Commit, state: State }, params: object = {}) {
         context.commit(types.CHANGE_ACCESS_TOKEN, params);
     },
-    async getMessageCount (context: { commit: Commit, state: State }, params: object = {}) {
-        let data = await services.count(params);
-        context.commit(types.GET_MESSAGE_COUNT, data);
-    },
     async getInfo (context: { commit: Commit, state: State }, params: {username: string}) {
         let data = await services.user(params);
         context.commit(types.GET_INFO, data);
     },
     authorOrNot (context: { commit: Commit, state: State }, params: {isAuthor: boolean, showInfo: boolean}) {
         context.commit(types.AUTH_OR_NOT, params);
+    },
+    async getMessageCount (context: { commit: Commit, state: State }, params: object = {}) {
+        let data = await services.count(params);
+        context.commit(types.GET_MESSAGE_COUNT, data);
+    },
+    async getMessage (context: { commit: Commit, state: State }, params: object = {}) {
+        let data = await services.messages(params);
+        context.commit(types.GET_MESSAGE, data);
     }
 };
 
@@ -80,15 +88,19 @@ const mutations = {
     [types.CHANGE_ACCESS_TOKEN] (state: State, payload: any) {
 		state.accesstoken = payload.accesstoken || '';
     },
-    [types.GET_MESSAGE_COUNT] (state: State, payload: any) {
-        state.count = payload || {};
-    },
     [types.GET_INFO] (state: State, payload: any) {
         state.info = payload.data || {};
     },
     [types.AUTH_OR_NOT] (state: State, payload: any) {
         state.isAuthor = payload.isAuthor || false;
         state.showInfo = payload.showInfo || false;
+    },
+    [types.GET_MESSAGE_COUNT] (state: State, payload: any) {
+        state.count = payload || {};
+    },
+    [types.GET_MESSAGE] (state: State, payload: any) {
+        state.hasRead = (payload.data && payload.data.has_read_messages) ? payload.data.has_read_messages : [];
+        state.hasnotRead = (payload.data && payload.data.hasnot_read_messages) ? payload.data.hasnot_read_messages : [];
     },
 };
 

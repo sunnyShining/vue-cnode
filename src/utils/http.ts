@@ -62,7 +62,10 @@ export default {
                 axios.get(options.url, {
                     params: options.qs,
                     headers: options.headers
-                }).then((res) => {
+                }).then((res: any) => {
+                    if (!res.data.success && !options.mask) {
+                        Warning.info(res.error_msg);
+                    }
                     cb(res.data);
                 }).catch((err) => {
                     if (!err.success && !options.mask) {
@@ -75,7 +78,10 @@ export default {
                     ...options.qs
                 }, {
                     headers: options.headers
-                }).then((res) => {
+                }).then((res: any) => {
+                    if (!res.data.success && !options.mask) {
+                        Warning.info(res.error_msg);
+                    }
                     cb(res.data);
                 }).catch((err) => {
                     if (!err.success && !options.mask) {

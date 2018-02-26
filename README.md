@@ -1,12 +1,12 @@
-# test
+# vue-cnode
 
 > A Vue.js project
 
-## Build Setup
+## 构建
 
 ``` bash
 # install dependencies
-npm install
+yarn
 
 # serve with hot reload at localhost:8080
 npm run dev
@@ -18,4 +18,6 @@ npm run build
 npm run build --report
 ```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+## 线上地址
+
+https://still-bayou-37837.herokuapp.com/vuecnode/index.html#/home

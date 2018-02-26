@@ -21,7 +21,7 @@
             <li @click="changePage(currentPage - 2)"><a>...</a></li>
             <li @click="changePage(currentPage - 2)"><a>{{ currentPage - 2 }}</a></li>
             <li @click="changePage(currentPage - 1)"><a>{{ currentPage - 1 }}</a></li>
-            <li class="disabled active"><a>{currentPage}</a></li>
+            <li class="disabled active"><a>{{ currentPage }}</a></li>
             <li @click="changePage(currentPage + 1)"><a>{{ currentPage + 1 }}</a></li>
             <li @click="changePage(currentPage + 2)"><a>{{ currentPage + 2 }}</a></li>
             <li @click="changePage(currentPage + 2)"><a>...</a></li>

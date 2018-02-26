@@ -64,5 +64,23 @@
 
     @Component({})
     export default class Home extends Vue {
+        created(): void {
+            this.changeSider();
+        }
+        async changeSider () {
+            const accesstoken = window.localStorage.getItem('accesstoken');
+            await this.$store.dispatch('accesstoken', {accesstoken});
+            const accessInfo = this.$store.state.app.accessInfo;
+            let showInfo = accessInfo.success ? true : false;
+            this.$store.dispatch('authorOrNot', {
+                showInfo,
+                isAuthor: false,
+            });
+            if (accessInfo && accessInfo.loginname !== '' && accessInfo.loginname) {
+                this.$store.dispatch('getInfo', {
+                    username: accessInfo.loginname
+                });
+            }
+        }
     };
 </script>

@@ -52,16 +52,14 @@
                     } else {
                         await self.$store.dispatch('accesstoken', {accesstoken});
                         let accessInfo = self.$store.state.app.accessInfo;
-                        // const { accessInfo, changeAccesstoken, getInfo, getMessage } = self.$props;
                         if (accessInfo.success) {
                             self.$store.dispatch('changeAccesstoken', {accesstoken});
-                            // await getMessage({
-                            //     accesstoken,
-                            //     mdrender: true
-                            // });
-                            // await getInfo({
-                            //     username: accessInfo.loginname
-                            // });
+                            await self.$store.dispatch('getMessage', {accesstoken,
+                                mdrender: true
+                            });
+                            await self.$store.dispatch('getInfo', {
+                                username: accessInfo.loginname
+                            });
                             Dialog.close();
                             Warning.info('登录成功！');
                             window.localStorage.setItem('accesstoken', accesstoken);
