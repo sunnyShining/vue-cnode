@@ -4,3 +4,5 @@ declare module "*.vue" {
 }
 
 declare module 'mavon-editor';
+
+declare var require: RequireFunction;
