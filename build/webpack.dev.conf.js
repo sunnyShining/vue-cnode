@@ -12,6 +12,7 @@ const portfinder = require('portfinder')
 const opn = require('opn')
 const execSync = require('child_process').execSync
 
+require('../mock/index.js')()
 const HOST = process.env.HOST
 const PORT = process.env.PORT && Number(process.env.PORT)
 

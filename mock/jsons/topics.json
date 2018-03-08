@@ -1,0 +1,684 @@
+{
+  "data": [
+    {
+      "author": {
+        "avatar_url": "https://avatars3.githubusercontent.com/u/3118295?v=4&s=120",
+        "loginname": "i5ting"
+      },
+      "author_id": "54009f5ccd66f2eb37190485",
+      "content": "<div class=\"markdown-text\"><p>本来提供开发api，目的是为了开发第三方应用或客户端，如果大家用来学习也是好的，但现在很多人太过分了，随意发帖，at，严重影响了社区的用户，故而决定开始严查</p>\n<p>以下情况，直接封号</p>\n<ul>\n<li>测试标题</li>\n<li>无任何内容</li>\n<li>无意义回复</li>\n<li>测试帖，5分钟内没有删除</li>\n</ul>\n<p>欢迎大家监督</p>\n<p>封号</p>\n<ul>\n<li><a href=\"https://cnodejs.org/user/Mwangzhi\">https://cnodejs.org/user/Mwangzhi</a></li>\n<li><a href=\"https://cnodejs.org/user/lw6395\">https://cnodejs.org/user/lw6395</a></li>\n<li><a href=\"https://cnodejs.org/user/shengliang74\">https://cnodejs.org/user/shengliang74</a>  竟然挑衅，发帖说你来打我呀。。。。</li>\n<li><a href=\"https://cnodejs.org/user/h5-17\">https://cnodejs.org/user/h5-17</a> <a href=\"/user/h5-17\">@h5-17</a></li>\n<li><a href=\"https://cnodejs.org/user/592php\">https://cnodejs.org/user/592php</a> <a href=\"/user/592php\">@592php</a></li>\n</ul>\n<hr>\n<p>20170601更新</p>\n<p><a href=\"https://cnodejs.org/?tab=dev\">https://cnodejs.org/?tab=dev</a>  目前开了一个『客户端测试』专区，以后开发新客户端的同学，帖子直接发到这个专区去。tab 的值是 dev。</p>\n<p><img src=\"//dn-cnode.qbox.me/FundjyBuYk60yqQ-PdKstrPKY-7-\" alt=\"image.png\"></p>\n</div>",
+      "create_at": "2017-05-27T06:07:49.278Z",
+      "good": false,
+      "id": "5a2403226190c8912ebaceeb",
+      "last_reply_at": "2018-03-08T00:55:07.883Z",
+      "reply_count": 154,
+      "tab": "share",
+      "title": "测试请发到客户端测试专区，违规影响用户的，直接封号",
+      "top": true,
+      "visit_count": 41997
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars3.githubusercontent.com/u/327019?v=4&s=120",
+        "loginname": "JacksonTian"
+      },
+      "author_id": "4efc278525fa69ac69000013",
+      "content": "<div class=\"markdown-text\"><p>如题。如果再有发此类帖子的，一定会删。各种群更适合发此类信息。</p>\n</div>",
+      "create_at": "2018-03-06T09:32:58.614Z",
+      "good": false,
+      "id": "5a2403226190c8912ebaceeb",
+      "last_reply_at": "2018-03-07T09:08:14.970Z",
+      "reply_count": 7,
+      "tab": "share",
+      "title": "请不要让薅羊毛的帖子入侵技术社区。",
+      "top": true,
+      "visit_count": 1308
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars1.githubusercontent.com/u/227713?v=3&s=120",
+        "loginname": "atian25"
+      },
+      "author_id": "4f447c2f0a8abae26e01b27d",
+      "content": "<div class=\"markdown-text\"><p><img src=\"//dn-cnode.qbox.me/FhSNYCv6Ab9wzT6aUSfKLa0GtP4w\" alt=\"image.png\"></p>\n<blockquote>\n<p>原文地址：知乎专栏 <a href=\"https://zhuanlan.zhihu.com/p/31640541\">https://zhuanlan.zhihu.com/p/31640541</a></p>\n</blockquote>\n<p>给大家介绍下，Egg 2.0 正式版，今天 12.3 冒泡啦，距 3.21 的 <a href=\"https://zhuanlan.zhihu.com/p/25860846\">Egg 1.0 版本</a> 时隔 8 个月。</p>\n<p><img src=\"//dn-cnode.qbox.me/FrC_ZbrhyLkhVIquPOsMqPhvqsHX\" alt=\"image.png\"></p>\n<blockquote>\n<p><a href=\"https://eggjs.org/\">Egg</a> 是阿里 Node.js 的核心基础框架，面向『企业级的 Web 基础框架』这个领域，提供了「微内核 + 插件机制 + 框架定制能力」，完美达成生态共建和差异化定制的平衡点。<br>\n既适合个人小项目快速开发，也适合团队架构师基于自身的技术架构在 Egg 基础上扩展出适合特定团队业务场景的框架。<br>\n它沉淀自阿里在各行各业不同领域的大规模工程实践经验，稳定支撑了多年天猫双11大促，顶级流量压力。</p>\n</blockquote>\n<h2>2.0 特性</h2>\n<ul>\n<li>基于 Koa 2.x\n<ul>\n<li>异步解决方案直接基于 Async Function 。</li>\n<li>去除 co 兼容后<a href=\"https://github.com/eggjs/egg/wiki/co-vs-async\">堆栈信息更清晰</a>。</li>\n</ul>\n</li>\n<li>框架层优化带来 <a href=\"https://eggjs.github.io/benchmark/plot/\">30% 左右的性能提升</a>，不含 Node 8 带来的提升。</li>\n<li>为了方便开发者快速升级，保持了对 Egg 1.x 以及 generator function 的兼容。</li>\n</ul>\n<p><img src=\"//dn-cnode.qbox.me/Fuf5DkXMxM7wfClcN6B6LzX5d18Q\" alt=\"image.png\"></p>\n<h2>如何升级</h2>\n<p><strong><a href=\"https://eggjs.org/\">Egg</a> 的理念之一是渐进式增强，故我们为开发者提供渐进升级的体验。</strong></p>\n<ol>\n<li>Node.js 使用最新的 LTS 版本（&gt;=8.9.0）。</li>\n<li>修改 package.json 中 egg 的依赖为 ^2.0.0。</li>\n<li>检查相关插件是否发布新版本（可选）。</li>\n<li>重新安装依赖，跑单元测试。</li>\n</ol>\n<p><strong>搞定！几乎不需要修改任何一行代码，就已经完成了升级。</strong></p>\n<p>这得益于 Egg 对 1.x 的兼容，但为了更好的统一代码风格，以及更佳的性能和错误堆栈，我们建议开发者参考 <a href=\"https://eggjs.org/zh-cn/migration.html\">升级指南</a> 进一步升级。</p>\n<h2>未来规划</h2>\n<p>如您所知，Egg 采用的是 <strong>『微内核 + 插件 + 上层框架』</strong> 模式。</p>\n<p>其中微内核经过 3 年 4 个版本，以及在阿里的大规模应用，已经打磨的非常稳定。</p>\n<p>接下来我们的<strong>重心主要在开发者体验方面的优化</strong>，包括：</p>\n<ul>\n<li>更好的开发者体验，包括 TypeScript，开发者工具，IDE 工具等方面。</li>\n<li>社区扶持\n<ul>\n<li>协助业界的前端团队，打造适合特定团队业务场景的上层框架，欢迎勾搭。</li>\n<li>分享我们在团队、协作、规范化等方面的经验。</li>\n<li>分享在 Docker，GraphQL，SSR 等方面的探索和最佳实践分享。</li>\n</ul>\n</li>\n<li>国际化，官网和<a href=\"https://github.com/eggjs/egg/issues/363\">文档翻译</a>等。</li>\n</ul>\n<p>同时，我们也欢迎社区更多的<a href=\"https://github.com/orgs/eggjs/projects\">参与</a>，一起打造更完善的生态。</p>\n<p><img src=\"//dn-cnode.qbox.me/Fg_WHGNC13j2azgEWb-ONk5whle5\" alt=\"image.png\"></p>\n<h2>我们这一年</h2>\n<p>截止至今天(2017-12-03)：</p>\n<ul>\n<li><strong>GitHub 5.6k star</strong>，555 forks，npm 月下载量 11,140 (不含阿里内网数据)。</li>\n<li>从 1.0 到 2.0，我们一共发布了 <a href=\"https://github.com/eggjs/egg/releases\">18 个版本</a>，处理了 820 个 issue，收到了 500+ (主库 272) 个 Pull Request 。</li>\n<li>开发者体验方面的优化包括：<a href=\"https://eggjs.org/zh-cn/core/development.html#%E4%BD%BF%E7%94%A8-egg-bin-%E8%B0%83%E8%AF%95\">断点调试代理</a>，<a href=\"https://eggjs.org/zh-cn/core/development.html#%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95\">单元测试+覆盖率</a>，<a href=\"https://eggjs.org/zh-cn/core/deployment.html#%E9%83%A8%E7%BD%B2\">部署工具</a>，TypeScript 支持，<a href=\"https://github.com/eggjs/vscode-eggjs\">VSCode 插件</a>，文档优化等等。</li>\n</ul>\n<p><strong>社区方面：</strong></p>\n<ul>\n<li>来自 BAT，丁香园，全民直播等多家兄弟公司的反馈和插件回馈。</li>\n<li>来自 <a href=\"https://github.com/eggjs/egg/network/dependents\">GitHub Dependents</a> 的统计：992 Repositories, 231 Packages</li>\n<li><a href=\"https://npms.io/search?q=egg-\">NPM 搜索结果</a>超过 400 个。</li>\n<li>上层框架：\n<ul>\n<li><a href=\"https://github.com/alibaba/beidou\">北斗</a> - Isomorphic framework for server-rendered React apps</li>\n<li><a href=\"https://github.com/avetjs/avet\">avet</a> - A very comfortable framework for writing isomorphic applications</li>\n</ul>\n</li>\n<li>如果你有好的分享，PR 传送门：<a href=\"https://github.com/eggjs/awesome-egg\">awesome-egg</a></li>\n</ul>\n<p><strong>趣味数据：</strong></p>\n<ul>\n<li>官网访问量中，Mac 占 47% → 这比例挺高的，看来 Node 程序猿都很幸福。</li>\n<li>周末的访问量约为平时的 1/3 → 看来 Node 程序猿周末加班少。（滑稽</li>\n<li>官网访问来源：站内，直链，外链各 30% 多，来自搜索引擎的较少。</li>\n</ul>\n<p><strong>分享交流：</strong></p>\n<ul>\n<li>在 <a href=\"http://2017.jsdc.tw/\">台灣 JSDC2017 開發者年會</a> 和 <a href=\"http://2017.imweb.io/index.html#schedule\">腾讯IMWebConf</a> 分享了『<a href=\"https://github.com/atian25/blog/raw/master/assets/files/Egg%20%26%20Node.js%20%E4%BB%8E%E5%B0%8F%E5%B7%A5%E5%9D%8A%E8%B5%B0%E5%90%91%E4%BC%81%E4%B8%9A%E7%BA%A7%E5%BC%80%E5%8F%91.pdf\">Egg &amp; Node.js 从小工坊走向企业级开发</a>』</li>\n</ul>\n<p><img src=\"//dn-cnode.qbox.me/FgFUrGpNw07LKQPYzGgZp64j7CZH\" alt=\"image.png\"></p>\n<ul>\n<li>Node TSC @张秋怡 在 <a href=\"https://nina17.sched.com/event/Atii/nodejs-at-alibaba-a-joyee-cheung-alibaba-cloud\">Node Interactive North America 2017</a> 和 <a href=\"http://nodefest.jp/2017/schedule.html#joyee\">東京Node学園祭2017</a> 分享了『<a href=\"https://github.com/joyeecheung/talks/blob/master/node_fest_2017/nodejs_at_alibaba_tokyo.pdf\">Node.js at Alibaba</a>』。</li>\n</ul>\n<p><img src=\"//dn-cnode.qbox.me/Fl5IyrfAMzQ49Uz3eQ67i2FLL09H\" alt=\"image.png\"></p>\n<ul>\n<li><a href=\"/user/ngot\">@ngot</a> 在 <a href=\"https://www.bagevent.com/event/751307\">Node Party</a> 分享了『<a href=\"https://github.com/Hangzhou-Node-Party/Node-Party/blob/master/2017-08-19/Egg.js%E5%9C%A8%E9%98%BF%E9%87%8C%E5%B7%B4%E5%B7%B4%E9%9B%86%E5%9B%A2%E7%9A%84%E7%9A%84%E5%AE%9E%E8%B7%B5%E8%BF%90%E7%94%A8.pdf\">Egg.js 在阿里巴巴集团的实践运用</a>』</li>\n<li>@姜天意 在 <a href=\"http://2017.imweb.io/index.html#schedule\">腾讯IMWebConf</a> 分享了 『<a href=\"https://github.com/jtyjty99999/share/blob/master/security%20risk%20in%20node%20web.pdf\">脆弱的 Node.js</a>』</li>\n</ul>\n<h2>写在最后</h2>\n<p>开源，痛并快乐着。</p>\n<p><img src=\"//dn-cnode.qbox.me/Fiamh5LNYR3e2E0HtdhrO3sVfHrs\" alt=\"image.png\"></p>\n</div>",
+      "create_at": "2017-12-03T13:58:58.901Z",
+      "good": true,
+      "id": "5a2403226190c8912ebaceeb",
+      "last_reply_at": "2018-03-06T16:09:10.058Z",
+      "reply_count": 142,
+      "tab": "share",
+      "title": "企业级 Node.js 框架 Egg 发布 2.0，性能提升 30%，拥抱 Async",
+      "top": true,
+      "visit_count": 27692
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars3.githubusercontent.com/u/18484395?v=4&s=120",
+        "loginname": "jiangli1990"
+      },
+      "author_id": "5aa1445b19b2e3db18959c0c",
+      "content": "<div class=\"markdown-text\"><p>学习到中间件connect时，提到他自带了两个模块 一个是logger  这个我上网搜索到已经分出改成morgan模块  那么另外一个是favicon，现在报错如下\nTypeError: connect.favicon is not a function\nat Object.&lt;anonymous&gt; (/Users/johnny/Downloads/code/6/http.js:5:26)\nat Module._compile (module.js:660:30)\nat Object.Module._extensions…js (module.js:671:10)\nat Module.load (module.js:573:32)\nat tryModuleLoad (module.js:513:12)\nat Function.Module._load (module.js:505:3)\nat Function.Module.runMain (module.js:701:10)\nat startup (bootstrap_node.js:193:16)\nat bootstrap_node.js:617:3\njohnnydeMacBook-Air:6 johnny$\n有木有大神告诉我 是什么原因…懵逼中额么么么</p>\n</div>",
+      "create_at": "2018-03-08T14:13:30.470Z",
+      "good": false,
+      "id": "5a2403226190c8912ebaceeb",
+      "last_reply_at": "2018-03-08T14:13:30.470Z",
+      "reply_count": 0,
+      "tab": "ask",
+      "title": "最近在学习NODE 权威指南这本书遇到一点问题求大神帮忙",
+      "top": false,
+      "visit_count": 11
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars2.githubusercontent.com/u/12076578?v=4&s=120",
+        "loginname": "sonong"
+      },
+      "author_id": "553c3aa81a6e36a27780ee26",
+      "content": "<div class=\"markdown-text\"><p><a href=\"https://cloud.tencent.com/act/campus/group/detail?group=10258\">https://cloud.tencent.com/act/campus/group/detail?group=10258</a></p>\n<p>看来可能是 kpi 压力，腾讯年前，年后一直\n有优惠活动。。良心云名不虚传。\n这次又是，老用户开团，，新用户参团可享。非学生也可以成功购买。 源地址： <a href=\"https://cloud.tencent.com/act/campus/group/index\">https://cloud.tencent.com/act/campus/group/index</a> 老用户开团成功后可领取 100 元通用代金劵年付 120 元，购买后可以续费两年，然后等组团结束后降低配置就可以总共花 360 元续费到 2023 年。\n机房选择成都，降配时，可以返还更多时间。 机房选择成都，降配时，可以返还更多时间。 机房选择成都，降配时，可以返还更多时间。\n续费链接： <a href=\"https://cloud.tencent.com/act/campus\">https://cloud.tencent.com/act/campus</a> 续费时长随意。\n降低配置： <a href=\"https://console.cloud.tencent.com/cvm/index\">https://console.cloud.tencent.com/cvm/index</a> 后台控制台 - 更多 - 云主机设置 - 调整配置。选择 1G 内存，会返还时间。\n附上操作步骤：</p>\n<p>1、登录，用新号登录</p>\n<p>2、认证，选择QQ或者微信认证。</p>\n<p>3、参团（如果电脑打不开，扫码用手机QQ微信等打开）</p>\n<p>4、选择12个月送4个月 支付120块</p>\n<p>5、进入https://cloud.tencent.com/act/campus/</p>\n<p>6、随便输入学生信息（BUG，不走学信，赶紧上）</p>\n<p>7、返回https://cloud.tencent.com/act/campus/</p>\n<p>8、续费2次，分别付2次120块</p>\n<p>9、进入https://console.cloud.tencent.com/cvm/index</p>\n<p>10、看到主机后面 更多-云主机设置-调整配置-改成1G，时间自动延长 我选成都2024-09-25到期。</p>\n<p>11、更多-重装系统，可以选择win2008 win2012 还可以选择其他的linux。</p>\n</div>",
+      "create_at": "2018-03-05T16:30:13.473Z",
+      "good": false,
+      "id": "5a2403226190c8912ebaceeb",
+      "last_reply_at": "2018-03-08T13:36:30.979Z",
+      "reply_count": 55,
+      "tab": "share",
+      "title": "360元6.5年腾讯云服务器",
+      "top": false,
+      "visit_count": 3086
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars1.githubusercontent.com/u/13896491?v=4&s=120",
+        "loginname": "oyosc"
+      },
+      "author_id": "56ac4d7f26d02fc6626bb3b1",
+      "content": "<div class=\"markdown-text\"><p>腾讯云服务器1核2G年付 120 元，购买后可以续费两年，然后等组团结束后降低配置就可以总共花 360 元续费到 2023 年。如果需要降配置的话，建议购买时选择成都节点，降低后可延长至 2024 年，相当于 360 元，6 年半。</p>\n<p>老用户方法：\n重新申请个新号就可以了。新号认证，主要验证的是微信支付。\n只要填写的是和微信绑定银行卡一样的就行。\n用你认证过的老号的资料，再输入下身份证和姓名到新号去认证一样可以买。</p>\n<p>求支持下，参团链接：<a href=\"https://cloud.tencent.com/act/campus/group/detail?group=11314\">https://cloud.tencent.com/act/campus/group/detail?group=11314</a>\n源地址： <a href=\"https://cloud.tencent.com/act/campus/group/index\">https://cloud.tencent.com/act/campus/group/index</a></p>\n<p>另外如果电脑端点击没反应，可以在手机端购买，已成功上车</p>\n</div>",
+      "create_at": "2018-03-06T05:25:47.183Z",
+      "good": false,
+      "id": "5a2403226190c8912ebaceeb",
+      "last_reply_at": "2018-03-08T13:33:56.404Z",
+      "reply_count": 28,
+      "tab": "share",
+      "title": "360元六年半腾讯云服务器,老用户可以参与--------------------现在已经不能降配了，所以只能是360元五年半",
+      "top": false,
+      "visit_count": 1261
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars1.githubusercontent.com/u/33851847?v=4&s=120",
+        "loginname": "zsrzsrzsr-zsr"
+      },
+      "author_id": "5a308492f15b4f306d2f02c9",
+      "content": "<div class=\"markdown-text\"><p>element的表格排序怎么做？\n:default-sort = &quot;{prop: ‘date’, order: ‘descending’}&quot;做到的只是把原来的顺序调个个儿，可是原数据就是乱的。。。不会，求大神告知，感激不尽</p>\n</div>",
+      "create_at": "2018-03-08T06:41:44.175Z",
+      "good": false,
+      "id": "5a2403226190c8912ebaceeb",
+      "last_reply_at": "2018-03-08T13:20:33.982Z",
+      "reply_count": 5,
+      "tab": "ask",
+      "title": "element-ui 的表格排序",
+      "top": false,
+      "visit_count": 162
+    },
+    {
+      "author": {
+        "avatar_url": "//gravatar.com/avatar/c4e414b7264b513a00bbd8ec3e9a0d66?s=48",
+        "loginname": "czy88840616"
+      },
+      "author_id": "4efc278625fa69ac6900038f",
+      "content": "<div class=\"markdown-text\"><h2>TLDR</h2>\n<p>Github: <a href=\"http://github.com/midwayjs/pandora\">http://github.com/midwayjs/pandora</a>， 欢迎 PR、Issue 和 Star.</p>\n<p>Pandora.js 阿里巴巴产出的一个Node.js 应用监控管理器，可以让您对自己的 Node.js 应用了若指掌，我们的目标就是让应用可管理、可度量、可追踪。</p>\n<p>我们自 2014 年开始使用 Node.js 并参与运维工作，Pandora.js 是淘宝 Midway 团队这些年对企业环境 Node.js 运维监控的一个沉淀与总结。在发展的过程中，我们大量使用了社区的开源软件，这次 Pandora.js 的开源是对社区的回馈。希望 Pandora.js 能让 Node.js 更好的应用在专业的商业场景上，给予它更好的基础监控运维能力去服务大规模商业场景。</p>\n<p>同时，这也是阿里巴巴开源的第一个使用了类型系统的 Node.js 软件。它使用的是 TypeScript，为 Pandora.js 带来了前所未有的逻辑健壮性。</p>\n<p>欢迎您来体验，同时更欢迎您基于 Pandora.js 建构您的 Node.js 运维基础设施。</p>\n<h2>什么是 Pandora.js</h2>\n<p>就像前面提到的一样，Pandora.js 是一个 Node.js 应用监控管理器。它集成了多种类型的能力诸如：监控、链路追踪、调试、进程管理等等。一个一个讲太过凌乱，这里分为几个大范畴：</p>\n<ol>\n<li>让业务更易追踪\n<ul>\n<li>基于 Open-tracing 实现了业务链路追踪系统。</li>\n<li>实时追踪每个请求链路，让每次请求不再是黑盒。在运行时直观的看出接口或页面慢在哪里、错在哪里、超时在哪里。</li>\n<li>可以实时追踪多种基础中间件的用量及错误，诸如： MySQL、Mongose、Redis 等等。</li>\n</ul>\n</li>\n<li>让应用更易度量\n<ul>\n<li>实现了软件行业上通用的 Metrics 系统。</li>\n<li>自带多种监控指标实现，从操作系统指标到 Node.js Runtime，从 HTTP QPS 到中间件用量。</li>\n<li>支持多种监控指标类型（Metrics 类型），您可以基于这些指标类型，轻松地建构您的业务监控指标。</li>\n</ul>\n</li>\n<li>让系统更加健壮\n<ul>\n<li>故障演练扩展，可以模拟大部分基础中间件的不可以用状态。这是从淘宝多次大促中沉淀下来的断网演习工具。</li>\n<li>远程调试扩展，基于 Dashboard 的能力可以实时调试您的线上进程，线上业务问题不再抓瞎。</li>\n</ul>\n</li>\n<li>让应用更易管理\n<ul>\n<li>进程管理管理能力，提供了基础的进程守护和 Cluster 能力。</li>\n<li>基础服务管理能力来满足中间件管理等场景，提供了依赖管理和标准的启停接口。</li>\n<li>提供了进程间通信的基础能力。</li>\n</ul>\n</li>\n</ol>\n<p>上面提到的全部能力和数据，全部通过 RESTFul 接口或文本日志透出，您可以轻松的将其集成进您的监控管理系统（为了更好的配套，在不远的将来我们也会将我们的私有监控管理平台开源）。</p>\n<p>这样的概括还是有些枯燥与难以理解，接下来会通过 <a href=\"https://github.com/midwayjs/pandora-dashboard\">Pandora.js dashboard</a> 的界面介绍几个主要特性，Pandora.js dashboard 是一个与 Pandora.js 相配套的单机可视化仪表。然后在文章的最后是一个可以跑起来的例子~</p>\n<h2>业务链路追踪 - Trace</h2>\n<p>链路追踪是第一个要介绍的重量级特性，可以追踪每个业务请求的全过程，在运行时直观的看出接口或页面慢在哪里、错在哪里、超时在哪里。</p>\n<p>听上去很厉害的样子，但实际使用起来很简单。您只需要简单的使用 Pandora.js 来启动您的应用，然后打开 Pandora.js dashboard 就可以看到您的业务链路的全部细节：</p>\n<p><strong>轻松识别慢链路和错误链路</strong></p>\n<p><img src=\"https://user-gold-cdn.xitu.io/2018/2/23/161c1df10fe82540?w=1758&amp;h=1166&amp;f=png&amp;s=37240\" alt=\"undefined | center\"></p>\n<p><strong>调用了，哪里耗时多，一目了然</strong></p>\n<p><img src=\"https://user-gold-cdn.xitu.io/2018/2/23/161c1df1100e6e21?w=2306&amp;h=2152&amp;f=png&amp;s=84969\" alt=\"undefined | center\"></p>\n<h2>应用度量</h2>\n<h3>默认的应用度量 - Built-in Metrics</h3>\n<p>Pandora.js 为您默认提供了近百项开箱即用的默认监控指标，让您轻松的开始监控您的应用。</p>\n<p>默认提供了，Node.js Runtime 指标，操作系统指标，HTTP Incoming 指标等等。</p>\n<p><strong>Node.js 指标，包含大量运行时指标</strong></p>\n<p><img src=\"https://user-gold-cdn.xitu.io/2018/2/23/161c1df10ffab3df?w=1742&amp;h=1584&amp;f=png&amp;s=65178\" alt=\"undefined | center\"></p>\n<p><strong>操作系统指标，包含 Load、CPU、内存、磁盘、网络、TCP 等各种指标</strong></p>\n<p><img src=\"https://user-gold-cdn.xitu.io/2018/2/23/161c1df11115542f?w=1790&amp;h=1720&amp;f=png&amp;s=39532\" alt=\"undefined | center\"></p>\n<h3>自定义的应用度量 - Custom Metrics</h3>\n<p>应用运行在生产环境，我们有太多想要知道和观察的数据了。以往我们都是写很多日志文件，查看分析十分麻烦。Pandora.js 的 Metrics 提供了 Gauge（瞬时）、Counter（计数）、Meter（流速）、Histogram（直方图） 等多种度量类型，您可以轻易地完成大部分的应用或业务指标。</p>\n<p><strong>下面是一个例子：</strong></p>\n<p>根据 Email 去 Gravatar 获取用户的 Profile。然后我想统计有多少次成功了，多少次失败了。（这个例子在文章后面有附上）</p>\n<pre class=\"prettyprint language-javascript\"><code>\nconst {MetricsClientUtil} = require(&#x27;dorapan&#x27;); &#x2F;&#x2F; dorapan 是 pandora 的一个客户端 sdk\nconst client = MetricsClientUtil.getMetricsClient(); &#x2F;&#x2F; 获得 Metrics 客户端\n\n&#x2F;&#x2F; 创建两个 Counter （计数）类型的指标\nconst successCounter = client.getCounter(&#x27;custom&#x27;, &#x27;custom.gravatar.success&#x27;);\nconst failCounter = client.getCounter(&#x27;custom&#x27;, &#x27;custom.gravatar.fail&#x27;);\n\n&#x2F;&#x2F; ...此处省略若干代码\n\nconst userAvatars = {};\nconst promises = [];\nfor(const user of rows) {\n  const profileUrl = gravatar.profile_url(user.email);\n   promises.push(urllib.request(profileUrl, {\n     followRedirect: true, dataType: &#x27;json&#x27;\n   }).then((res) =&gt; {\n     if(typeof res.data === &#x27;object&#x27;) {\n\t   successCounter.inc(1);\n       userAvatars[user.email] = res.data;\n     } else {\n\t   failCounter.inc(1);\n\t }\n   }));\n}\nawait Promise.all(promises);\n</code></pre><p>可以看到 Metrics 中已经出现了 Custom 分组：</p>\n<p><img src=\"https://user-gold-cdn.xitu.io/2018/2/23/161c1df111b56189?w=1902&amp;h=968&amp;f=png&amp;s=26691\" alt=\"undefined | center\"></p>\n<p>当然还有更多的 Metrics 类型可以实践，<a href>请具体参见文档</a>。</p>\n<h2>一个简单的例子</h2>\n<p>这个例子的演示依赖两个部件：</p>\n<ol>\n<li>Pandora.js 命令行工具：来启动和监控应用。</li>\n<li>Pandora.js dashboard：Pandora.js 的 单机版 GUI。</li>\n</ol>\n<h3>安装</h3>\n<p>您最好在 Linux 系统安装，同时 Pandora.js 依赖 Node.js &gt;= 8.0.0 （也就是当前的 LTS 版本。我们在 macOS 上指标有部分实现也可以。如果您是 Windows 用户的话，我只能说欢迎 PR）。</p>\n<ol>\n<li>安装 Pandora.js 命令行工具：</li>\n</ol>\n<pre class=\"prettyprint language-bash\"><code>$ npm i pandora -g\n</code></pre><p>安好后您会获得一个  pandora 命令。</p>\n<ol>\n<li>安装 Pandora.js dashboard</li>\n</ol>\n<pre class=\"prettyprint language-bash\"><code>$ npm i pandora-dashboard -g\n</code></pre><p>然后您就可以启动 Pandora.js dashboard 了。</p>\n<pre class=\"prettyprint language-bash\"><code>$ pandora start --name dashboard &#96;pandora-dashboard-dir&#96;\n</code></pre><p>上面有个 <a href=\"https://www.gnu.org/s/bash/manual/html_node/Command-Substitution.html\">command substitution</a> <code>pandora-dashboard-dir</code>，它是 Pandora.js 注入的一个全局命令。用来输出 Pandora.js dashboard 的目录，然后 Pandora.js 会把它当成一个普通的项目来启动。</p>\n<p>安装完 Dashboard 之后打开 <code>http://127.0.0.1:9081</code>，您可以看到 Dashboard 这个应用，这就是 Pandora.js dashborad 自己。</p>\n<h3>启动一个简单的 MySQL CRUD 的例子</h3>\n<p>我找到一个 Node.js 的 简单 MySQL CRUD 的例子来进行接下来的演示。当然我为了演示还做了一些修改。<a href=\"https://github.com/midwayjs/pandora-example-rest-crud\">示例项目在 Github</a>，Clone 它您也可以跑跑试试看。</p>\n<p>在这个例子里主入口为 <code>server.js</code>，在项目根目录运行下面的命令来初始化。</p>\n<pre class=\"prettyprint language-bash\"><code>$ pandora init server.js \n? Which type do you like to generate ? (Use arrow keys)\n  fork \n❯ cluster \n</code></pre><p>我选择了 Cluster，不过您可以选择任意一个，这两个选项的行为就像 PM2 一样。Fork 简单拉起 server.js ，而 Cluster 则用 Node.js 的 Cluster 模块启动 server.js （即 Master / Worker 模型）。</p>\n<p>在初始化完后，将会生成一个 <code>procfile.js</code> 文件。这个文件用来定义项目结构，就像 PM2 的 Process file 一样。其实 procfile 就是 Process File 的简写。</p>\n<p>然后我们运行 <code>pandora start</code> 来启动应用：</p>\n<pre class=\"prettyprint language-bash\"><code>$ pandora start\nStarting rest-crud at &#x2F;xx&#x2F;xxx&#x2F;rest-crud\nrest-crud started successfully! Run command [ pandora log rest-crud ] to get more information\n</code></pre><p>先放问下 <code>http://127.0.0.1:300/api/user</code> 查看下简单的 CRUD 例子，稍微做点操作。</p>\n<p>然后让我们无视  <code>Run command [ pandora log rest-crud ]</code> 这个提示，直接打开 <code>http://127.0.0.1:9081/</code>，然后您将看到：</p>\n<p><img src=\"https://user-gold-cdn.xitu.io/2018/2/23/161c1df111e3a006?w=1752&amp;h=570&amp;f=png&amp;s=15485\" alt=\"undefined | center\"></p>\n<p>点击 <code>Standard Output</code> 按钮来查看控制台输出：</p>\n<p><img src=\"https://user-gold-cdn.xitu.io/2018/2/23/161c1df13b61cc5d?w=2312&amp;h=982&amp;f=png&amp;s=26236\" alt=\"undefined | center\"></p>\n<p>点击 <code>Trace</code> 查看所有的链路：</p>\n<p><img src=\"https://user-gold-cdn.xitu.io/2018/2/23/161c1df13c6acdd0?w=2446&amp;h=1642&amp;f=png&amp;s=58558\" alt=\"undefined | center\"></p>\n<p>点击 <code>Metrics</code> 查看所有的 Metrics 指标：</p>\n<p><img src=\"https://user-gold-cdn.xitu.io/2018/2/23/161c1df14026ecbe?w=2484&amp;h=1962&amp;f=png&amp;s=75658\" alt=\"undefined | center\"></p>\n<h2>这只是开始</h2>\n<p>Node.js 应用在运维方面依旧还是很薄弱，Pandora.js 所做的也只是一点点工作，帮忙开发者更加了解自己的应用，在问题来临时，不再迷惘，不再慌乱。</p>\n<p>四年间，我们看到了 Node 的兴起，工具链的完善，也看到了应用场景的萎缩，产品的各种迭代和意外，唏嘘之余，依旧得做好分内之事，让 Node 在部门，在集团，乃至在业界都能有一些成长和突破，同时让自己看清和选择一条路，坚定的走下去。</p>\n<p>最后，再一次欢迎您来体验，尝试基于 Pandora.js 来建构您的 Node.js 运维基础设施，让天下没有难管理的应用。</p>\n</div>",
+      "create_at": "2018-03-08T07:46:40.558Z",
+      "good": false,
+      "id": "5a2403226190c8912ebaceeb",
+      "last_reply_at": "2018-03-08T12:40:55.435Z",
+      "reply_count": 2,
+      "tab": "share",
+      "title": "Pandora.js 专业的 Node.js 应用监控管理器，阿里开源",
+      "top": false,
+      "visit_count": 155
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars3.githubusercontent.com/u/9349200?v=4&s=120",
+        "loginname": "2596887568"
+      },
+      "author_id": "547c35030ae47dec03aa2939",
+      "content": "<div class=\"markdown-text\"><p><strong>第一节 课程概述</strong></p>\n<p>本课程面向初学者，内容涵盖以太坊开发相关的基本概念，并将手把手地教大家如何构建一个 基于以太坊的完整去中心化应用 —— 区块链投票系统。</p>\n<p><img src=\"http://upload-images.jianshu.io/upload_images/145564-05af8271c5d269b2..png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240\" alt=\"ethereum logo\"></p>\n<p>通过本课程的学习，你将掌握：</p>\n<ul>\n<li>\n<p>以太坊区块链的基本知识</p>\n</li>\n<li>\n<p>开发和部署以太坊合约所需的软件环境</p>\n</li>\n<li>\n<p>使用高级语言（<code>solidity</code>）编写以太坊合约</p>\n</li>\n<li>\n<p>使用NodeJS编译、部署合约并与之交互</p>\n</li>\n<li>\n<p>使用<code>Truffle</code>框架开发分布式应用</p>\n</li>\n<li>\n<p>使用控制台或网页与合约进行交互</p>\n</li>\n</ul>\n<p>前序知识要求</p>\n<p>为了顺利完成本课程，最好对以下技术已经有一些基本了解：</p>\n<ul>\n<li>\n<p>一种面向对象的开发语言，例如：Python，Ruby，Java…</p>\n</li>\n<li>\n<p>前端开发语言：HTML/CSS/JavaScript</p>\n</li>\n<li>\n<p>Linxu命令行的使用</p>\n</li>\n<li>\n<p>数据库的基本概念</p>\n</li>\n</ul>\n<p>课程的所有代码均已在Ubuntu（Trusty、Xenial）和 macOS 上测试过。</p>\n<p><strong>第二节 课程简介</strong></p>\n<p>在本课程中，我们将会构建一个去中心化的（<code>Decentralized</code>）投票应用。利用这个投票应用， 用户可以在不可信（<code>trustless</code>）的分布环境中对特定候选人投票，每次投票都会被记录在区块 链上：</p>\n<p><img src=\"http://upload-images.jianshu.io/upload_images/145564-54aa78522a079801..png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240\" alt=\"voting dapp\"></p>\n<p>所谓去中心化应用（<code>DApp</code>：Dcentralized Application），就是一个不存在中心服务器 的应用。在网络中成百上千的电脑上，都可以运行该应用的副本，这使得它几乎不可能 出现宕机的情况。</p>\n<p>基于区块链的投票是完全去中心化的，因此无须任何中心化机构的存在。</p>\n<p><strong>第三节 开发迭代</strong></p>\n<p>本课程将涵盖应用开发的整个过程，我们将通过三次迭代来渐进地引入区块链应用 开发所涉及的相关概念、语言和工具：</p>\n<p><img src=\"http://upload-images.jianshu.io/upload_images/145564-0054cf4a4728ac74..png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240\" alt=\"voting dapp iteration\"></p>\n<ul>\n<li>\n<p>Vanilla：在第一个迭代周期，我们不借助任何开发框架，而仅仅使用NodeJS来进行应用开发， 这有助于我们更好地理解区块链应用的核心理念。</p>\n</li>\n<li>\n<p>Truffle：在第二个迭代周期，我们将使用最流行的去中心化应用开发框架<code>Truffle</code>进行开发。 使用开发框架有助于我们提高开发效率。</p>\n</li>\n<li>\n<p>Token：在第三个迭代周期，我们将为投票应用引入代币（<code>Token</code>） —— 现在大家都改口 称之为通证了 —— 都是<code>ICO</code>惹的祸。代币是公链上不可或缺的激励机制，也是区块链 应用区别于传统的中心化应用的另一个显著特征。</p>\n</li>\n</ul>\n<p>为什么选择投票应用作为课程项目？</p>\n<p>之所以选择投票作为我们的第一个区块链应用，是因为集体决策 —— 尤其是投票机制 —— 是以太坊的 一个核心的价值主张。</p>\n<p>另一个原因在于，投票是很多复杂的去中心化应用的基础构件，所以我们选择了投票应用作为学习区块链 应用开发的第一个项目。</p>\n<p><strong>第四节 初识区块链</strong></p>\n<p>如果你熟悉关系型数据库，就应该知道一张数据表里可以包含很多行数据记录。例如，下面的数据表中 包含了6条交易记录：</p>\n<p><img src=\"http://upload-images.jianshu.io/upload_images/145564-113159ced40bd21e..png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240\" alt=\"relation database\"></p>\n<p>本质上，区块链首先就是一个分布式（<code>Distributed</code>）数据库，这个数据库维护了一个不断增长的记录列表。 现在，让我们对数据进行批量（<code>batch</code>）存储，比如每批 100 行，并将各存储批次连接起来，是不是就像一条链？</p>\n<p><img src=\"http://upload-images.jianshu.io/upload_images/145564-28930d25d9bf48af..png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240\" alt=\"chain\"></p>\n<p>在区块链里，多个数据记录组成的批次就被称为块（<code>block</code>），块里的每一行数据记录就被称为交易（<code>transaction</code>）：</p>\n<p><img src=\"http://upload-images.jianshu.io/upload_images/145564-4022ed583142243e..png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240\" alt=\"basic blockchain\"></p>\n<p>最开始的那个块，通常被称为创世块（<code>genesis block</code>），它不指向任何其他块。</p>\n<p>不可篡改性</p>\n<p>区块链的一个显著特点是，数据一旦写入链中，就不可篡改重写。</p>\n<p>在传统的关系型数据库中，你可以很容易地更新一条数据记录。但是，在区块链中，一旦数据写入就无法 再更新了 —— 因此，区块链是一直增长的。</p>\n<p>那么，区块链是如何实现数据的不可篡改特性？</p>\n<p>这首先得益于哈希（<code>Hash</code>）函数 —— 如果你还没接触过哈希函数，不妨将它视为一个数字指纹的计算函数： 输入任意长度的内容，输出定长的码流（指纹）。哈希函数的一个重要特性就是，输入的任何一点微小变化，都会 导致输出的改变。因此可以将哈希值作为内容的指纹来使用。 你可以点击<a href=\"https://simple.wikipedia.org/wiki/Cryptographic_hash_function\">这里</a>进一步了解哈希函数。</p>\n<p>由于区块链里的每个块都存储有前一个块内容的哈希值，因此如果有任何块的内容被篡改，被篡改的块之后 所有块的哈希值也会随之改变，这样我们就很容易检测出区块链的各块是否被篡改了。</p>\n<p>去中心化的挑战</p>\n<p>一旦完全去中心化，在网络上就会存在大量的区块链副本（即：全节点），很多事情都会变得比之前中心化 应用环境复杂的多，例如：</p>\n<ul>\n<li>\n<p>如何保证所有副本都已同步到最新状态？</p>\n</li>\n<li>\n<p>如何保证所有交易都被广播到所有运行和维护区块链副本的节点计算机上？</p>\n</li>\n<li>\n<p>如何防止恶意参与者篡改区块链</p>\n</li>\n<li>\n<p>…</p>\n</li>\n</ul>\n<p>在接下来的课程中，通过与经典的C/S架构的对比，我们将逐步理解去中心化应用的核心思路， 并掌握如何构建以太坊上的去中心化应用。</p>\n<p><strong>第五节 C/S架构以服务器为中心</strong></p>\n<p>理解去中心化应用架构的最好方法，就是将它与熟悉的<code>Client/Server</code>架构进行对比。如果你是一个<code>web</code>开发者， 应该对下图很了解，这是一个典型的<code>Client/Server</code>架构：</p>\n<p><img src=\"http://upload-images.jianshu.io/upload_images/145564-b8f8995d2f5029ec..png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240\" alt=\"webapp architecture\"></p>\n<p>一个典型web应用的服务端通常由 Java，Ruby，Python 等等语言实现。前端代码由 HTML/CSS/JavaScript 实现。 然后将整个应用托管在云端，比如 AWS、Google Cloud Platform、Heroku…，或者放在你租用的一个<code>VPS</code> 主机上。</p>\n<p>用户通过客户端（<code>Client</code>）与 web 应用（<code>Server</code>）进行交互。典型的客户端包括浏览器、命令行工具（<code>curl</code>、<code>wget</code>等）、 或者是<code>API</code>访问代码。注意在这种架构中，总是存在一个（或一组）中心化的 web 服务器，所有的客户端都需要 与这一（组）服务器进行交互。当一个客户端向服务器发出请求时，服务器处理该请求，与数据库/缓存进行交互， 读/写/更新数据库，然后向客户端返回响应。</p>\n<p>这是我们熟悉的中心化架构。在下一节，我们将会看到基于区块链的去中心化架构的一些显著区别。</p>\n<p><strong>第六节 去中心化架构——彼此平等的节点</strong></p>\n<p>下图给出了基于以太坊的去中心化应用架构：</p>\n<p><img src=\"http://upload-images.jianshu.io/upload_images/145564-05d600afa139209e..png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240\" alt=\"ethereum architecture\"></p>\n<p>你应该已经注意到，每个客户端（浏览器）都是与各自的节点应用实例进行交互，而不是向 一个中心化的服务器请求服务。</p>\n<p>在一个理想的去中心化环境中，每个想要跟DApp交互的人，都需要在他们的计算机或手机上面运行 一个的完整区块链节点 —— 简言之，每个人都运行一个全节点。这意味着，在能够真正使用一个 去中心化应用之前，用户不得不下载整个区块链。</p>\n<p>不过我们并非生活在一个乌托邦里，期待每个用户都先运行一个全节点，然后再使用你的应用是不现实的。 但是去中心化背后的核心思想，就是不依赖于中心化的服务器。所以，区块链社区已经出现了 一些解决方案，例如提供公共区块链节点的<code>Infura</code>, 以及浏览器插件<code>Metamask</code>等。通过这些方案， 你就不需要花费大量的硬盘、内存和时间去下载并运行完整的区块链节点，同时也可以利用去中心化 的优点。我们将会以后的课程中对这些解决方案分别进行评测。</p>\n<p><strong>第七节 以太坊——世界计算机</strong></p>\n<p>以太坊是一种区块链的实现。在以太坊网络中，众多的节点彼此连接，构成了以太坊网络：</p>\n<p><img src=\"http://upload-images.jianshu.io/upload_images/145564-55c0685dcd2a9e27..png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240\" alt=\"ethereum\"></p>\n<p>以太坊节点软件提供两个核心功能：数据存储、合约代码执行。</p>\n<p>在每个以太坊全节点中，都保存有完整的区块链数据。以太坊不仅将交易数据保存在链上，编译后 的合约代码同样也保存在链上。</p>\n<p>以太坊全节点中，同时还提供了一个虚拟机来执行合约代码。</p>\n<p>交易数据</p>\n<p>以太坊中每笔交易都存储在区块链上。当你部署合约时，一次部署就是一笔交易。当你为候选者投票时，一次投票 又是另一笔交易。所有的这些交易都是公开的，每个人都可以看到并进行验证。这个数据永远也无法篡改。</p>\n<p>为了确保网络中的所有节点都有着同一份数据拷贝，并且没有向数据库中写入任何无效数据，以太坊 目前使用<a href=\"http://ethereum.stackexchange.com/questions/14/what-proof-of-work-function-does-ethereum-use\">工作量证明</a> （<code>POW：Proof Of Work</code>）算法来保证网络安全，即通过矿工挖矿（<code>Mining</code>）来达成共识（<code>Consensus</code>）—— 将数据同步到所有节点。</p>\n<p>工作量证明不是达成共识的唯一算法，挖矿也不是区块链的唯一选择。现在，我们只需要了解，共识是指各节点 的数据实现了一致，<code>POW</code>只是众多用于建立共识的算法中的一种，这种算法需要通过矿工的挖矿来实现非可信环境下的 可信交易。共识是目的，POW是手段。</p>\n<p>合约代码</p>\n<p>以太坊不仅仅在链上存储交易数据，它还可以在链上存储合约代码。</p>\n<p>在数据库层面，区块链的作用就是存储交易数据。那么给候选者投票、或者检索投票结果的逻辑放在哪儿呢？ 在以太坊的世界里，你可以使用<code>Solidity</code>语言来编写业务逻辑/应用代码（也就是合约：<code>Contract</code>）， 然后将合约代码编译为以太坊字节码，并将字节码部署到区块链上：</p>\n<p><img src=\"http://upload-images.jianshu.io/upload_images/145564-bc27269f17d4031c..png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240\" alt=\"contract development and deploy\"></p>\n<p>编写合约代码也可以使用其他的语言，不过 <code>Solidity</code>是到目前为止最流行的选择。</p>\n<p>以太坊虚拟机</p>\n<p>以太坊区块链不仅存储数据和代码，每个节点中还包含一个虚拟机（EVM：Ethereum Virtual Machine）来执行 合约代码 —— 听起来就像计算机操作系统。</p>\n<p>事实上，这一点是以太坊区别于比特币（<code>Bitcoin</code>）的最核心的一点：虚拟机的存在使区块链迈入了2.0 时代，也让区块链第一次成为应用开发者友好的平台。</p>\n<p>JS开发库</p>\n<p>为了便于构建基于web的DApp，以太坊还提供了一个非常方便的JavaScript库<code>web3.js</code>，它封装了以太坊节点的API 协议，从而让开发者可以轻松地连接到区块链节点而不必编写繁琐的<code>RPC</code>协议包。所以，我们可以在常用的JS框架 （比如 reactjs、angularjs 等)中直接引入该库来构建去中心化应用：</p>\n<p><img src=\"http://upload-images.jianshu.io/upload_images/145564-8a5c614cb56709c0..png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240\" alt=\"web3.js\"></p>\n<p>PC端课程地址：\n<a href=\"http://xc.hubwiz.com/course/5a952991adb3847553d205d1?affid=cnode\">http://xc.hubwiz.com/course/5a952991adb3847553d205d1?affid=cnode</a></p>\n<p>手机可以微信扫码看：\n<img src=\"//dn-cnode.qbox.me/Fl5H2DFBgz_J7YDkUF7REASb4EMb\" alt=\"ethereumcode.png\"></p>\n</div>",
+      "create_at": "2018-03-02T07:43:04.745Z",
+      "good": false,
+      "id": "5a2403226190c8912ebaceeb",
+      "last_reply_at": "2018-03-08T12:24:31.352Z",
+      "reply_count": 4,
+      "tab": "share",
+      "title": "以太坊 DApp 开发入门实战！ 用Node.js和truffle框架搭建——区块链投票系统！",
+      "top": false,
+      "visit_count": 627
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars2.githubusercontent.com/u/16252756?v=4&s=120",
+        "loginname": "343830384"
+      },
+      "author_id": "5aa00e83ce4a27f867526eaf",
+      "content": "<div class=\"markdown-text\"><h2><a href=\"https://github.com/343830384/Eng-NOS\">Eng-NOS</a></h2>\n<ul>\n<li>当前仅有 1.4Kb的体积 ,却兼容所有浏览器 , 是传统网页模式 实现组件化数据渲染的利器 ,只需学习4个指令就能完成所有操作</li>\n<li>是对于传统页面 有兼容需求 ,又渴望组件化渲染 , 还想要极低学习曲线项目的 实现利器 …</li>\n<li>Eng-NOS 寓意为 <a href=\"https://github.com/343830384/Eng\">Eng</a>的 NOS 氮气直线加速系统 , 因此舍弃了对完整<a href=\"https://github.com/343830384/Eng\">Eng</a>的其它功能支持 , 只做单纯的页面渲染</li>\n<li>只渲染<a href=\"https://github.com/343830384/Eng\">Eng</a> 的 e-base、e-attr、e-html、e-for 4个指令 , (e-attr 可操作所有行内属性) , 实时上绝大部分常规页面也仅做渲染 , 使用其它js工具操作, Eng-NOS恰恰最符合这种应用场景</li>\n<li>拥有世界顶尖的性能 远超所有主流已知同类JS工具. 是 <a href=\"https://github.com/343830384/Eng\">Eng</a>和其同类工具中佼佼者的完整渲染性能耗时的1/3左右, 纯html文本用时占比 1/10左右</li>\n<li>可以和 <a href=\"https://github.com/343830384/Eng\">Eng</a> 共享组件 , 但仅能执行 被 <a href=\"https://github.com/343830384/Eng-Drive\">Eng-Drive</a> 编译后的组件 , 被编译后的组件体积相较于原始会有所增加, 但相对于组件本身的大小,几乎可以忽略</li>\n</ul>\n<h3>版本说明</h3>\n<ul>\n<li>0.9 (当前) 版本, 仅支持<a href=\"https://github.com/343830384/Eng\">Eng</a> 的 e-base、e-attr、e-html、e-for</li>\n<li>1.0 版本 待考虑</li>\n</ul>\n<h3>声明</h3>\n<ul>\n<li><a href=\"https://github.com/343830384/Eng\">Eng</a> 致力于精简所有同类工具中的技术玄学 ,  用最 简明、简易和最少的API实现同类工具的核心部分 ,摒除一切冗余的学习内容,无谓的蹉跎,并达成同样的目的.</li>\n</ul>\n<h4>使用示例 :</h4>\n<pre class=\"prettyprint\"><code>   var  engCompileData= .... ;\n   var  data={\n              .......\n            };\n   var html= Eng_Nos( data , engCompileData );\n            \n      \tdocument.body.innerHTML=html;\n      \t&#x2F;&#x2F; 没了就这样 ( 仓库里 有个 demo 源码在页面内)\n</code></pre><h2>License</h2>\n<p><a href><img src=\"http://img.shields.io/badge/license-APACHE2-blue.svg\" alt=\"License\"></a></p>\n</div>",
+      "create_at": "2018-03-08T11:05:33.280Z",
+      "good": false,
+      "id": "5a2403226190c8912ebaceeb",
+      "last_reply_at": "2018-03-08T11:46:41.393Z",
+      "reply_count": 2,
+      "tab": "share",
+      "title": "仅有1.4kb ! 兼容全部浏览器的组件化渲染插件  Eng-NOS",
+      "top": false,
+      "visit_count": 76
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars0.githubusercontent.com/u/9590859?v=4&s=120",
+        "loginname": "chapgaga"
+      },
+      "author_id": "545b74143e1f39344c5b3bee",
+      "content": "<div class=\"markdown-text\"><pre class=\"prettyprint\"><code>var asdfsdf = {\n\tsdfsdf: [\n\t\t[&#x27;aaaaa&#x27;, &#x27;aaaaa&#x27;],\n\t\t[&#x27;adsfsadf&#x27;, &#x27;wfwfwef&#x27;],\n\t\t[&#x27;--sdf-&#x27;,&#x27;asdfasdf&quot;&gt;asdfsadfsdf&gt;&#x27;],\n\t\t[&#x27;afds&#x27;],\n\t\t[&#x27;asdf&#x27;],\n\t\t[&#x27;sfdaf&#x27;],\n\t\t[&#x27;adf&#x27;,[&#x27;adsf&#x27;,&#x27;sdf&#x27;,&#x27;asdf&#x27;], &#x27;sdf:sdf&#x27;]\n\t\t[&#x27;-df--&#x27;],\n\t\t[&#x27;sfd&#x27;, &#x27;dsf:sdf&#x27;],\n\t]\n};\n</code></pre><p>[‘adf’,[‘adsf’,‘sdf’,‘asdf’], ‘sdf:sdf’] 这句后门的逗号没写，但是jshint语法检测为何没有报错？</p>\n<p>jshint检测通过\n[JSHint: D:\\workspace\\test.js]\n✓ 0 errors, [esc] to hide.\n[Finished in 0.3s]</p>\n</div>",
+      "create_at": "2018-02-08T22:12:12.476Z",
+      "good": false,
+      "id": "5a2403226190c8912ebaceeb",
+      "last_reply_at": "2018-03-08T11:18:07.532Z",
+      "reply_count": 17,
+      "tab": "ask",
+      "title": "下面这段JS代码，什么语法检测工具可以发现错在哪里？",
+      "top": false,
+      "visit_count": 1070
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars0.githubusercontent.com/u/7136286?v=4&s=120",
+        "loginname": "x-da"
+      },
+      "author_id": "53e47a3a71470ac0550b907e",
+      "content": "<div class=\"markdown-text\"><p>地址：<a href=\"http://www.yymapp.com/\">http://www.yymapp.com/</a></p>\n<p>技术栈：express,Sequelize,vue.js,vue-router,webpack,freeui(自己捣鼓自己用的前端框架)</p>\n<p>简介：云养猫APP，一个分享猫片的平台。</p>\n<p>以学习的心态进行捣鼓的，如果一切进展顺利的话，应该会成为创业项目。\n不顺利的话，则作为找工作的敲门砖吧，工作好些年了，一些做的网站，由于公司原因，不能访问了。\n写简历的时候一堆404，也挺尴尬的。</p>\n<p>欢迎大家来体验（<strong>发测试帖，请百度随便找几张猫图做做样子，拜托啦~</strong>），源码的话，因可能会用于创业，恕暂不公布。\n但网站中所涉及的功能点，我将尽力解答。</p>\n</div>",
+      "create_at": "2018-03-08T02:48:13.187Z",
+      "good": false,
+      "id": "5a2403226190c8912ebaceeb",
+      "last_reply_at": "2018-03-08T10:44:07.678Z",
+      "reply_count": 4,
+      "tab": "share",
+      "title": "分享一个自己的nodejs全栈项目",
+      "top": false,
+      "visit_count": 302
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars1.githubusercontent.com/u/2180842?v=4&s=120",
+        "loginname": "suchiva"
+      },
+      "author_id": "50f3ef85df9e9fcc5849d96c",
+      "content": "<div class=\"markdown-text\"><p>后端服务是java服务，前端是用的reactjs,我这边为了做SEO，中间层用的是Nodejs express框架，但是目前性能测试不佳\n场景： 100用户不间断压测，首页全部改为ajax请求，静态资源使用nginx代理\n压测结果： TPS为150.1 （可视为150个用户/秒）\n一时找不到解决方案，还请高手指点~</p>\n</div>",
+      "create_at": "2018-03-08T02:51:28.365Z",
+      "good": false,
+      "id": "5a2403226190c8912ebaceeb",
+      "last_reply_at": "2018-03-08T10:32:15.550Z",
+      "reply_count": 14,
+      "tab": "ask",
+      "title": "关于 Nodejs 服务端渲染的问题~~请高手指点~",
+      "top": false,
+      "visit_count": 266
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars2.githubusercontent.com/u/12774144?v=4&s=120",
+        "loginname": "starduliang"
+      },
+      "author_id": "575283579d7997dd7060a10f",
+      "content": "<div class=\"markdown-text\"><p><a href=\"https://www.cockos.com/licecap/\">https://www.cockos.com/licecap/</a>\n开始录屏\n看官网\n非常好用！！！<img src=\"//dn-cnode.qbox.me/Fg9HO3OKUfcQcrT8Twbgzy3wZuQG\" alt=\"screen_capturexxx_cnodejs.gif\"></p>\n</div>",
+      "create_at": "2018-03-08T10:00:18.512Z",
+      "good": false,
+      "id": "5a2403226190c8912ebaceeb",
+      "last_reply_at": "2018-03-08T10:00:18.512Z",
+      "reply_count": 0,
+      "tab": "share",
+      "title": "发现一个非常方便的录屏工具可以转换gif",
+      "top": false,
+      "visit_count": 58
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars3.githubusercontent.com/u/32264346?v=4&s=120",
+        "loginname": "varwx"
+      },
+      "author_id": "5a3075929807389a1809f330",
+      "content": "<div class=\"markdown-text\"><h4>-两年-前端攻城狮，你会出什么样的题？别发链接哦…</h4>\n<ul>\n<li>擅长 javascript</li>\n</ul>\n</div>",
+      "create_at": "2018-03-08T06:25:24.082Z",
+      "good": false,
+      "id": "5a2403226190c8912ebaceeb",
+      "last_reply_at": "2018-03-08T09:04:19.261Z",
+      "reply_count": 4,
+      "tab": "ask",
+      "title": "如果你是面试官或者出题人，面试-两年-前端攻城狮，请出几道题呗",
+      "top": false,
+      "visit_count": 252
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars1.githubusercontent.com/u/19768530?v=4&s=120",
+        "loginname": "se7en-1992"
+      },
+      "author_id": "59473175ff5813233faad9cf",
+      "content": "<div class=\"markdown-text\"><h2><a href=\"http://5se7en.com\">5se7en.com</a></h2>\n<p>nuxtjs+express+vue2.0+vuex搭建的服务端渲染个人网站项目.&lt;br&gt;\ngithub项目地址: <a href=\"https://github.com/se7en-1992/5se7en.com\">https://github.com/se7en-1992/5se7en.com</a>\n项目线上地址：<a href=\"https://5se7en.com/\">https://5se7en.com/</a></p>\n<h2>注意事项</h2>\n<ul>\n<li>node&gt;=v8.0.0+ (nuxt1.0.0以上版本的node版本号必须大于v8.0.0否则启动的时候会报错)&lt;br&gt;</li>\n<li>若要测试游戏登录请点击前往<a href=\"https://www.hybjf.com/game/20170925Activity\">套马游戏</a>注册一个账号</li>\n</ul>\n<h2>技术选型</h2>\n<p>这里先说两句题外话，谈一谈对前端开发产生了深远影响的两个时间点&lt;br&gt;</p>\n<ul>\n<li>ajax的出现，促成了Web 2.0时代的来临</li>\n<li>nodejs的出现，让前端能做的更多，让js不仅仅只是浏览器端的语言。\n这里为什么要说这个呢，有些前端开发者会说node不是做后端的吗？我为什么要学nodejs呢？其实随着前端的发展，尤其是node出现，前端发展日新月异，各种自动化工具，框架层出不穷。很多都是依赖node。node不仅仅只是用来拿来写后端，可以这么说，当前时间如果你对node毫无知晓，也不去学的话，那么你已经被前端浪潮所覆盖了。</li>\n<li>本项目用的是node中使用最多的express前端web框架，官网的demo是这么形容的=&gt; <a href=\"http://expressjs.com/\">ExpressJS</a> + <a href=\"https://nuxtjs.org\">Nuxt.js</a> = ⚡️  没错可以说是非常极速了，我的个人网站服务器是阿里云1核1g学生版机，网站除了第一次打开稍微慢点，后面可以说得上是光速了。比我以前使用的任何框架都要极速。</li>\n<li>下面再谈一下为什么要使用服务端渲染和选用nuxtjs？\n<ul>\n<li>知乎上有个论题大家可以看一看<a href=\"https://www.zhihu.com/question/59578433/answer/326694511\">为什么现在又流行服务端渲染html？</a>，回答的人比较多，也比较杂，我这里就简单的总结一下\n<ul>\n<li>服务端渲染，主要解决两个痛点 SEO优化(一些新闻资讯类的网站都需要做一些搜索引擎优化)和大型应用的首屏渲染(解决一些大型应用首页加载速度问题)</li>\n<li>其实这又要谈到历史了，一开始html就是后端渲染的，前端实际上就是在切图（CSS）和做特效(JS)，所以所有程序员中前端工资最低，职位也最低。所以前后端的鄙视链就出现了。</li>\n<li>nodejs 和前端 mvc 的兴起让前端变得复杂起来，前端发现翻身的机会，于是全力支持这两种技术，造成本不该做成 spa 的网站也成了 spa。慢慢地前后端分离运动从大公司开始兴起，目的就是前端脱离后端的指指点点，独立发展。（表面上是为了「代码分离」，实际上是为了「人员分离」，也就是「前后端分家」，前端不再附属于后端团队）</li>\n<li>spa 之后发现 seo 问题很大，而且首屏渲染速度贼慢，但是自己选的路再难走也要走下去，于是用 nodejs 在服务端渲染这一条路被看成是一条出路</li>\n<li>简而言之就是前端一开始骚不起来，后来node和MVC/MVVM（Vue,React,Angular）的出现前端开始骚起来了，搞独立，把本应要做成服务端渲染的东西也做成了SPA，现在新技术又出来了，要及时发现错误，进行改正。前后端分离是趋势，既然都分开了，总不能还让后端去渲染，那咱们前端自己想办法做服务端渲染吧，于是服务端渲染框架也就出现了。</li>\n</ul>\n</li>\n<li>为什么选用nuxtjs?\n<ul>\n<li>一开始我用的服务端渲染是学习<a href=\"https://github.com/nswbmw/N-blog\">N-blog</a>利用nodejs的express+ejs模版渲染做的，效果其实也还不错，里面的代码并没有完全的组件化，我做的项目还使用的jQuery,这多low啊，那我怎么能忍，我肯定要换个技术来玩。（这里没有贬低jQuery的意思，我觉得jQuery是个很不错的JavaScript库，曾经也可以说是一统前端了，包括现在，不会用jQuery的前端基本上没几个，但是怎么说呢，jQuery在慢慢沉寂，操作dom在现在对比下来并不是一个最优的选择了。）前端在不断发展，我们要做的就是选择最优。</li>\n<li>在vue官网中也对nuxtjs做了强力的推荐，再加上nuxtjs的github上express模版demo介绍<a href=\"http://expressjs.com/\">ExpressJS</a> + <a href=\"https://nuxtjs.org\">Nuxt.js</a> =⚡看到这个我就选了这个框架了。没错就是他了.</li>\n<li>nuxtjs结合vue2、Webpack、vue-loader、babel-loader、vuex、Vue-Meta</li>\n<li>不需要在配置繁琐的webpack配置,vue-loader自动生成路由，只需要在pages目录下创建文件就是自动生成对应的路由文件</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>\n<h2>开发环境</h2>\n<ul>\n<li>Node.js: <code>^8.9.4</code></li>\n<li>express: <code>^4.16.2</code></li>\n<li>nuxtjs: <code>^1.0.0-rc11</code></li>\n<li>vue: <code>^2.5.3</code></li>\n</ul>\n<pre class=\"prettyprint language-bash\"><code>npm install\nnpm run dev\n</code></pre><p>使用浏览器打开 <code>http://localhost:5757</code></p>\n<h2>友情提示</h2>\n<ul>\n<li><a href=\"https://github.com/nswbmw/N-blog\">N-blog</a>(一个不错的Nodejs + Express + MongoDB入门项目)</li>\n<li><a href=\"https://vuejs.org/\">vue2.0官网文档</a></li>\n<li><a href=\"https://nuxtjs.org/\">nuxtjs官方文档</a></li>\n<li><a href=\"https://github.com/bailicangdu/vue2-elm\">vue2-elm</a>(一个不错的vue2.0个人项目)</li>\n<li><a href=\"https://github.com/nuxt/nuxtjs.org\">nuxtjs.org</a></li>\n</ul>\n<h2>nuxt介绍</h2>\n<ul>\n<li>nuxt详细的入门教程这里不做详细的介绍，<a href=\"https://nuxtjs.org/\">官方文档</a>讲解的已经非常详细了。这里简单介绍一下项目目录作用</li>\n</ul>\n<h3>nuxt目录介绍</h3>\n<ul>\n<li>\n<p>assets</p>\n<ul>\n<li>如果你的静态资源文件需要 Webpack 做构建编译处理，可以放到 assets 目录，否则可以放到 static 目录中去。</li>\n<li>Nuxt 服务器启动的时候，该目录下的文件会映射至应用的根路径 / 下，像 robots.txt 或 sitemap.xml 这种类型的文件就很适合放到 static 目录中。</li>\n</ul>\n</li>\n<li>\n<p>components</p>\n<ul>\n<li>组件目录 components 用于组织应用的 Vue.js 组件。Nuxt.js 不会扩展增强该目录下 Vue.js 组件，即这些组件不会像页面组件那样有 <a href=\"https://nuxtjs.org/api/\">asyncData</a> 方法的特性。\n简而言之此目录就是普通的vue组件目录。</li>\n</ul>\n</li>\n<li>\n<p>layouts</p>\n<ul>\n<li>该目录名为Nuxt.js保留的，不可更改。</li>\n<li>你可以自定义合适自己网站的默认样式和错误样式</li>\n</ul>\n</li>\n<li>\n<p>middleware</p>\n<ul>\n<li>中间件执行流程顺序：\n<ul>\n<li>nuxt.config.js</li>\n<li>匹配布局</li>\n<li>匹配页面</li>\n</ul>\n</li>\n</ul>\n</li>\n<li>\n<p>pages</p>\n<ul>\n<li>该目录名为Nuxt.js保留的，不可更改。</li>\n<li>页面目录 pages 用于组织应用的路由及视图。Nuxt.js 框架读取该目录下所有的 .vue 文件并自动生成对应的路由配置。</li>\n<li>此页面的.vue文件都具有<a href=\"https://nuxtjs.org/api/\">asyncData</a>、<a href=\"https://nuxtjs.org/api/pages-fetch\">fech</a>方法。</li>\n</ul>\n</li>\n<li>\n<p>plugins</p>\n<ul>\n<li>插件目录 plugins 用于组织那些需要在 根vue.js应用 实例化之前需要运行的 Javascript 插件。</li>\n<li>我们可以将element-ui或者mint-ui以及其他更多的插件都可以放在plugins中使用</li>\n</ul>\n</li>\n<li>\n<p>static</p>\n<ul>\n<li>该目录名为Nuxt.js保留的，不可更改。</li>\n<li>静态文件目录 static 用于存放应用的静态文件，此类文件不会被 Nuxt.js 调用 Webpack 进行构建编译处理。 服务器启动的时候，该目录下的文件会映射至应用的根路径 / 下。</li>\n</ul>\n</li>\n<li>\n<p>store</p>\n<ul>\n<li>该目录名为Nuxt.js保留的，不可更改。</li>\n<li>store 目录用于组织应用的 Vuex 状态树 文件。 Nuxt.js 框架集成了 Vuex 状态树 的相关功能配置，在 store 目录下创建一个 index.js 文件可激活这些配置。</li>\n</ul>\n</li>\n</ul>\n<h3>nuxt配置介绍</h3>\n<ul>\n<li>\n<p>config</p>\n<ul>\n<li>此目录并不是nuxt自身目录而是一些项目经验促使我添加此目录从来更加方便的去管理和使用在项目中所需要的变量。</li>\n<li>NEWRELIC_KEY:<a href=\"https://newrelic.com/\">newrelic</a>的密钥，newrelic是服务器端性能监控的一款软件</li>\n<li>TIMBER_KEY:<a href=\"https://timber.io/\">timber</a>的密钥，timber是一种云日志记录系统，简单的来说就是纪录线上的一些日志</li>\n<li>SENTRY_PROJECT_ID/SENTRY_PUBLIC_KEY/SENTRY_PRIVATE_KEY:<a href=\"https://sentry.io\">Sentry</a>的项目id,公钥,私钥，Sentry是一个开源的实时错误报告工具</li>\n<li>porductionProxy/developmentProxy: 是nuxt的axios模块代理请求的路径设置</li>\n<li>其实我在项目启动的时候还使用了<a href=\"http://pm2.keymetrics.io/\">pm2</a>有express项目经验的人用过都说好，有日志记录状态监控等，真的很好用。</li>\n</ul>\n</li>\n<li>\n<p><a href=\"https://nuxtjs.org/guide/configuration\">nuxt.config.js</a></p>\n</li>\n<li>\n<p><a href=\"http://editorconfig.org/\">.editorconfig</a></p>\n<ul>\n<li>EditorConfig是一套用于统一代码格式的解决方案</li>\n</ul>\n</li>\n<li>\n<p><a href=\"https://eslint.org/\">.eslintrc.js</a></p>\n<ul>\n<li>ESLint是一个应用广泛的 JavaScript 代码检查工具</li>\n</ul>\n</li>\n<li>\n<p><a href=\"https://git-scm.com/docs/gitignore\">gitignore</a></p>\n<ul>\n<li>git提交忽略项配置文件</li>\n</ul>\n</li>\n<li>\n<p><a href=\"https://newrelic.com/\">newrelic.js</a></p>\n<ul>\n<li>newrelic配置文件</li>\n</ul>\n</li>\n<li>\n<p>start.js</p>\n<ul>\n<li>express启动入口文件，开发环境直接使用nuxt启动并没有走start.js，生产环境用<a href=\"http://pm2.keymetrics.io/\">pm2</a>启动的该文件</li>\n</ul>\n</li>\n</ul>\n</div>",
+      "create_at": "2018-03-08T05:03:42.210Z",
+      "good": false,
+      "id": "5a2403226190c8912ebaceeb",
+      "last_reply_at": "2018-03-08T08:54:44.196Z",
+      "reply_count": 1,
+      "tab": "share",
+      "title": "nuxtjs+express+vue2+vuex搭建的服务端渲染（SSR）个人网站项目",
+      "top": false,
+      "visit_count": 168
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars1.githubusercontent.com/u/6050413?v=4&s=120",
+        "loginname": "zyq5945"
+      },
+      "author_id": "567bb910a056d3460780577b",
+      "content": "<div class=\"markdown-text\"><p>我们如何玩好互联网信息传播这个每天都重复的“囚徒游戏”呢？</p>\n<p>由于互联网信息传播中信息提供者特征可识别性与其传播的信息历史可查询性，我们根据我们的经验为与我们打交道的信息提供者设置相应的权值，这里称为信誉权值。信誉权值越高说明信息提供者提供的信息就对于我们来说越有价值，我们就可以奖励回报为我们提供高价值信息的信息提供者与反馈提高其信誉权值。信誉权值越低说明信息提供者提供的信息就对于我们来说越没有价值，我们就可以惩罚隔离这些提供垃圾信息的信息提供者与反馈降低其信誉权值。</p>\n<p>通过为信息提供者设置的个人可随时修改的信誉权值，我们可以非常有效率的与愿意提供高价值信息的高信誉权值的信息提供者达成信息传播的“合作”，拒绝并惩罚那些提供垃圾信息的低信誉权值的信息提供者的信息传播的“合作”。为了互联网信息传播这个天天重复的“囚徒游戏”能更好长久的玩下去，我们需要如《合作的进化》中的所有善良策略者一样，不能耍小聪明地对善良的高信誉权值的信息提供者的高价值信息传播的“合作”予以善良的回报。</p>\n<p>详细地址：\n<a href=\"https://github.com/turenmianshi/turenmianshi/wiki/book3_chs\">https://github.com/turenmianshi/turenmianshi/wiki/book3_chs</a>\n<a href=\"https://turenmianshi.github.io/turenmianshi/book3_chs.html\">https://turenmianshi.github.io/turenmianshi/book3_chs.html</a></p>\n<p>如果你也深受垃圾信息的荼毒，想让更多的相关的人看到，请转发</p>\n</div>",
+      "create_at": "2018-03-08T07:48:42.777Z",
+      "good": false,
+      "id": "5a2403226190c8912ebaceeb",
+      "last_reply_at": "2018-03-08T08:29:51.820Z",
+      "reply_count": 1,
+      "tab": "share",
+      "title": "【转载】互联网垃圾信息的终极终结者",
+      "top": false,
+      "visit_count": 143
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars0.githubusercontent.com/u/9590859?v=4&s=120",
+        "loginname": "chapgaga"
+      },
+      "author_id": "545b74143e1f39344c5b3bee",
+      "content": "<div class=\"markdown-text\"><p>13/50*100的值没问题，是26</p>\n</div>",
+      "create_at": "2018-03-08T05:58:02.780Z",
+      "good": false,
+      "id": "5a2403226190c8912ebaceeb",
+      "last_reply_at": "2018-03-08T08:23:40.996Z",
+      "reply_count": 2,
+      "tab": "ask",
+      "title": "14/50*100的值为何不是28？",
+      "top": false,
+      "visit_count": 166
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars0.githubusercontent.com/u/1798364?v=4&s=120",
+        "loginname": "helloyou2012"
+      },
+      "author_id": "55e3e9f422d29223058b65d3",
+      "content": "<div class=\"markdown-text\"><p>前段时间被人问到有没有文件分享的网站，给他推荐了 WeTransfer，但是试用下来不太理想比较慢。想了想这个应该比较简单，于是我们自己写了一个文件分享的网站 <a href=\"https://bugu.link\">https://bugu.link</a>。项目是开源的分为前后端两个部分：<a href=\"https://github.com/bugulink/bugu-web\">后端项目</a> 和 <a href=\"https://github.com/bugulink/bugu-web\">前端项目</a>。后端采用：Node.js + Koa2 + MySQL + Redis；前端采用：React + Yax + ReactRouter。</p>\n<ul>\n<li>支持分片上传</li>\n<li>支持断点续传</li>\n<li>支持大文件上传（暂时限制了单个文件最大 2G）</li>\n<li>上传速度快（简单测试了下 1G 文件上传只花了 4 分钟）</li>\n<li>UI 简洁，使用简单</li>\n<li>默认文件保存 14 天</li>\n<li>分享链接默认带 Code</li>\n</ul>\n<p>附个图：\n<img src=\"//dn-cnode.qbox.me/Fs8PKmfraHJ9DJtzR89VQXkQzOao\" alt=\"Screen Shot 2018-03-08 at 3.40.26 PM.png\"></p>\n</div>",
+      "create_at": "2018-03-08T07:38:58.927Z",
+      "good": false,
+      "id": "5a2403226190c8912ebaceeb",
+      "last_reply_at": "2018-03-08T08:17:16.015Z",
+      "reply_count": 1,
+      "tab": "share",
+      "title": "一个文件分享的网站",
+      "top": false,
+      "visit_count": 408
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars3.githubusercontent.com/u/25921552?v=4&s=120",
+        "loginname": "fuxingZhang"
+      },
+      "author_id": "5a9e3400ce4a27f867526ddd",
+      "content": "<div class=\"markdown-text\"><p>看了很多promise的实现，比如这里：\n1、<a href=\"http://coderlt.coding.me/2016/12/04/promise-in-depth-an-introduction-2/\">http://coderlt.coding.me/2016/12/04/promise-in-depth-an-introduction-2/</a>\n2、<a href=\"https://zhuanlan.zhihu.com/p/25178630\">https://zhuanlan.zhihu.com/p/25178630</a>\n感觉很绕，不符合自己的思维习惯，所以想自己动手写一个</p>\n<p>在谷歌浏览测试各种情况、错误，看谷歌浏览器是如何反馈的，来改进自己的代码\n<img src=\"//dn-cnode.qbox.me/FrKC1g9tHSU7V5e3FKvT5yRkclqa\" alt=\"image.png\">\n所以函数名是resolver（只是为了让表现行为更接近chrome），需要的代码是：if(typeof resolver !== ‘function’) throw new TypeError(<code>Promise resolver ${resolver} is not a function</code>);\n。。。。。。</p>\n<p>源码： <a href=\"https://github.com/fuxingZhang/promiseImplementing\">https://github.com/fuxingZhang/promiseImplementing</a>\n还在更新中。。。。\n<strong><em>If you like, please help me improve the code</em></strong></p>\n<p>code :</p>\n<pre class=\"prettyprint\"><code>function Promise(resolver){\n\tif(typeof resolver !== &#x27;function&#x27;) throw new TypeError(&#96;Promise resolver ${resolver} is not a function&#96;);\n\tthis.state = &#x27;pending&#x27;\n\tthis.value = void 0\n\ttry{\n\t\tresolver(this.resolve.bind(this), this.reject.bind(this))\n\t}catch(error){\n\t\tthis.reject.call(this,error)\n\t}\n}\n\nPromise.prototype.resolve = function(value) {\n\tif(this.state !== &#x27;pending&#x27;) return\n\tthis.value = value\n\tthis.state = &#x27;fulfilled&#x27;\t\n\tsetTimeout( () =&gt; {\n\t\tif(!this.onFulfilled) return\n\t\tthis.onFulfilled(value)\n\t}, 0)\n};\n\nPromise.prototype.reject = function(reason){\n\tif(this.state !== &#x27;pending&#x27;) return\n\tthis.value = reason\n\tthis.state = &#x27;rejected&#x27;\n\tsetTimeout( () =&gt; {\n\t\tif(this.onRejected){\n\t\t\tthis.onRejected(reason)\n\t\t}else{\n\t\t\tthrow \\&#96;(in promise) ${reason}\\&#96;\n\t\t}\n\t}, 0)\n};\n\nPromise.prototype.then = function(fulfilled, rejected){\n\tif ( typeof fulfilled !== &#x27;function&#x27; &amp;&amp; typeof rejected !== &#x27;function&#x27; ) {\n\t\treturn this;\n\t}\n\tif (typeof fulfilled !== &#x27;function&#x27; &amp;&amp; this.state === &#x27;fulfilled&#x27; ||\n\t\ttypeof rejected !== &#x27;function&#x27; &amp;&amp; this.state === &#x27;rejected&#x27;) {\n\t\treturn this;\n\t}\n\tvar self = this\n\treturn new Promise( (resolve, reject) =&gt; {\n\t\tif(fulfilled &amp;&amp; typeof fulfilled == &quot;function&quot;){\n\t\t\tvar onFulfilled = function (){\n\t\t\t\ttry{\n\t\t\t\t\tvar result = fulfilled(self.value)\n\t\t\t\t\tif(result &amp;&amp; typeof result.then === &#x27;function&#x27;){\n\t\t\t\t\t\tresult.then(resolve, reject)\n\t\t\t\t\t}else{\n\t\t\t\t\t\tresolve(result)\n\t\t\t\t\t}\n\t\t\t\t}catch(error){\n\t\t\t\t\treject(error)\n\t\t\t\t}\n\t\t\t}\n\t\t\tif( self.state === &#x27;pending&#x27;){\n\t\t\t\tself.onFulfilled = onFulfilled\n\t\t\t}else{\n\t\t\t\tonFulfilled()\n\t\t\t}\n\t\t}\n\t\tif(rejected &amp;&amp; typeof rejected == &quot;function&quot;){\n\t\t\tvar onRejected = function (){\n\t\t\t\ttry{\n\t\t\t\t\tvar result = rejected(self.value)\n\t\t\t\t\tif(result &amp;&amp; typeof result.then === &#x27;function&#x27;){\n\t\t\t\t\t\tresult.then(resolve, reject)\n\t\t\t\t\t}else{\n\t\t\t\t\t\tresolve(result)\n\t\t\t\t\t}\n\t\t\t\t}catch(error){\n\t\t\t\t\treject(error)\n\t\t\t\t}\n\t\t\t}\n\t\t\tif( self.state === &#x27;pending&#x27;){\n\t\t\t\tself.onRejected = onRejected\n\t\t\t}else{\n\t\t\t\tonRejected()\n\t\t\t}\n\t\t}\n\t})\n}\n\n&#x2F;*\n *  the methods don&#x27;t in Promise&#x2F;A+ \n *&#x2F;\n \nPromise.prototype.catch = function(onRejected){\n\treturn this.then(null, onRejected)\n}\n\nPromise.resolve = function(value){\n\tif(value instanceof this) return value\n\treturn new Promise( (resolve,reject) =&gt; {\n\t\tif(value &amp;&amp; typeof value === &#x27;object&#x27; &amp;&amp; typeof value.then === &#x27;function&#x27;){\n\t\t\tresolve( value.then( v =&gt; v))\n\t\t}else{\n\t\t\tresolve(value)\n\t\t}\n\t})\n}\n\nPromise.reject = function(reason){\n\treturn new Promise( (resolve,reject) =&gt; {\n\t\treject(reason)\n\t})\n}\n</code></pre></div>",
+      "create_at": "2018-03-06T06:50:26.842Z",
+      "good": false,
+      "id": "5a2403226190c8912ebaceeb",
+      "last_reply_at": "2018-03-08T07:56:17.194Z",
+      "reply_count": 2,
+      "tab": "share",
+      "title": "自己动手实现的promise",
+      "top": false,
+      "visit_count": 373
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars2.githubusercontent.com/u/8315732?v=4&s=120",
+        "loginname": "youth7"
+      },
+      "author_id": "565553143325bb2c4ebd803a",
+      "content": "<div class=\"markdown-text\"><h1>不同的event loop</h1>\n<p>event loop是一个执行模型，在不同的地方有不同的实现。浏览器和nodejs基于不同的技术实现了各自的event loop。网上关于它的介绍多如牛毛，但大多数是基于浏览器的，真正讲nodejs的event loop的并没有多少，甚至很多将浏览器和nodejs的event loop等同起来的。  我觉得讨论event loop要做到以下两点：</p>\n<ul>\n<li><strong>首先要确定好上下文，nodejs和浏览器的event loop是两个有明确区分的事物，不能混为一谈</strong>。</li>\n<li>其次，讨论一些js异步代码的执行顺序时候，<strong>要基于node的源码而不是自己的臆想</strong>。</li>\n</ul>\n<p>简单来讲，</p>\n<ul>\n<li><strong>nodejs的event是基于libuv，而浏览器的event loop则在<a href=\"https://www.w3.org/TR/html5/webappapis.html#event-loops\">html5的规范</a>中明确定义</strong>。</li>\n<li>libuv已经对event loop作出了实现，而html5规范中只是定义了浏览器中event loop的模型，具体实现留给了浏览器厂商。</li>\n</ul>\n<h1>nodejs中的event loop</h1>\n<p>关于nodejs中的event loop有两个地方可以参考，一个是nodejs<a href=\"https://nodejs.org/en/docs/guides/event-loop-timers-and-nexttick/\">官方的文档</a>；另一个是libuv的<a href=\"http://docs.libuv.org/en/v1.x/design.html\">官方的文档</a>，前者已经对nodejs有一个比较完整的描述，而后者则有更多细节的描述。nodejs正在快速发展，源码变化很大，以下的讨论都是基于nodejs9.5.0。</p>\n<p>（然而nodejs的event loop似乎比预料更加复杂，在查看nodejs源码的过程中我惊奇发现原来nodejs的event loop的某些阶段，还会将v8的micro task queue中的任务取出来运行，看来nodejs的浏览器的event loop还是存在一些关联，这些细节我们往后再讨论，目前先关注重点内容。）</p>\n<h2>event loop的6个阶段（phase）</h2>\n<p>nodejs的event loop分为6个阶段，每个阶段的作用如下（<code>process.nextTick()</code>在6个阶段结束的时候都会执行，文章后半部分会详细分析<code>process.nextTick()</code>的回调是怎么引进event loop，仅仅从<code>uv_run()</code>是找不到<code>process.nextTick()</code>是如何牵涉进来）：</p>\n<ul>\n<li>timers：执行<code>setTimeout()</code> 和 <code>setInterval()</code>中到期的callback。</li>\n<li>I/O callbacks：上一轮循环中有少数的I/Ocallback会被延迟到这一轮的这一阶段执行</li>\n<li>idle, prepare：仅内部使用</li>\n<li>poll：最为重要的阶段，执行I/O callback，在适当的条件下会阻塞在这个阶段</li>\n<li>check：执行setImmediate的callback</li>\n<li>close callbacks：执行close事件的callback，例如<code>socket.on(&quot;close&quot;,func)</code></li>\n</ul>\n<pre class=\"prettyprint language-C\"><code>   ┌───────────────────────┐\n┌─&gt;│        timers         │\n│  └──────────┬────────────┘\n│  ┌──────────┴────────────┐\n│  │     I&#x2F;O callbacks     │\n│  └──────────┬────────────┘\n│  ┌──────────┴────────────┐\n│  │     idle, prepare     │\n│  └──────────┬────────────┘      ┌───────────────┐\n│  ┌──────────┴────────────┐      │   incoming:   │\n│  │         poll          │&lt;─────┤  connections, │\n│  └──────────┬────────────┘      │   data, etc.  │\n│  ┌──────────┴────────────┐      └───────────────┘\n│  │        check          │\n│  └──────────┬────────────┘\n│  ┌──────────┴────────────┐\n└──┤    close callbacks    │\n   └───────────────────────┘\n</code></pre><p>event loop的每一次循环都需要依次经过上述的阶段。  每个阶段都有自己的callback队列，每当进入某个阶段，都会从所属的队列中取出callback来执行，当队列为空或者被执行callback的数量达到系统的最大数量时，进入下一阶段。这六个阶段都执行完毕称为一轮循环。</p>\n<p>event loop的核心代码在deps/uv/src/unix/core.c</p>\n<pre class=\"prettyprint language-C\"><code>int uv_run(uv_loop_t* loop, uv_run_mode mode) {\n  int timeout;\n  int r;\n  int ran_pending;\n\n  &#x2F;*\n  从uv__loop_alive中我们知道event loop继续的条件是以下三者之一：\n  1，有活跃的handles（libuv定义handle就是一些long-lived objects，例如tcp server这样）\n  2，有活跃的request\n  3，loop中的closing_handles\n  *&#x2F;\n  r = uv__loop_alive(loop);\n  if (!r)\n    uv__update_time(loop);\n\n  while (r != 0 &amp;&amp; loop-&gt;stop_flag == 0) {\n    uv__update_time(loop);&#x2F;&#x2F;更新时间变量，这个变量在uv__run_timers中会用到\n    uv__run_timers(loop);&#x2F;&#x2F;timers阶段\n    ran_pending = uv__run_pending(loop);&#x2F;&#x2F;从libuv的文档中可知，这个其实就是I&#x2F;O callback阶段,ran_pending指示队列是否为空\n    uv__run_idle(loop);&#x2F;&#x2F;idle阶段\n    uv__run_prepare(loop);&#x2F;&#x2F;prepare阶段\n\n    timeout = 0;\n\n    &#x2F;**\n    设置poll阶段的超时时间，以下几种情况下超时会被设为0，这意味着此时poll阶段不会被阻塞，在下面的poll阶段我们还会详细讨论这个\n    1，stop_flag不为0\n    2，没有活跃的handles和request\n    3，idle、I&#x2F;O callback、close阶段的handle队列不为空\n    否则，设为timer阶段的callback队列中，距离当前时间最近的那个\n    **&#x2F;    \n    if ((mode == UV_RUN_ONCE &amp;&amp; !ran_pending) || mode == UV_RUN_DEFAULT)\n      timeout = uv_backend_timeout(loop);\n\n    uv__io_poll(loop, timeout);&#x2F;&#x2F;poll阶段\n    uv__run_check(loop);&#x2F;&#x2F;check阶段\n    uv__run_closing_handles(loop);&#x2F;&#x2F;close阶段\n    &#x2F;&#x2F;如果mode == UV_RUN_ONCE（意味着流程继续向前）时，在所有阶段结束后还会检查一次timers，这个的逻辑的原因不太明确\n    \n    if (mode == UV_RUN_ONCE) {\n      uv__update_time(loop);\n      uv__run_timers(loop);\n    }\n\n    r = uv__loop_alive(loop);\n    if (mode == UV_RUN_ONCE || mode == UV_RUN_NOWAIT)\n      break;\n  }\n\n  if (loop-&gt;stop_flag != 0)\n    loop-&gt;stop_flag = 0;\n\n  return r;\n}\n\n</code></pre><p>我对重要部分加上注释，从上述代码可以看到event loop的六个阶段是依次执行的。值得注意的是，在UV_RUN_ONCE模式下，timers阶段在当前循环结束前还会得到一次的执行机会。</p>\n<h2>timers阶段</h2>\n<p>timer阶段的代码在deps/uv/src/unix/timer.c的<code>uv__run_timers()</code>中</p>\n<pre class=\"prettyprint language-C\"><code>void uv__run_timers(uv_loop_t* loop) {\n  struct heap_node* heap_node;\n  uv_timer_t* handle;\n\n  for (;;) {\n    heap_node = heap_min((struct heap*) &amp;loop-&gt;timer_heap);&#x2F;&#x2F;取出timer堆上超时时间最小的元素\n    if (heap_node == NULL)\n      break;\n    &#x2F;&#x2F;根据上面的元素，计算出handle的地址，head_node结构体和container_of的结合非常巧妙，值得学习\n    handle = container_of(heap_node, uv_timer_t, heap_node);\n    if (handle-&gt;timeout &gt; loop-&gt;time)&#x2F;&#x2F;如果最小的超时时间比循环运行的时间还要大，则表示没有到期的callback需要执行，此时退出timer阶段\n      break;\n\n    uv_timer_stop(handle);&#x2F;&#x2F;将这个handle移除\n    uv_timer_again(handle);&#x2F;&#x2F;如果handle是repeat类型的，重新插入堆里\n    handle-&gt;timer_cb(handle);&#x2F;&#x2F;执行handle上的callback\n  }\n}\n</code></pre><p>从上面的逻辑可知，<strong>在timer阶段其实使用一个最小堆而不是队列来保存所有元素</strong>（其实也可以理解，因为timeout的callback是按照超时时间的顺序来调用的，并不是先进先出的队列逻辑），然后循环取出所有到期的callback执行。</p>\n<h2>I/O callbacks阶段</h2>\n<p>I/O callbacks阶段的代码在deps/uv/src/unix/core.c的<code>int uv__run_pending()</code>中</p>\n<pre class=\"prettyprint language-C\"><code>static int uv__run_pending(uv_loop_t* loop) {\n  QUEUE* q;\n  QUEUE pq;\n  uv__io_t* w;\n\n  if (QUEUE_EMPTY(&amp;loop-&gt;pending_queue))&#x2F;&#x2F;如果队列为空则退出\n    return 0;\n\n  QUEUE_MOVE(&amp;loop-&gt;pending_queue, &amp;pq);&#x2F;&#x2F;移动该队列\n\n  while (!QUEUE_EMPTY(&amp;pq)) {\n    q = QUEUE_HEAD(&amp;pq);&#x2F;&#x2F;取出队列的头结点\n    QUEUE_REMOVE(q);&#x2F;&#x2F;将其移出队列\n    QUEUE_INIT(q);&#x2F;&#x2F;不再引用原来队列的元素\n    w = QUEUE_DATA(q, uv__io_t, pending_queue);\n    w-&gt;cb(loop, w, POLLOUT);&#x2F;&#x2F;执行callbak直到队列为空\n  }\n  return 1;\n}\n</code></pre><p>根据libuv的文档，一些应该在上轮循环poll阶段执行的callback，因为某些原因不能执行，就会被延迟到这一轮的循环的I/O callbacks阶段执行。换句话说这个阶段执行的callbacks是上轮残留的。</p>\n<h2>idle和prepare阶段</h2>\n<p><code>uv__run_idle()</code>、<code>uv__run_prepare()</code>、<code>uv__run_check()</code>定义在文件deps/uv/src/unix/loop-watcher.c中，它们的逻辑非常相似，其中的实现利用了大量的宏（说实在我个人非常烦宏，它的可读性真的很差，为了那点点的性能而使用宏真是值得商榷）。</p>\n<pre class=\"prettyprint language-C\"><code>  void uv__run_##name(uv_loop_t* loop) {                                      \\\n    uv_##name##_t* h;                                                         \\\n    QUEUE queue;                                                              \\\n    QUEUE* q;                                                                 \\\n    QUEUE_MOVE(&amp;loop-&gt;name##_handles, &amp;queue);&#x2F;&#x2F;用新的头节点取代旧的头节点，相当于将原队列移动到新队列                                \\\n    while (!QUEUE_EMPTY(&amp;queue)) {&#x2F;&#x2F;当新队列不为空                                            \\\n      q = QUEUE_HEAD(&amp;queue);&#x2F;&#x2F;取出新队列首元素                                                 \\\n      h = QUEUE_DATA(q, uv_##name##_t, queue);&#x2F;&#x2F;获取首元素中指向的handle                                \\\n      QUEUE_REMOVE(q);&#x2F;&#x2F;将这个元素移出新队列                                                        \\\n      QUEUE_INSERT_TAIL(&amp;loop-&gt;name##_handles, q);&#x2F;&#x2F;然后再插入旧队列尾部                            \\\n      h-&gt;name##_cb(h);&#x2F;&#x2F;执行对应的callback                                                        \\\n    }                                                                         \\\n  } \n</code></pre><h2>poll阶段</h2>\n<p>poll阶段的代码+注释高达200行不好逐行分析，我们挑选部分重要代码</p>\n<pre class=\"prettyprint language-C\"><code>void uv__io_poll(uv_loop_t* loop, int timeout) {\n\t&#x2F;&#x2F;...\n\t&#x2F;&#x2F;处理观察者队列\n\twhile (!QUEUE_EMPTY(&amp;loop-&gt;watcher_queue)) {\n\t\t&#x2F;&#x2F;...\n\tif (w-&gt;events == 0)\n\t  op = UV__EPOLL_CTL_ADD;&#x2F;&#x2F;新增监听这个事件\n\telse\n\t  op = UV__EPOLL_CTL_MOD;&#x2F;&#x2F;修改这个事件\n\t}\n \t&#x2F;&#x2F;...\n \t&#x2F;&#x2F;阻塞直到监听的事件来临，前面已经算好timeout以防uv_loop一直阻塞下去\n\tif (no_epoll_wait != 0 || (sigmask != 0 &amp;&amp; no_epoll_pwait == 0)) {\n\t  nfds = uv__epoll_pwait(loop-&gt;backend_fd,\n\t            events,\n\t            ARRAY_SIZE(events),\n\t            timeout,\n\t            sigmask);\n\t  if (nfds == -1 &amp;&amp; errno == ENOSYS)\n\t    no_epoll_pwait = 1;\n\t} else {\n\t  nfds = uv__epoll_wait(loop-&gt;backend_fd,\n\t           events,\n\t           ARRAY_SIZE(events),\n\t           timeout);\n\t  if (nfds == -1 &amp;&amp; errno == ENOSYS)\n\t    no_epoll_wait = 1;\n\t}\n\t&#x2F;&#x2F;...\n\tfor (i = 0; i &lt; nfds; i++) {\n\t    if (w == &amp;loop-&gt;signal_io_watcher)\n\t      have_signals = 1;\n\t    else\n\t      w-&gt;cb(loop, w, pe-&gt;events);&#x2F;&#x2F;执行callback\n\t}\n\t&#x2F;&#x2F;...\n}\n</code></pre><p>可见poll阶段的任务就是阻塞等待监听的事件来临，然后执行对应的callback，其中阻塞是带有超时时间的，以下几种情况都会使得超时时间为0</p>\n<ul>\n<li>uv_run处于UV_RUN_NOWAIT模式下</li>\n<li><code>uv_stop()</code>被调用</li>\n<li>没有活跃的handles和request</li>\n<li>有活跃的idle handles</li>\n<li>有等待关闭的handles\n如果上述都不符合，则超时时间为距离现在最近的timer；如果没有timer则poll阶段会一直阻塞下去</li>\n</ul>\n<h2>check阶段</h2>\n<p>见上面的 <em>idle和prepare阶段</em></p>\n<h2>close阶段</h2>\n<pre class=\"prettyprint language-C\"><code>static void uv__run_closing_handles(uv_loop_t* loop) {\n  uv_handle_t* p;\n  uv_handle_t* q;\n\n  p = loop-&gt;closing_handles;\n  loop-&gt;closing_handles = NULL;\n\n  while (p) {\n    q = p-&gt;next_closing;\n    uv__finish_close(p);\n    p = q;\n  }\n}\n</code></pre><p>这段代码非常浅显，就是循环关闭所有的closing handles，无需多言。其中的callback调用在<code>uv__finish_close()</code>中</p>\n<h2>process.nextTick在哪里</h2>\n<p>文档中提到<code>process.nextTick()</code>不属于上面的任何一个phase，它在每个phase结束的时候都会运行。但是我们看到<code>uv_run()</code>中只是依次运行了6个phase的函数，并没有<code>process.nextTick()</code>影子，那它是怎么被驱动起来的呢？<br>\n这个问题要从两个c++和js的源码层面来说明。</p>\n<h3>process.nextTick在js层面的实现</h3>\n<p><code>process.nextTick</code>的实现在next_tick.js中</p>\n<pre class=\"prettyprint language-javascript\"><code>  function nextTick(callback) {\n    if (typeof callback !== &#x27;function&#x27;)\n      throw new errors.TypeError(&#x27;ERR_INVALID_CALLBACK&#x27;);\n\n    if (process._exiting)\n      return;\n\n    var args;\n    switch (arguments.length) {\n      case 1: break;\n      case 2: args = [arguments[1]]; break;\n      case 3: args = [arguments[1], arguments[2]]; break;\n      case 4: args = [arguments[1], arguments[2], arguments[3]]; break;\n      default:\n        args = new Array(arguments.length - 1);\n        for (var i = 1; i &lt; arguments.length; i++)\n          args[i - 1] = arguments[i];\n    }\n\n    push(new TickObject(callback, args, getDefaultTriggerAsyncId()));&#x2F;&#x2F;将callback封装为一个对象放入队列中\n  }\n</code></pre><p>它并没有什么魔法，也没有调用C++提供的函数，只是简单地将所有回调封装为对象并放入队列。而callback的执行是在函数<code>_tickCallback()</code></p>\n<pre class=\"prettyprint language-javascript\"><code>  function _tickCallback() {\n    let tock;\n    do {\n      while (tock = shift()) {\n        const asyncId = tock[async_id_symbol];\n        emitBefore(asyncId, tock[trigger_async_id_symbol]);\n        if (destroyHooksExist())\n          emitDestroy(asyncId);\n\n        const callback = tock.callback;\n        if (tock.args === undefined)\n          callback();&#x2F;&#x2F;执行调用process.nextTick()时放置进来的callback\n        else\n          Reflect.apply(callback, undefined, tock.args);&#x2F;&#x2F;执行调用process.nextTick()时放置进来的callback\n\n        emitAfter(asyncId);\n      }\n      runMicrotasks();&#x2F;&#x2F;microtasks将会在此时执行，例如Promise\n    } while (head.top !== head.bottom || emitPromiseRejectionWarnings());\n    tickInfo[kHasPromiseRejections] = 0;\n  }\n</code></pre><p>可以看到<code>_tickCallback()</code>会循环执行队列中所有callback，值得注意的是microtasks的执行时机， 因此<code>_tickCallback()</code>的执行就意味着<code>process.nextTick()</code>的回调的执行。我们继续搜索一下发现<code>_tickCallback()</code>在好几个地方都有被调用，但是我们只关注跟event loop相关的。<br>\n在next_tick.js中发现</p>\n<pre class=\"prettyprint language-javascript\"><code>  const [\n    tickInfo,\n    runMicrotasks\n  ] = process._setupNextTick(_tickCallback);\n</code></pre><p>查找了一下发现在node.cc中有</p>\n<pre class=\"prettyprint language-C++\"><code>env-&gt;SetMethod(process, &quot;_setupNextTick&quot;, SetupNextTick);&#x2F;&#x2F;暴露_setupNextTick给js\n</code></pre><p><code>_setupNextTick()</code>是node.cc那边暴露出来的方法，因此猜测这就是连接event loop的桥梁。</p>\n<h3>c++中执行process.nextTick的回调</h3>\n<p>在node.cc中找出<code>SetupNextTick()</code>函数，有这样的代码片段</p>\n<pre class=\"prettyprint language-C++\"><code>void SetupNextTick(const FunctionCallbackInfo&lt;Value&gt;&amp; args) {\n  Environment* env = Environment::GetCurrent(args);\n\n  CHECK(args[0]-&gt;IsFunction());\n  &#x2F;&#x2F;把js中提供的回调函数（即_tickCallback）保存起来，以供调用\n  env-&gt;set_tick_callback_function(args[0].As&lt;Function&gt;());\n  ...\n}\n</code></pre><p><code>_tickCallback</code>被放置到env里面去了，那它何时被调用？也是在node.cc中我们发现</p>\n<pre class=\"prettyprint language-C++\"><code>void InternalCallbackScope::Close() {\n  if (!tick_info-&gt;has_scheduled()) {\n    env_-&gt;isolate()-&gt;RunMicrotasks();\n  }\n  &#x2F;&#x2F;...\n  &#x2F;&#x2F;终于调用在SetupNextTick()中放置进来的函数了\n  if (env_-&gt;tick_callback_function()-&gt;Call(process, 0, nullptr).IsEmpty()) {\n    env_-&gt;tick_info()-&gt;set_has_thrown(true);\n    failed_ = true;\n  }\n}\n</code></pre><p>可知<code>InternalCallbackScope::Close()</code>会调用它，而<code>InternalCallbackScope::Close()</code>则在文件node.cc的<code>InternalMakeCallback()</code>中被调用</p>\n<pre class=\"prettyprint language-C++\"><code>MaybeLocal&lt;Value&gt; InternalMakeCallback(Environment* env,\n                                       Local&lt;Object&gt; recv,\n                                       const Local&lt;Function&gt; callback,\n                                       int argc,\n                                       Local&lt;Value&gt; argv[],\n                                       async_context asyncContext) {\n  CHECK(!recv.IsEmpty());\n  InternalCallbackScope scope(env, recv, asyncContext);\n  &#x2F;&#x2F;...\n  scope.Close();&#x2F;&#x2F;Close会调用_tickCall\n  &#x2F;&#x2F;...\n}\n</code></pre><p>而<code>InternalMakeCallback()</code>则是在async_wrap.cc的<code>AsyncWrap::MakeCallback()</code>中被调用</p>\n<pre class=\"prettyprint language-C++\"><code>MaybeLocal&lt;Value&gt; AsyncWrap::MakeCallback(const Local&lt;Function&gt; cb,\n                                          int argc,\n                                          Local&lt;Value&gt;* argv) {\n  &#x2F;&#x2F;cb就是在event loop的6个phase中执行的回调函数\n  MaybeLocal&lt;Value&gt; ret = InternalMakeCallback(env(), object(), cb, argc, argv, context);\n}\n</code></pre><p>AsyncWrap类是异步操作的封装，它是一个顶级的类，TimerWrap、TcpWrap等封装异步的类都继承了它，这意味着这些类封装异步操作的时候都会调用<code>MakeCallback()</code>。至此真相大白了，<code>uv_run()</code>中的回调都是经过<code>AsyncWrap::MakeCallback()</code>包装过的，因此回调执行完毕之后都会执行<code>process.nextTick()</code>的回调了，与文档的描述是相符合的。整理一下<code>_tickCallback()</code>的转移并最终被调用的流程</p>\n<p>在js层面</p>\n<pre class=\"prettyprint language-JAVASCRIPT\"><code>_tickCallback()&#x2F;&#x2F;js中执行process.nextTick()的回调函数\n\t\t↓\nprocess._setupNextTick(_tickCallback)\t\t&#x2F;&#x2F;c++和js的桥梁，将回调交给C++执行\n\n</code></pre><p>此时<code>_tickCallback()</code>被转移到在C++层面，它首先被存储到env中</p>\n<pre class=\"prettyprint language-C++\"><code>env-&gt;set_tick_callback_function()&#x2F;&#x2F;将_tickCallback存储到env中\n        ↓\t\t\nenv-&gt;SetMethod(process, &quot;_setupNextTick&quot;, SetupNextTick);&#x2F;&#x2F;调用上者，js中process._setupNextTick的真身\n</code></pre><p>被存储到env的<code>_tickCallback()</code>被调用流程如下：</p>\n<pre class=\"prettyprint language-C++\"><code>env_-&gt;tick_callback_function()&#x2F;&#x2F;取出_tickCallback执行\n        ↓\nInternalCallbackScope::Close()&#x2F;&#x2F;调用前者\n        ↓  \nInternalMakeCallback()&#x2F;&#x2F;调用前者   \n        ↓  \nAsyncWrap::MakeCallback()&#x2F;&#x2F;调用前者   \n        ↓  \n被多个封装异步操作的类继承并调用\n        ↓\n被uv_run()执行，从而实现在每个phase之后调用process.nextTick提供的回调\t\n</code></pre><p>整个过程分析得比较粗糙，后面其实很多细节没去寻找，不过大家可以从以下的参考资料补全其它细节。例如timer的整个执行流程可以看<br>\n<a href=\"https://github.com/xtx1130/blog/issues/15\">《从./lib/timers.js来看timers相关API底层实现》</a>，是对我没提及地方的一个良好补充。</p>\n<h1>参考资料</h1>\n<p>由于node发展非常迅猛，很多早期的源码分析已经过时（源码的目录结构或者实现代码已经改变），不过还是很有指导意义。</p>\n<ul>\n<li><a href=\"http://acemood.github.io/2016/02/01/event-loop-in-javascript/\">Event loop in JavaScrip</a>：启迪我找到答案的最为关键的文章</li>\n<li><a href=\"https://www.ibm.com/developerworks/cn/opensource/os-cn-v8engine/\">使用 Google V8 引擎开发可定制的应用程序</a>：这篇文章介绍了v8引擎暴露C++对象给js的方法，对读懂node源码非常有帮助</li>\n<li><a href=\"https://github.com/yjhjstz/deep-into-node\">深入理解Node.js：核心思想与源码分析</a>：对node源码的一个全面分析，基于node 6.0</li>\n<li><a href=\"https://github.com/xtx1130/blog\">node 源码粗读系列</a>：基于9.0的源码分析，非常详细且跟上了最新变化</li>\n<li><a href=\"https://cnodejs.org/topic/55a76cf95d5240f223494f31\">Node.js挖掘系列</a></li>\n<li><a href=\"https://cnodejs.org/topic/56e3dfde545c5c736d12383f\">node源码详解系列</a></li>\n</ul>\n</div>",
+      "create_at": "2018-02-24T06:40:23.236Z",
+      "good": true,
+      "id": "5a2403226190c8912ebaceeb",
+      "last_reply_at": "2018-03-08T07:48:15.177Z",
+      "reply_count": 25,
+      "tab": "share",
+      "title": "不要混淆nodejs和浏览器中的event loop",
+      "top": false,
+      "visit_count": 2744
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars2.githubusercontent.com/u/8315732?v=4&s=120",
+        "loginname": "youth7"
+      },
+      "author_id": "565553143325bb2c4ebd803a",
+      "content": "<div class=\"markdown-text\"><p>在以下几种种情况，nodejs需要新开子进程来进行相关操作</p>\n<ul>\n<li>长时间耗费CPU的操作，这个大家都懂，防止进程卡在一处以致后续的请求得不到响应。</li>\n<li>执行外部程序，如<code>tar</code>、<code>gcc</code>等</li>\n<li>提高处理效率，某些任务可以分解成多个并行的小任务，然后再汇总一起。</li>\n</ul>\n<p>nodejs中使用<code>child_process</code>模块来对子进程进行生成、管理和通讯。网上关于这一块的介绍也不少，但是其中的细节感觉还是语焉不详，这里我们主要讨论3个问题（基于Linux平台）：</p>\n<ul>\n<li><code>spawn</code>、<code>exec</code>、<code>execFile</code>和<code>fork</code>的区别</li>\n<li>底层如何生存子进程</li>\n<li>父进程和子进程之间的IPC通讯究竟是怎样</li>\n</ul>\n<h1><code>spawn</code>、<code>exec</code>、<code>execFile</code>和<code>fork</code></h1>\n<p>它们之间的调用关系如下</p>\n<pre class=\"prettyprint language-javascript\"><code>exec \n  │\nexecFile         fork\n  │               │     \n  └─────spawn─────┘          用户层面\n          │\n----------│------------------------\n          │\n          │                  nodejs内部\n          │                   \n     spawn(位于lib&#x2F;internal&#x2F;child_process.js)\n</code></pre><p>从上图可易知：</p>\n<ul>\n<li>在用户层面，其它3个函数最终都是调用<code>child_process.spawn</code></li>\n<li>exec调用了execFile，因此它们的性态应该是一样的（缓存了IO）</li>\n</ul>\n<p>接下来我们依次讨论一下这几个函数。</p>\n<h2>spawn</h2>\n<p>spawn的用法文档上已经写得很清晰，我们这里讨论值得关注的地方</p>\n<h3>关于子进程的stdio(标准输入输出)</h3>\n<p>通过修改<code>options.stdio</code>，可以将子进程的stdio可以绑定到不同的地方。<code>options.stdio</code>可以接受两种类型的值：字符串或者数组</p>\n<ul>\n<li>当<code>options.stdio</code>的值是字符串时，它有以下几种取值\n<ul>\n<li><code>pipe</code> ： 相当于[“pipe”,“pipe”,“pipe”]，子进程的stdio与父进程的stdio通过管道连接起来，</li>\n<li><code>ignore</code> ： 相当于[“ignore”,“ignore”,“ignore”]，子进程的stdio绑定到<code>/dev/null</code>，丢弃数据的输入输出</li>\n<li><code>inherit</code> ： 继承于父进程的相关stdio、即等同于<code>[process.stdin, process.stdout, process.stderr]</code>或者<code>[0,1,2]</code>，此时父子进程的stdio都是绑定到同一个地方。</li>\n</ul>\n</li>\n</ul>\n<ul>\n<li>\n<p>当<code>options.stdio</code>的值是数组的时候，前三个元素分别代表stdin stdout stderr。<strong>如果数组的元素大于3，则会在父子进程之间建立 <em>额外的通讯通道</em></strong>，它们的值可以是下面的其中之一</p>\n<ul>\n<li><code>pipe</code>：<em>额外的通讯通道</em> 通过管道通讯。管道的两端分别连接着父子进程，在父进程这边可以通过<code>subprocess.stdio[n]（n=0、1、2）</code>或者<code>subprocess.stdin, subprocess.stdout, subprocess.stderr</code>来引用管道的一端，而子进程则可以通过<code>process.stdin, process.stdout, process.stderr</code>来引用另外一端，详情可以见面的例子。</li>\n<li><code>ipc</code>：<em>额外的通讯通道</em> 通过ipc channel通讯</li>\n<li><code>ignore</code>：绑定到<code>/dev/null</code>，即丢弃数据的输入输出</li>\n<li><code>Stream</code>对象：<em>额外的通讯通道</em> 通过nodejs中<code>Stream</code> 对象通讯，对象底层的文件描述符代表一个文件例如socket，tty、本地文件等。</li>\n<li>正整数：和<code>Stream</code>相似。</li>\n<li><code>null</code>和<code>undefined</code>：对于前3个元素，它们会被设为<code>pipe</code>，对于剩下的元素会被设置<code>ignore</code></li>\n</ul>\n</li>\n</ul>\n<p>以下的例子，它将stdio绑定到不同的地方</p>\n<pre class=\"prettyprint language-javascript\"><code>&quot;use strict&quot;;\nconst child_process = require(&quot;child_process&quot;);\nconst script = (function(data) {\n  console.log(data);\n}).toString();\nchild_process.spawn(&quot;node&quot;, [&quot;-e&quot;, &#96;( ${script}(&quot;inherit，这一般个会写到控制台&quot;) )&#96;], {\n  &#x2F;&#x2F;子进程的stdio继承父进程的stdio，即控制台，因此会输出到控制台\n  stdio: [process.stdin, process.stdout, process.stderr]\n});\n\nconst fd = require(&quot;fs&quot;).openSync(&quot;.&#x2F;node.log&quot;, &quot;w+&quot;);\nchild_process.spawn(&quot;node&quot;, [&quot;-e&quot;, &#96;( ${script}(&quot;整数fd，这一般个会写到某个文件&quot;) )&#96;], {\n  &#x2F;&#x2F;stdio绑定到文件描述符fd，它代表文件node.log，因此会输出到该文件\n  stdio: [process.stdin, fd, fd]\n});\n\nconst writableStream = require(&quot;fs&quot;).createWriteStream(&quot;.&#x2F;node.log&quot;, {\n  flags: &quot;a&quot;,\n  fd: fd\n});\nchild_process.spawn(&quot;node&quot;, [&quot;-e&quot;, &#96;( ${script}(&quot;stream，这一般个会写到某个文件&quot;) )&#96;], {\n  &#x2F;&#x2F;输出到流所代表的目的地，注意这个流必须要有文件描述符，否则会失败\n  &#x2F;&#x2F;这个例子中它会输出到文件node.log\n  stdio: [process.stdin, writableStream, fd]\n});\nconst script2 = (function(data) {\n  console.log(data);\n  process.stdout.end(&quot;hello&quot;);\n}).toString();\nconst node = child_process.spawn(&quot;node&quot;, [&quot;-e&quot;, &#96;( ${script2}(&quot;pipe，只能通过父进程将它输出&quot;) )&#96;], {\n  &#x2F;&#x2F;子进程的stdio绑定到父进程的\n  stdio: [&quot;pipe&quot;, &quot;pipe&quot;, &quot;pipe&quot;]\n});\nnode.stdout.on(&quot;data&quot;, function(data) {\n  &#x2F;&#x2F;注意此时子进程的输出全都通过管道传递到父进程，注意这种方式和&quot;inherit&quot;的区别\n  console.log(String(data));\n});\n</code></pre><p>看文档时候我发现一个例子</p>\n<pre class=\"prettyprint language-JavaScript\"><code>&#x2F;&#x2F; Open an extra fd=4, to interact with programs presenting a\n&#x2F;&#x2F; startd-style interface.\nspawn(&#x27;prg&#x27;, [], { stdio: [&#x27;pipe&#x27;, null, null, null, &#x27;pipe&#x27;] });\n</code></pre><p>从<code>stdio</code>的值来看父子进程之间建立了额外的ipc通道，父进程可以很容易引用这些额外的ipc通道，但是我找了很久都没有发现<strong>子进程那边是如何使用这些额外的ipc通道</strong>，希望有大牛能告之。</p>\n<h3>detached和守护进程</h3>\n<p>生成子进程的时候如果传递了<code>detached=true</code>，则效果是使得子进程成为新的session和group的leader，效果和<a href=\"http://man7.org/linux/man-pages/man2/setsid.2.html\">SETSID(2)</a>是类似的。但也是仅此而已了，它和守护进程并没有明显的关联，文档中特别指出</p>\n<blockquote>\n<p>Note that child processes may continue running after the parent exits regardless of whether they are detached or not</p>\n</blockquote>\n<p>说明子进程是可以继续运行下去的，<strong>无论<code>detached=true</code>是否被设置</strong>，例如</p>\n<pre class=\"prettyprint language-JavaScript\"><code>&quot;use strict&quot;;\nconst child_process = require(&quot;child_process&quot;);\nchild_process.spawn(&quot;ping&quot;, [&quot;localhost&quot;]);\nsetTimeout(function() {console.log(&quot;hello&quot;);}, 3000);\nprocess.exit();\n</code></pre><p>将上述代码保存到文件<code>test.js</code>，然后从命令行运行<code>node test.js</code>，则有以下输出</p>\n<pre class=\"prettyprint language-bash\"><code>[chris@localhost node]$ node test.js \n[chris@localhost node]$ ps -ef | grep -E &#x27;ping|node&#x27;\nroot       621     1  0 Mar03 ?        00:00:00 &#x2F;usr&#x2F;sbin&#x2F;mcelog --ignorenodev --daemon --foreground\nchris     6364     1  0 04:01 pts&#x2F;0    00:00:00 ping localhost\nchris     6366  5514  0 04:01 pts&#x2F;0    00:00:00 grep --color=auto -E ping|node\n\n</code></pre><p>父进程启动<code>ping</code>后就立即使用<code>process.exit()</code>强行退出，这使得<code>ping</code>成为孤儿进程并被<code>init</code>进程（进程id为1）收养，从而使得<code>ping</code>能够继续在后台运行，注意此时并没有设置<code>detached=true</code>，此时即使你退出终端<code>ping</code>命令依然在后台继续进程（有点像守护进程？）。<br>\n不过这种方法是有缺陷的，因为是强行退出的，父进程event loop中的内容尚未执行完退出了，我们需要一种优雅安全的退出方法。</p>\n<p>首先删掉<code>process.exit()</code>并设置<code>detached=true</code>（<strong>如果不设置的话子进程在父进程结束后也会跟着结束</strong>）</p>\n<pre class=\"prettyprint language-JavaScript\"><code>&quot;use strict&quot;;\nconst child_process = require(&quot;child_process&quot;);\nchild_process.spawn(&quot;ping&quot;, [&quot;localhost&quot;], {detached:true});\nsetTimeout(function() {console.log(&quot;hello&quot;);}, 3000);\n</code></pre><p>此时<code>setTimeout</code>的回调可以得到执行，但是父进程会等待子进程退出，用<code>ctrl+c</code>结束父进程后子进程依然存活，并且被<code>init</code>进程收养。因为文档中说明：</p>\n<blockquote>\n<p>By default, the parent will wait for the detached child to exit. To prevent the parent from waiting for a given subprocess, use the subprocess.unref() method</p>\n</blockquote>\n<p>默认情况下父进程会等待已经分离的子进程，可以调用<code>subprocess.unref()</code>来取消等待。于是按照要求加上相关代码</p>\n<pre class=\"prettyprint language-JavaScript\"><code>&quot;use strict&quot;;\nconst child_process = require(&quot;child_process&quot;);\nconst ping = child_process.spawn(&quot;ping&quot;, [&quot;localhost&quot;],{detached : true});\nping.unref();\nsetTimeout(function() {console.log(&quot;hello&quot;);}, 3000);\n</code></pre><p>还是不行，父进程依然会等待子进程，再次查阅文档，原来还漏看了一句</p>\n<blockquote>\n<p>unless there is an established IPC channel between the child and parent.</p>\n</blockquote>\n<p>如果父子进程之间建立了的ipc，父进程还是会等待。根据我们上面的总结，推论将<code>stdio</code>设置为<code>ignore</code>、描述符、<code>Stream</code>对象应该可以让父进程不再等待。</p>\n<pre class=\"prettyprint language-javascript\"><code>&quot;use strict&quot;;\nconst fd = require(&quot;fs&quot;).openSync(&quot;.&#x2F;node.log&quot;, &quot;w+&quot;);\nconst writableStream = require(&quot;fs&quot;).createWriteStream(&quot;.&#x2F;node.log&quot;, {\n\tflags: &quot;a&quot;,\n\tfd: fd\n});\nconst child_process = require(&quot;child_process&quot;);\nconst ping = child_process.spawn(&quot;ping&quot;, [&quot;localhost&quot;], {\n\tdetached: true,\n\tstdio: [&quot;ignore&quot;, fd, writableStream]\n});\nping.unref();\nsetTimeout(function() {\n\tconsole.log(&quot;hello&quot;);\n}, 3000);\n</code></pre><p>这次可以了，父进程在运行完自己的代码之后顺利退出，而子进程则继续在后台运行，同时被<code>init</code>进程收养</p>\n<p>总结：要想让程序成为守护进程，必须要做到</p>\n<ul>\n<li>子进程必须要和父进程分离，即设置<code>detached=true</code></li>\n<li>子进程要调用<code>unref()</code></li>\n<li>子进程的io不能跟父进程有联系</li>\n</ul>\n<h2><code>exec</code>和<code>execFile</code></h2>\n<p>先来看看<code>exec</code>的源码</p>\n<pre class=\"prettyprint language-javascript\"><code>function normalizeExecArgs(command, options, callback) {\n  if (typeof options === &#x27;function&#x27;) {\n    callback = options;\n    options = undefined;\n  }\n\n  &#x2F;&#x2F; Make a shallow copy so we don&#x27;t clobber the user&#x27;s options object.\n  options = Object.assign({}, options);\n  &#x2F;&#x2F;如果指定了shell，则把它传递下去，否则将它设为true\n  options.shell = typeof options.shell === &#x27;string&#x27; ? options.shell : true;\n\n  return {\n    file: command,\n    options: options,\n    callback: callback\n  };\n}\n\nexports.exec = function(command &#x2F;*, options, callback*&#x2F;) {\n  var opts = normalizeExecArgs.apply(null, arguments);\n  &#x2F;&#x2F;其实就是简单调用execFIle\n  return exports.execFile(opts.file,\n                          opts.options,\n                          opts.callback);\n};\n</code></pre><p>原来就是调用<code>execFile</code>，那么无需多言直接看<code>execFile</code>就可以了，值得一提的是文档中说<code>exec</code>会开启一个shell来执行命令，在代码中的体现是把<code>options.shell</code>设置为<code>true</code>，后续的函数根据这个来属性来决定是否开启一个shell执行命令。</p>\n<p>再来看看<code>exec</code>的源码的关键部分</p>\n<pre class=\"prettyprint language-JavaScript\"><code>exports.execFile = function(file &#x2F;*, args, options, callback*&#x2F;) {\n &#x2F;&#x2F;......\t\n &#x2F;&#x2F;直接调用spawn，但是传入了一些选项\n  var child = spawn(file, args, {\n    cwd: options.cwd,\n    env: options.env,\n    gid: options.gid,\n    uid: options.uid,\n    shell: options.shell,\n    windowsHide: !!options.windowsHide,\n    windowsVerbatimArguments: !!options.windowsVerbatimArguments\n  });\n\n  &#x2F;&#x2F;......\n  &#x2F;&#x2F;调用完spawn之后会缓存子进程的stdout和stderr\n  if (child.stdout) {\n    if (encoding)\n      child.stdout.setEncoding(encoding);&#x2F;&#x2F;如果不是buffer类型，则是指编码\n\n    child.stdout.on(&#x27;data&#x27;, function onChildStdout(chunk) {\n    \t&#x2F;&#x2F;如果是buffer类型，则加上收到的字节数，否则，加上收到的字符串\n      stdoutLen += encoding ? Buffer.byteLength(chunk, encoding) : chunk.length;\n\n      if (stdoutLen &gt; options.maxBuffer) {&#x2F;&#x2F;判断是否超出内部的buffer，如果你的子进程的输出很大，请注意调整这个参数\n        ex = new errors.RangeError(&#x27;ERR_CHILD_PROCESS_STDIO_MAXBUFFER&#x27;,\n                                   &#x27;stdout&#x27;);\n        kill();\n      } else if (encoding) {\n        _stdout += chunk;&#x2F;&#x2F;缓存字符串\n      } else {\n        _stdout.push(chunk);&#x2F;&#x2F;缓存buffer\n      }\n    });\n  }\n  &#x2F;&#x2F;......\n  &#x2F;&#x2F;监听子进程io流的关闭和子进程的错误，用户提供的callback会在这里被调用\n  &#x2F;&#x2F;上面被缓存的输出会当做参数传递过去\n  child.addListener(&#x27;close&#x27;, exithandler);\n  child.addListener(&#x27;error&#x27;, errorhandler);\n\n  return child;\n};\n</code></pre><p>从上述代码可以清晰看到<code>execFile</code>就是调用了<code>spawn</code>并且将子进程的输出<strong>缓存起来然后通过回调一次过返回给用户</strong>。<code>spawn</code>中是通过监听stdio上面的事件来获取子进程的输出（并且输出还不是一次返回），这有些繁琐。<br>\n<strong><code>execFile</code>对其适当地封装使之变成了我们熟悉的回调方式，这应该就是<code>execFile</code>的优点</strong>。<br>\n值得注意的是里面作为缓存的buffer是有默认大小的（默认为200 x 1024个字节），在项目中曾经试过因为子进程的输出太大导致抛出异常，因此<code>execFile</code>适合子进程的输出不是太大的情况，或者修改<code>maxBuffer</code>提供更大的缓存空间。</p>\n<h2><code>fork</code></h2>\n<p><code>fork</code>的相关源码如下：</p>\n<pre class=\"prettyprint\"><code>exports.fork = function(modulePath &#x2F;*, args, options*&#x2F;) {\n &#x2F;&#x2F;省略\t\n var execArgv;\n  if (typeof options.stdio === &#x27;string&#x27;) {\n    options.stdio = stdioStringToArray(options.stdio);\n  } else if (!Array.isArray(options.stdio)) {\n  \t&#x2F;*\n  \t\t这里的注释说明第4个元素的值是ipc，说明在父子进程之间除了stdio之外还有ipc通道可以进行通讯\n  \t\t详情可以见下面的stdioStringToArray函数\n  \t*&#x2F;\n    &#x2F;&#x2F; Use a separate fd=3 for the IPC channel. Inherit stdin, stdout,\n    &#x2F;&#x2F; and stderr from the parent if silent isn&#x27;t set.\n    options.stdio = options.silent ? stdioStringToArray(&#x27;pipe&#x27;) :\n      stdioStringToArray(&#x27;inherit&#x27;);\n  } else if (options.stdio.indexOf(&#x27;ipc&#x27;) === -1) {\n    throw new errors.Error(&#x27;ERR_CHILD_PROCESS_IPC_REQUIRED&#x27;,&#x27;options.stdio&#x27;);\n  }\n  &#x2F;&#x2F;如果没有特地指定execPath则默认值为nodejs的启动路径的绝对值\n  options.execPath = options.execPath || process.execPath;\n  options.shell = false;\n  return spawn(options.execPath, args, options);\n}\n\nfunction stdioStringToArray(option) {\n  switch (option) {\n    case &#x27;ignore&#x27;:\n    case &#x27;pipe&#x27;:\n    case &#x27;inherit&#x27;:\n      return [option, option, option, &#x27;ipc&#x27;];&#x2F;&#x2F;第4个元素表示额外的ipc通道\n    default:\n      throw new errors.TypeError(&#x27;ERR_INVALID_OPT_VALUE&#x27;, &#x27;stdio&#x27;, option);\n  }\n}\n</code></pre><p><code>fork</code>也是相当简单，注意两个地方：</p>\n<ul>\n<li>父子进程之间建立了额外的ipc通道</li>\n<li>调用<code>spawn</code>的时候传递的第一个参数默认是nodejs路径的绝对值</li>\n</ul>\n<p>这跟文档描述很契合，启动了一个独立nodejs子进程并且和它建立ipc通道</p>\n<h2>再看<code>spawn</code></h2>\n<p>一开始我们就说明了，用户层面的<code>spawn</code>调用了nodejs内部的<code>spawn</code>来生成子进程，它们的源码如下：</p>\n<pre class=\"prettyprint language-javascript\"><code>var spawn = exports.spawn = function(&#x2F;*file, args, options*&#x2F;) {\n  var opts = normalizeSpawnArguments.apply(null, arguments);\n  var options = opts.options;\n  var child = new ChildProcess();&#x2F;&#x2F;一个内部的child_process构造函数，位于lib&#x2F;internal&#x2F;child_process.js\n  debug(&#x27;spawn&#x27;, opts.args, options);\n  child.spawn({&#x2F;&#x2F;调用js内部的spawn函数，位于lib&#x2F;internal&#x2F;child_process.js\n    &#x2F;&#x2F;注意file和detached，待会看下c++是怎么使用它们\n    file: opts.file,\n    args: opts.args,\n    cwd: options.cwd,\n    windowsHide: !!options.windowsHide,\n    windowsVerbatimArguments: !!options.windowsVerbatimArguments,\n    detached: !!options.detached,\n    envPairs: opts.envPairs,\n    stdio: options.stdio,\n    uid: options.uid,\n    gid: options.gid\n  });\n  return child;\n};\n</code></pre><p>代码一目了然没什么好探讨的，可以说用户层面的<code>child_process</code>其实是内部<code>child_process</code>的一个封装，我们直接看内部的<code>spawn</code></p>\n<pre class=\"prettyprint language-JavaScript\"><code>ChildProcess.prototype.spawn = function(options) {\n  &#x2F;&#x2F;省略...\n  var err = this._handle.spawn(options);\n  &#x2F;&#x2F;省略...\n  &#x2F;&#x2F; Add .send() method and start listening for IPC data\n  if (ipc !== undefined) setupChannel(this, ipc);\n  return err;\n};\n\n</code></pre><p>内部的<code>spawn</code>看似很长但是核心代码就两句，分别用于生成子进程和建立父子进程的通讯通道。其中<code>this._handle.spawn</code>其实是调用了<code>process_wrap.cc</code>的<code>spawn</code>，这属于C++层面的东西，我们下个章节会对它进行简要的分析。</p>\n<h1>子进程在底层如何生成</h1>\n<h2><code>process_wrap.cc</code>的<code>spawn</code></h2>\n<p>根据上面的分析，先来看<code>process_wrap.cc</code>的<code>spawn</code>关键代码</p>\n<pre class=\"prettyprint language-JavaScript\"><code>  static void Spawn(const FunctionCallbackInfo&lt;Value&gt;&amp; args) {\n    &#x2F;&#x2F;获取js传过来的第一个option参数\n    Local&lt;Object&gt; js_options = args[0]-&gt;ToObject(env-&gt;context()).ToLocalChecked();\n\n   &#x2F;&#x2F;提取option里面的参数，例如file和detached\n    &#x2F;&#x2F; options.file\n    Local&lt;Value&gt; file_v = js_options-&gt;Get(context, env-&gt;file_string()).ToLocalChecked();\n    CHECK(file_v-&gt;IsString());\n    node::Utf8Value file(env-&gt;isolate(), file_v);\n    options.file = *file;\n\n    &#x2F;&#x2F; options.detached\n    Local&lt;Value&gt; detached_v = js_options-&gt;Get(context, env-&gt;detached_string()).ToLocalChecked();\n\n    if (detached_v-&gt;IsTrue()) {\n      options.flags |= UV_PROCESS_DETACHED;\n    }\n    &#x2F;&#x2F;调用uv_spawn生成子进程，并将父进程的event_loop传递过去\n    int err = uv_spawn(env-&gt;event_loop(), &amp;wrap-&gt;process_, &amp;options);\n    &#x2F;&#x2F;省略\n  }\n</code></pre><p>它的主逻辑也很简单，仅仅看注释就很清楚，先是提取js传递过来的参数，然后调用<code>process.cc</code>中的 <code>uv_spawn</code>。</p>\n<h2><code>process.cc</code>中的 <code>uv_spawn</code></h2>\n<p>终于来到了真正做事的地方：<code>uv_spawn</code>，它也是相当长，我们摘取核心部分来看看</p>\n<pre class=\"prettyprint language-C\"><code>int uv_spawn(uv_loop_t* loop,\n             uv_process_t* process,\n             const uv_process_options_t* options) {\n  &#x2F;&#x2F;省略一堆设置stdio的初始化工作代码\n  err = uv__make_pipe(signal_pipe, 0);&#x2F;&#x2F;建立父子进程之间的通讯通道，这个东西似乎是node内部使用的\n  pid = fork();&#x2F;&#x2F;用fork生成一个子进程\n\n  if (pid == 0) {&#x2F;&#x2F;如果是子进程，则执行uv__process_child_init然后退出\n    uv__process_child_init(options, stdio_count, pipes, signal_pipe[1]);\n    abort();\n  }\n  &#x2F;&#x2F;省略...\n  err = waitpid(pid, &amp;status, 0);&#x2F;&#x2F;等待子进程返回\n  &#x2F;&#x2F;如果是父进程则继续往下执行，以下是一堆相关的收尾释放资源之类的操作\n}\n\n\nstatic void uv__process_child_init(const uv_process_options_t* options,\n                                   int stdio_count,\n                                   int (*pipes)[2],\n                                   int error_fd) {\n  &#x2F;&#x2F;哈哈，终于找到了设置detached=true的作用了\n  if (options-&gt;flags &amp; UV_PROCESS_DETACHED)\n    setsid();\n  &#x2F;&#x2F;省略一大堆代码\n  &#x2F;&#x2F;最终是调用execvp来执行任务，注意最终运行的命令就是js中传递过来的file\n  execvp(options-&gt;file, options-&gt;args);\n}\n</code></pre><p>从上面代码可以看到主要做了两件事：</p>\n<ul>\n<li><code>uv_spawn</code>调用了<code>fork</code>来生成子进程</li>\n<li>子进程调用<code>execvp</code>来执行新任务</li>\n</ul>\n<p>（其实跟我们的预料是一样的，linux就提供了这两个函数，关于这个两个函数的具体用法大家请自行搜索，网上的介绍极其丰富，缺乏系统编程的知识真是不好读源码）</p>\n<p>从注释可以看到js层面传递过去<code>detached=true</code>和<code>file</code>最终是如何被使用的。选取C++层面源码的时候我跳过了很多关于stdio的地方，这些细节我们都放在IPC再讨论（好吧，其实是好多没看明白，囧rz）</p>\n<h1>IPC通讯</h1>\n<p>本来想讨论一下父子进程之间的IPC包括stdio细节的，但是发现IPC足够写n篇文章了，以后再独立开吧。</p>\n</div>",
+      "create_at": "2018-03-08T07:12:26.559Z",
+      "good": false,
+      "id": "5a2403226190c8912ebaceeb",
+      "last_reply_at": "2018-03-08T07:12:26.559Z",
+      "reply_count": 0,
+      "tab": "share",
+      "title": "child_process和IPC探究(标题党，其实并没有IPC)",
+      "top": false,
+      "visit_count": 110
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars1.githubusercontent.com/u/7311122?v=4&s=120",
+        "loginname": "semicoyoung"
+      },
+      "author_id": "550fb120d792542a297897c5",
+      "content": "<div class=\"markdown-text\"><h1>MYSQL ORDER BY 使用 IF 以及使用 IN</h1>\n<ul>\n<li>\n<p>本文非原创，原文在<a href=\"http://blog.csdn.net/bestallen/article/details/53726192\">这里</a>\n有如下表数据</p>\n<pre class=\"prettyprint\"><code>+----+------+\n| id | type |\n+----+------+\n|  1 |    1 |\n|  2 |    1 |\n|  3 |    1 |\n|  4 |    2 |\n|  5 |    2 |\n|  6 |    3 |\n|  7 |    3 |\n|  8 |    4 |\n|  9 |    4 |\n| 10 |    4 |\n+----+------+\n</code></pre></li>\n</ul>\n<h1>使用 IF 语句</h1>\n<p>想要 type=3 的行排在前面，type为其他值的排在后面，可以这样写SQL：</p>\n<pre class=\"prettyprint\"><code>\tSELECT * FROM test ORDER BY IF(type=3,0,1);\n</code></pre><p>结果如下：</p>\n<pre class=\"prettyprint\"><code>\t+----+------+\n\t| id | type |\n\t+----+------+\n\t|  6 |    3 |\n\t|  7 |    3 |\n\t|  1 |    1 |\n\t|  2 |    1 |\n\t|  3 |    1 |\n\t|  4 |    2 |\n\t|  5 |    2 |\n\t|  8 |    4 |\n\t|  9 |    4 |\n\t| 10 |    4 |\n\t+----+------+\n</code></pre><p>解释：</p>\n<p><code>IF(type=3,0,1)</code>的意思是，对 type 附加一个一个隐藏属性，这个隐藏属性，可以是0或者1，也就是对 type进行排序的时候，优先判断type是不是等于3，如果是，返回0，不是，返回1。然后对type隐藏属性进行排序，也就是对0和1进行排序。</p>\n<p>也就是说，可以IF语句，看成一个独立的column，然后进行排序，你可以在IF语句后添加排序条件ASC或者DESC，当然，默认的排序是ASC，可以不写，上面的例子，加入你想让type=3的数据排在后面，就可以IF语句后面添加DESC了，如下：</p>\n<pre class=\"prettyprint\"><code>\tSELECT * FROM test IF(type=3,0,1) DESC;\n</code></pre><p>结果如下：</p>\n<pre class=\"prettyprint\"><code>\t+----+------+\n\t| id | type |\n\t+----+------+\n\t|  1 |    1 |\n\t|  2 |    1 |\n\t|  3 |    1 |\n\t|  4 |    2 |\n\t|  5 |    2 |\n\t|  8 |    4 |\n\t|  9 |    4 |\n\t| 10 |    4 |\n\t|  6 |    3 |\n\t|  7 |    3 |\n\t+----+------+\n</code></pre><p>另外，你在进行隐藏属性优先排序的同时，对于剩下的排序，你也可以另外进行ASC或者DESC的排序</p>\n<h1>使用 IN 语句</h1>\n<p>上面的例子是满足单个条件，返回0 或者 1，如果需要用到一个范围呢？比如想让 type =2或者type=3的行排在前面呢？</p>\n<p>可以使用 IN 语句</p>\n<pre class=\"prettyprint\"><code>\tSELECT * FROM ORDER BY type IN(2,3) DESC\n</code></pre><p>结果如下</p>\n<pre class=\"prettyprint\"><code>\t+----+------+\n\t| id | type |\n\t+----+------+\n\t|  4 |    2 |\n\t|  5 |    2 |\n\t|  6 |    3 |\n\t|  7 |    3 |\n\t|  1 |    1 |\n\t|  2 |    1 |\n\t|  3 |    1 |\n\t|  8 |    4 |\n\t|  9 |    4 |\n\t| 10 |    4 |\n\t+----+------+\n</code></pre><p>上面 <code>type IN(2,3) DESC</code>,  type IN 语句进行判断，如果type的值在（2，3）里面，返回1，否则返回0，所以，满足条件的数据，因为返回值是1，进行DESC排序的时候，就被放在在最后。</p>\n<p>其他情况类推</p>\n</div>",
+      "create_at": "2018-03-08T07:10:21.883Z",
+      "good": false,
+      "id": "5a2403226190c8912ebaceeb",
+      "last_reply_at": "2018-03-08T07:10:21.883Z",
+      "reply_count": 0,
+      "tab": "share",
+      "title": "MYSQL ORDER BY 使用 IF 以及使用 IN",
+      "top": false,
+      "visit_count": 97
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars2.githubusercontent.com/u/7995232?v=4&s=120",
+        "loginname": "JZLeung"
+      },
+      "author_id": "57bbcb58b32043f532d40e6f",
+      "content": "<div class=\"markdown-text\"><p>褥CVM的羊毛：</p>\n<ol>\n<li>购买链接： <a href=\"https://cloud.tencent.com/act/campus/group/detail?group=10524\">https://cloud.tencent.com/act/campus/group/detail?group=10524</a>\n请用微信或者其他浏览器打开。根据实际情况购买。\n<strong>机房选择成都，降配时，可以返还更多时间。</strong>\n<strong>机房选择成都，降配时，可以返还更多时间。</strong>\n<strong>机房选择成都，降配时，可以返还更多时间。</strong></li>\n<li>续费链接： <a href=\"https://cloud.tencent.com/act/campus\">https://cloud.tencent.com/act/campus</a> 续费时长随意。</li>\n<li>降低配置： <a href=\"https://console.cloud.tencent.com/cvm/index\">https://console.cloud.tencent.com/cvm/index</a> 后台控制台 - 更多 - 云主机设置 - 调整配置。选择 1G 内存，会返还时间。</li>\n</ol>\n<p>PS:\n如果感觉 1C1G 够用的话，最多可以用 6年半，但是记得要选择 <strong>成都</strong> 机房。\n如果感觉 1C2G 才够的话，哪个机房都可以。\n续费时的学生认证，随便填都可以。\n续费时间越长，返还时间越多。\n附上一张成都机房的羊毛：\n<img src=\"https://ws3.sinaimg.cn/large/006tKfTcgy1fp36ko3sx0j3088062dfp.jpg\" alt></p>\n</div>",
+      "create_at": "2018-03-06T08:33:16.073Z",
+      "good": false,
+      "id": "5a2403226190c8912ebaceeb",
+      "last_reply_at": "2018-03-08T07:00:05.295Z",
+      "reply_count": 6,
+      "tab": "share",
+      "title": "腾讯云 360 元买 6年半的教程，别的咋都不说清楚呢？",
+      "top": false,
+      "visit_count": 915
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars0.githubusercontent.com/u/37013502?v=4&s=120",
+        "loginname": "jsonwalker"
+      },
+      "author_id": "5a9b578489a57ad544fa41ed",
+      "content": "<div class=\"markdown-text\"><p>不知道有没有违反规定，求管理员手下留情。</p>\n<p>如题</p>\n<p><strong>Boolean(programmer &amp;&amp; gay) == true</strong></p>\n<p>谢绝其他行业从事者，不好意思了。只加码农，谢谢。</p>\n<p>群里目前200人，想加的话留下微信或者邮箱，会及时拉你进群。</p>\n<p>长期有效 周末快乐。</p>\n<p>想加入的朋友如果不方便留言的话可以发微信到我邮箱: dGVzdHdlYXRoZXJmb3JlY2FzdEBnbWFpbC5jb20=\n自己 decode from base64 再次感谢。</p>\n</div>",
+      "create_at": "2018-03-04T02:26:21.140Z",
+      "good": false,
+      "id": "5a2403226190c8912ebaceeb",
+      "last_reply_at": "2018-03-08T06:38:42.186Z",
+      "reply_count": 9,
+      "tab": "share",
+      "title": "一个程序员基佬微信群",
+      "top": false,
+      "visit_count": 835
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars0.githubusercontent.com/u/15852576?v=4&s=120",
+        "loginname": "kinglisky"
+      },
+      "author_id": "564c2f011ba2ef107f854d91",
+      "content": "<div class=\"markdown-text\"><h2>18-03-07</h2>\n<p>更新了一版，把侵入性 content page 内容移到了 popup page 中，鸡肋的快捷键啥的统统不要了（后期加），应该不会再对现有页面影响了。\n<img src=\"http://i01.pic.sogou.com/c8cf32ae4b7cb22f\" alt></p>\n<h2>18-02-27</h2>\n<p><a href=\"https://github.com/ywwhack/aidou-electron\">https://github.com/ywwhack/aidou-electron</a></p>\n<p>小伙伴用 <code>electron</code> 开发了个 mac 桌面版的斗图，可以直接往微信上贴图，来吧！</p>\n<p><img src=\"http://i04.pic.sogou.com/71dc14018b043482\" alt></p>\n<h2>12 - 30 日更新</h2>\n<p>新增了可配置项，可针对指定的网站（<a href=\"http://github.com\">github.com</a>）使用图床转图片链接。</p>\n<h2>下面是原始内容****</h2>\n<p>嗯，写个 chrome 斗图用的浏览器插件。</p>\n<p>便于在 github、gitlab code review，与各个技术社区评论发表情包斗图用，可快速搜索生成表情包链接所需的表情链接。</p>\n<p><a href=\"https://github.com/kinglisky/aidou\">github 地址</a></p>\n<p><a href=\"https://chrome.google.com/webstore/detail/aidou/kidfkhcacngpkgkagdmbkncecbnadajb?hl=zh-CN\">chrome 应用商店地址</a></p>\n<p><img src=\"https://i.loli.net/2017/12/28/5a43ccef1b497.jpg\" alt></p>\n<p>最早想写个在方便在 github 上面发表情的 chrome 插件，这样和小伙伴们  <code>code review</code> 会稍微有趣一点。\n找了几个表情包服务，最后感觉搜狗表情包的质量比较好，然后选择了搜狗表情。但搜狗表情生成图片的链接不能直接往 github 上面粘贴，因为搜狗表情生成链接只是个资源链接，响应头里面没带有 content-type:image/jpeg，直接贴在 github 会挂。所以比较蛋疼，需要加个图床转换一下。</p>\n<p><img src=\"https://i.loli.net/2017/12/28/5a43cc6528fe4.png\" alt=\"demo.png\"></p>\n<p>总感觉喷代码又多了一份乐趣（伤害）</p>\n<p><img src=\"https://i.loli.net/2017/12/28/5a43cd9506594.jpg\" alt></p>\n<p>刚写完，实现的功能也很基础，欢迎大家来踩~</p>\n</div>",
+      "create_at": "2017-12-27T16:55:34.012Z",
+      "good": false,
+      "id": "5a2403226190c8912ebaceeb",
+      "last_reply_at": "2018-03-08T06:28:10.564Z",
+      "reply_count": 31,
+      "tab": "share",
+      "title": "chrome 浏览器表情包斗图插件， code review 社区撕逼必备~",
+      "top": false,
+      "visit_count": 2190
+    },
+    {
+      "author": {
+        "avatar_url": "//gravatar.com/avatar/d4a85d2401244f660fba9b10e22d9e37?s=48",
+        "loginname": "lei40251"
+      },
+      "author_id": "4efc278625fa69ac69000202",
+      "content": "<div class=\"markdown-text\"><p><a href=\"https://cloud.tencent.com/act/campus/group/detail?group=10417\">https://cloud.tencent.com/act/campus/group/detail?group=10417</a></p>\n</div>",
+      "create_at": "2018-03-06T07:35:07.693Z",
+      "good": false,
+      "id": "5a2403226190c8912ebaceeb",
+      "last_reply_at": "2018-03-08T06:19:43.199Z",
+      "reply_count": 10,
+      "tab": "share",
+      "title": "腾讯云的那个，我这个还剩16小时啊，开团了",
+      "top": false,
+      "visit_count": 580
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars2.githubusercontent.com/u/30619009?v=4&s=120",
+        "loginname": "liwend219"
+      },
+      "author_id": "5a9e11a67811af0f6522212e",
+      "content": "<div class=\"markdown-text\"><p>新用户点击：<a href=\"https://cloud.tencent.com/act/campus/group/detail?group=11663\">https://cloud.tencent.com/act/campus/group/detail?group=11663</a> 进行拼团，\n你好我也好，大家一起好 ，哈哈</p>\n</div>",
+      "create_at": "2018-03-06T06:52:43.718Z",
+      "good": false,
+      "id": "5a2403226190c8912ebaceeb",
+      "last_reply_at": "2018-03-08T06:18:22.624Z",
+      "reply_count": 21,
+      "tab": "share",
+      "title": "呐，也是腾讯云那个活动，拼团了",
+      "top": false,
+      "visit_count": 690
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars1.githubusercontent.com/u/16065346?v=4&s=120",
+        "loginname": "lvgithub"
+      },
+      "author_id": "57b08034a4f7e29c763413ef",
+      "content": "<div class=\"markdown-text\"><p>es6中，const和let变量声明，对性能有区别吗？用const代替let（不需要改变的变量或者对象）是否合适</p>\n</div>",
+      "create_at": "2018-03-07T00:57:52.181Z",
+      "good": false,
+      "id": "5a2403226190c8912ebaceeb",
+      "last_reply_at": "2018-03-08T06:08:04.701Z",
+      "reply_count": 9,
+      "tab": "share",
+      "title": "es6中，const和let变量声明，对性能有区别吗？用const代替let？",
+      "top": false,
+      "visit_count": 412
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars0.githubusercontent.com/u/13268747?v=4&s=120",
+        "loginname": "SidKwok"
+      },
+      "author_id": "5a9fdbd6ce4a27f867526ea0",
+      "content": "<div class=\"markdown-text\"><p>我举个puppeteer的例子。</p>\n<p>现在的需求是：\n1、用户通过前端点击一个按钮，给php的后端发一个ajax请求\n2、php通过调用nodejs写的脚本获取puppeteer生成的截图\n3、把截图发送到前端</p>\n<p>问题：\n因为这个脚本每次调用，都会重新执行一次 <code>puppeteer.launch() -&gt; browser.newPage() -&gt; 截图 -&gt; browser.close()</code>，但是现在希望，<code>puppeteer.launch()</code>和<code>browser.close(</code>只执行一次，也就是在脚本开启和脚本关闭的时候执行。而<code>browser.newPage() -&gt; 截图</code>希望在每次请求的时候再执行。也就是说希望puppeteer的启动和关闭在一个脚本A，截图在脚本B，而脚本A是一直运行的，直到人为手动关闭。而每次执行<code>node B.js</code>就可以无需启动puppeteer而执行截图功能。</p>\n<p>请问这种效果要怎么做？目前想到的是把这段脚本写成一个类似web的服务，每次请求来了就用http请求这个截图服务，然后返回相应的response。</p>\n<p>有没有一种方法是可以，将puppeteer的启动和关闭的脚本放在一个进程里，然后另外一个进程主要做的是截图的代码？</p>\n</div>",
+      "create_at": "2018-03-07T12:43:49.881Z",
+      "good": false,
+      "id": "5a2403226190c8912ebaceeb",
+      "last_reply_at": "2018-03-08T06:07:22.067Z",
+      "reply_count": 5,
+      "tab": "ask",
+      "title": "如何把用nodejs写的程序当成一个服务被其它程序访问？",
+      "top": false,
+      "visit_count": 257
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars0.githubusercontent.com/u/29773064?v=4&s=120",
+        "loginname": "golmic"
+      },
+      "author_id": "55b1a74b692e0e7706b3663e",
+      "content": "<div class=\"markdown-text\"><p>今晚3.8日直播讲京东抢购的网络请求分析，有想看的小伙伴备注python数据加我微信lujqme我拉你入群。</p>\n<p>或者对数据感兴趣的朋友们也欢迎呢~</p>\n<p>另外北京 数据岗求职，谢谢大家</p>\n</div>",
+      "create_at": "2018-03-08T04:07:37.248Z",
+      "good": false,
+      "id": "5a2403226190c8912ebaceeb",
+      "last_reply_at": "2018-03-08T04:39:53.112Z",
+      "reply_count": 1,
+      "tab": "share",
+      "title": "直播讲京东抢购的网络请求分析",
+      "top": false,
+      "visit_count": 135
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars2.githubusercontent.com/u/17695350?v=4&s=120",
+        "loginname": "shjhe"
+      },
+      "author_id": "585759837e4b231c53cb9f61",
+      "content": "<div class=\"markdown-text\"><p>主要是复制图片，类似ctrl+c的复制，可以粘贴到其他地方</p>\n</div>",
+      "create_at": "2018-03-08T02:05:38.844Z",
+      "good": false,
+      "id": "5a2403226190c8912ebaceeb",
+      "last_reply_at": "2018-03-08T04:12:51.555Z",
+      "reply_count": 2,
+      "tab": "ask",
+      "title": "Node如何操作window的剪切板（主要是复制图片）",
+      "top": false,
+      "visit_count": 149
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars0.githubusercontent.com/u/26707191?v=4&s=120",
+        "loginname": "Freen247"
+      },
+      "author_id": "5a97b630543e098150cb70ce",
+      "content": "<div class=\"markdown-text\"><p>最近蛮多朋友知道我玩node后推荐我玩go，为什么，他们回答的也各执一词~费解，网上信息太杂，谢谢各位评论了</p>\n<p>来自酷炫的 <a href=\"https://github.com/TakWolf/CNode-Material-Design\">CNodeMD</a></p>\n</div>",
+      "create_at": "2018-03-07T01:03:05.884Z",
+      "good": false,
+      "id": "5a2403226190c8912ebaceeb",
+      "last_reply_at": "2018-03-08T03:39:21.825Z",
+      "reply_count": 21,
+      "tab": "ask",
+      "title": "nodejs 和 go语言~，如何抉择呢",
+      "top": false,
+      "visit_count": 724
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars2.githubusercontent.com/u/9758711?v=4&s=120",
+        "loginname": "axetroy"
+      },
+      "author_id": "5909444b782dbc4b183ecfe2",
+      "content": "<div class=\"markdown-text\"><p>也就前两天，面试大厂，其中有那么一个问题:</p>\n<ol>\n<li>你了解过Babel吗？</li>\n</ol>\n<blockquote>\n<p>了解过抽象语法树，又称AST，有学习过，也写过一个基于AST的<a href=\"https://github.com/axetroy/pag\">乞丐版模板引擎</a>，先是词法解析token，然后生产抽象语法树，然后更改抽象语法树，当然这是插件做的事情，最后根据新的AST生成代码。</p>\n</blockquote>\n<ol>\n<li>写过Babel插件吗</li>\n</ol>\n<blockquote>\n<p>没有，只是看过相关文档</p>\n</blockquote>\n<ol>\n<li>如果让你写一个插件，你能写的出来吗?</li>\n</ol>\n<blockquote>\n<p>应该可以吧…</p>\n</blockquote>\n<p>遂卒…</p>\n<p>开玩笑的，既然提到了，又没回答上来什么，哎哟我这暴脾气，一想到今晚就睡不着，连夜把它撸了。</p>\n<p>那么我们来从零写个插件吧。</p>\n<p>写一个预计算简单表达式的插件</p>\n<h3>预览</h3>\n<p>Before:</p>\n<pre class=\"prettyprint language-javascript\"><code>const result = 1 + 2 + 3 + 4 + 5;\n</code></pre><p>After:</p>\n<pre class=\"prettyprint language-javascript\"><code>const result = 15;\n</code></pre><p>以上的例子可能大家不会经常遇到，因为傻x才会这么写，但是有可能你会这么写</p>\n<pre class=\"prettyprint language-javascript\"><code>setTimeout(function(){\n  &#x2F;&#x2F; do something\n}, 1000 * 2) &#x2F;&#x2F; 插件要做的事，就是把 1000 * 2 替换成 2000\n</code></pre><h3>前提条件</h3>\n<ul>\n<li><a href=\"https://github.com/jamiebuilds/babel-handbook/blob/master/translations/zh-Hans/plugin-handbook.md\">Babel相关概念</a></li>\n</ul>\n<h3>开工</h3>\n<p>再写代码之前，你需要明白Babel它的原理，简单点说： <strong>Babel解析成AST，然后插件更改AST，最后由Babel输出代码</strong></p>\n<p>那么Babel的插件模块需要你暴露一个function，function内返回visitor</p>\n<pre class=\"prettyprint language-javascript\"><code>module.export = function(babel){\n  return {\n    visitor:{\n    }\n  }\n}\n</code></pre><p>visitor是对各类型的AST节点做处理的地方，那么我们怎么知道Babel生成了的AST有哪些节点呢？</p>\n<p>很简单，你可以把Babel转换的结果打印出来，或者这里有传送门: <a href=\"https://astexplorer.net/\">AST explorer</a></p>\n<p><img src=\"https://user-images.githubusercontent.com/9758711/36645536-6165e5c2-1aa5-11e8-8bd1-fad3e2080658.JPG\" alt=\"1\"></p>\n<p>这里我们看到 <code>const result = 1 + 2</code>中的<code>1 + 1</code>是一个<code>BinaryExpression</code>节点，那么在visitor中，我们就处理这个节点</p>\n<pre class=\"prettyprint language-javascript\"><code>var babel = require(&#x27;babel-core&#x27;);\nvar t = require(&#x27;babel-types&#x27;);\n\nconst visitor = {\n  BinaryExpression(path) {\n    const node = path.node;\n    let result;\n    &#x2F;&#x2F; 判断表达式两边，是否都是数字\n    if (t.isNumericLiteral(node.left) &amp;&amp; t.isNumericLiteral(node.right)) {\n      &#x2F;&#x2F; 根据不同的操作符作运算\n      switch (node.operator) {\n        case &quot;+&quot;:\n          result = node.left.value + node.right.value;\n          break\n        case &quot;-&quot;:\n          result = node.left.value - node.right.value;\n          break;\n        case &quot;*&quot;:\n          result =  node.left.value * node.right.value;\n          break;\n        case &quot;&#x2F;&quot;:\n          result =  node.left.value &#x2F; node.right.value;\n          break;\n        case &quot;**&quot;:\n          let i = node.right.value;\n          while (--i) {\n            result = result || node.left.value;\n            result =  result * node.left.value;\n          }\n          break;\n        default:\n      }\n    }\n\n    &#x2F;&#x2F; 如果上面的运算有结果的话\n    if (result !== undefined) {\n      &#x2F;&#x2F; 把表达式节点替换成number字面量\n      path.replaceWith(t.numericLiteral(result));\n    }\n  }\n};\n\nmodule.exports = function (babel) {\n  return {\n    visitor\n  };\n}\n</code></pre><p>插件写好了，我们运行下插件试试</p>\n<pre class=\"prettyprint language-javascript\"><code>const babel = require(&quot;babel-core&quot;);\n\nconst result = babel.transform(&quot;const result = 1 + 2;&quot;,{\n  plugins:[\n    require(&quot;.&#x2F;index&quot;)\n  ]\n});\n\nconsole.log(result.code); &#x2F;&#x2F; const result = 3;\n</code></pre><p>与预期一致，那么转换 <code>const result = 1 + 2 + 3 + 4 + 5;</code>呢?</p>\n<p>结果是: <code>const result = 3 + 3 + 4 + 5;</code></p>\n<p>这就奇怪了，为什么只计算了<code>1 + 2</code>之后，就没有继续往下运算了?</p>\n<p>我们看一下这个表达式的AST树</p>\n<p><img src=\"https://user-images.githubusercontent.com/9758711/36645660-2bdd028a-1aa7-11e8-9131-c38c232ccb10.JPG\" alt=\"2\"></p>\n<p>你会发现Babel解析成表达式里面再嵌套表达式。</p>\n<pre class=\"prettyprint\"><code>表达式( 表达式( 表达式( 表达式(1 + 2) + 3) + 4) + 5)\n</code></pre><p>而我们的判断条件并不符合所有的，只符合<code>1 + 2</code></p>\n<pre class=\"prettyprint language-javascript\"><code>    &#x2F;&#x2F; 判断表达式两边，是否都是数字\n    if (t.isNumericLiteral(node.left) &amp;&amp; t.isNumericLiteral(node.right)) {}\n</code></pre><p>那么我们得改一改</p>\n<p>第一次计算<code>1 + 2</code>之后，我们会得到这样的表达式</p>\n<pre class=\"prettyprint\"><code>表达式( 表达式( 表达式(3 + 3) + 4) + 5)\n</code></pre><p>其中 <code>3 + 3</code>又符合了我们的条件， 我们通过向上递归的方式遍历父级节点</p>\n<p>又转换成这样:</p>\n<pre class=\"prettyprint\"><code>表达式( 表达式(6 + 4) + 5)\n表达式(10 + 5)\n15\n</code></pre><pre class=\"prettyprint language-javascript\"><code>    &#x2F;&#x2F; 如果上面的运算有结果的话\n    if (result !== undefined) {\n      &#x2F;&#x2F; 把表达式节点替换成number字面量\n      path.replaceWith(t.numericLiteral(result));\n\n      let parentPath = path.parentPath;\n\n      &#x2F;&#x2F; 向上遍历父级节点\n      parentPath &amp;&amp; visitor.BinaryExpression.call(this, parentPath);\n    }\n</code></pre><p>到这里，我们就得出了结果 <code>const result = 15;</code></p>\n<p>那么其他运算呢:</p>\n<p><code>const result = 100 + 10 - 50</code> &gt;&gt;&gt; <code>const result = 60;</code></p>\n<p><code>const result = (100 / 2) + 50</code> &gt;&gt;&gt; <code>const result = 100;</code></p>\n<p><code>const result = (((100 / 2) + 50 * 2) / 50) ** 2</code> &gt;&gt;&gt; <code>const result = 9;</code></p>\n<h3>完结</h3>\n<p>到这里，已经向你大概的讲解了，如何编写一个Babel插件，再也不怕面试官问我答不出什么了哈…</p>\n<p>你以为这就完了吗?</p>\n<p>并没有</p>\n<p>如果转换这样呢: <code>const result = 0.1 + 0.2;</code></p>\n<p>预期肯定是<code>0.3</code>, 但是实际上，Javascript有浮点计算误差，得出的结果是<code>0.30000000000000004</code></p>\n<p>那是不是这个插件就没卵用？</p>\n<p>这就需要你去矫正浮点运算误差了，可以使用<a href=\"https://github.com/MikeMcl/big.js\">Big.js</a>;</p>\n<p>比如: <code>result = node.left.value + node.right.value;</code> 改成 <code>result = +new Big(node.left.value).plus(node.right.value);</code></p>\n<p>你以为完了吗? 这个插件还可以做很多</p>\n<p>比如: <code>Math.PI * 2</code> &gt;&gt;&gt; <code>6.283185307179586</code></p>\n<p>比如: <code>Math.pow(2, 2)</code> &gt;&gt;&gt; <code>4</code></p>\n<p>…</p>\n<p>…</p>\n<p>最后上项目地址: <a href=\"https://github.com/axetroy/babel-plugin-pre-calculate-number\">https://github.com/axetroy/babel-plugin-pre-calculate-number</a></p>\n</div>",
+      "create_at": "2018-02-25T20:08:51.322Z",
+      "good": true,
+      "id": "5a2403226190c8912ebaceeb",
+      "last_reply_at": "2018-03-08T03:14:20.748Z",
+      "reply_count": 47,
+      "tab": "share",
+      "title": "面试官: 你了解过Babel吗？写过Babel插件吗? 答: 没有。卒",
+      "top": false,
+      "visit_count": 3227
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars1.githubusercontent.com/u/33886123?v=4&s=120",
+        "loginname": "JokerRoc"
+      },
+      "author_id": "5a66a1dd9d371d4a059eed21",
+      "content": "<div class=\"markdown-text\"><p>戳链接：\n<a href=\"https://www.yanshuo.me/r/zhfuli/\">https://www.yanshuo.me/r/zhfuli/</a></p>\n<p>还有什么有趣的东西可以爬呢？求大家分享。</p>\n</div>",
+      "create_at": "2018-03-07T07:05:54.724Z",
+      "good": false,
+      "id": "5a2403226190c8912ebaceeb",
+      "last_reply_at": "2018-03-08T03:11:52.868Z",
+      "reply_count": 4,
+      "tab": "share",
+      "title": "爬取了知乎上最热的妹子爆照福利",
+      "top": false,
+      "visit_count": 630
+    },
+    {
+      "author": {
+        "avatar_url": "//gravatar.com/avatar/3714fdb4034cd4e01afadbaaa7d9bdee?s=48",
+        "loginname": "jtyjty99999"
+      },
+      "author_id": "4efc278625fa69ac690002ab",
+      "content": "<div class=\"markdown-text\"><p>比如</p>\n<pre class=\"prettyprint\"><code>&lt;%var selector=require(&#x27;..&#x2F;conf&#x2F;selectors&#x2F;&#x27;+m+&#x27;.json&#x27;)[selectors]%&gt;\n</code></pre><p>会报 require is not defined 。是因为require调用的是nativeModule.require 但是模板引擎中没有么？</p>\n</div>",
+      "create_at": "2014-05-14T09:55:17.745Z",
+      "good": false,
+      "id": "5a2403226190c8912ebaceeb",
+      "last_reply_at": "2018-03-08T03:04:32.312Z",
+      "reply_count": 4,
+      "title": "ejs模板里可以使用require来动态加载东西么？",
+      "top": false,
+      "visit_count": 3118
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars3.githubusercontent.com/u/22312092?v=4&s=120",
+        "loginname": "hello-guoguo"
+      },
+      "author_id": "5a0a7ca8a57c17282e120659",
+      "content": "<div class=\"markdown-text\"><p>Express 的路由支不支持别名啊,\n只有重定向(官网我只发现重定向,没找到别名),很难受,\nExpress还会不会更新??</p>\n</div>",
+      "create_at": "2018-03-02T03:06:20.728Z",
+      "good": false,
+      "id": "5a2403226190c8912ebaceeb",
+      "last_reply_at": "2018-03-08T02:45:43.249Z",
+      "reply_count": 6,
+      "tab": "ask",
+      "title": "Express 路由问题",
+      "top": false,
+      "visit_count": 310
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars0.githubusercontent.com/u/25097125?v=4&s=120",
+        "loginname": "18820227745"
+      },
+      "author_id": "595d976b10d696af07768a24",
+      "content": "<div class=\"markdown-text\"><p>nvm安装设置一遍，root用户，user1…所有的用户都能使用该版本的node</p>\n</div>",
+      "create_at": "2018-03-07T09:22:47.338Z",
+      "good": false,
+      "id": "5a2403226190c8912ebaceeb",
+      "last_reply_at": "2018-03-08T02:29:52.508Z",
+      "reply_count": 5,
+      "tab": "ask",
+      "title": "centos nvm安装的node.js版本如何做到所有的用户共享？",
+      "top": false,
+      "visit_count": 184
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars3.githubusercontent.com/u/4082150?v=4&s=120",
+        "loginname": "areskts"
+      },
+      "author_id": "5aa08c817811af0f65222216",
+      "content": "<div class=\"markdown-text\"><p>最近想用nodejs 来运营活动，这类活动很多 估计有几十个常在线的活动 一般持续2个月，我想知道 一个8核心 16G内存的 Linux服务器大概能承受多少个nodejs服务进程，每个活动的访问量不是特别大，请大神分析一下</p>\n</div>",
+      "create_at": "2018-03-08T01:10:18.787Z",
+      "good": false,
+      "id": "5a2403226190c8912ebaceeb",
+      "last_reply_at": "2018-03-08T02:26:16.730Z",
+      "reply_count": 4,
+      "tab": "ask",
+      "title": "一个8核心 16G内存的 Linux服务器 大概能部署多少个NodeJS进程?",
+      "top": false,
+      "visit_count": 238
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars2.githubusercontent.com/u/16846186?v=4&s=120",
+        "loginname": "abRev"
+      },
+      "author_id": "56fc85768265278d59c7e363",
+      "content": "<div class=\"markdown-text\"><p>目前公司有这么个情景：多台阿里云的实例（高峰期时会增多），有用户发出提现申请时，前端可能会发过来两（多）个请求（同一条提现请求），跑到了不同的实例上。\n这时请问系统有什么好的处理办法？不能两条都记录的\n在前端发请求过来时 可不可以同时发一个随机码  服务器这边保存记录时，如果能查询到 则update或者忽略。\n请问大家有什么好的解决办法么</p>\n</div>",
+      "create_at": "2018-03-07T08:47:21.527Z",
+      "good": false,
+      "id": "5a2403226190c8912ebaceeb",
+      "last_reply_at": "2018-03-08T02:22:26.860Z",
+      "reply_count": 6,
+      "tab": "ask",
+      "title": "多实例重复请求怎么处理？",
+      "top": false,
+      "visit_count": 209
+    }
+  ],
+  "success": true
+}

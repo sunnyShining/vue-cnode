@@ -15,6 +15,7 @@ module.exports = {
     // Various Dev Server settings
     host: 'localhost', // can be overwritten by process.env.HOST
     port: 9990, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined
+    mockPort: 9991,
     autoOpenBrowser: true,
     errorOverlay: true,
     notifyOnErrors: true,

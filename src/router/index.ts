@@ -25,6 +25,7 @@ const NoFound = (r: any) => require.ensure([], () => r(require('@/pages/noFound/
 Vue.use(Router);
 
 export default new Router({
+	mode: 'history',
   	routes: [
 	    {
 	      	path: '/home',
