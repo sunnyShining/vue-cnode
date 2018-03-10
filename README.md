@@ -8,16 +8,16 @@
 # install dependencies
 yarn
 
-# serve with hot reload at localhost:8080
-npm run dev
+# serve with hot reload at localhost:9990
+yarn dev
 
 # build for production with minification
-npm run build
+yarn build
 
 # build for production and view the bundle analyzer report
-npm run build --report
+yarn analyz
 ```
 
 ## 线上地址
 
-https://still-bayou-37837.herokuapp.com/vuecnode/index.html#/home
+https://still-bayou-37837.herokuapp.com/vuecnode/index.html
