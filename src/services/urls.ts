@@ -9,7 +9,8 @@
 function hostName () {
     if (process.env.NODE_ENV === 'development') {
         return {
-            api: 'https://cnodejs.org/api/v1',
+            // api: 'https://cnodejs.org/api/v1',
+            api: 'http://127.0.0.1:9991/api/v1',
         };
     } else if (process.env.NODE_ENV === 'production') {
         return {

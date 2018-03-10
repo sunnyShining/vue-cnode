@@ -50,7 +50,23 @@
         }
         created(): void {
             const { accesstoken } = this.$store.state.app;
-            services.markAll({accesstoken});
+            this.changeSider();
+            services.markAll({ accesstoken });
+        }
+        async changeSider () {
+            const accesstoken = window.localStorage.getItem('accesstoken');
+            await this.$store.dispatch('accesstoken', {accesstoken});
+            const accessInfo = this.$store.state.app.accessInfo;
+            let showInfo = accessInfo.success ? true : false;
+            this.$store.dispatch('authorOrNot', {
+                showInfo,
+                isAuthor: false,
+            });
+            if (accessInfo && accessInfo.loginname !== '' && accessInfo.loginname) {
+                this.$store.dispatch('getInfo', {
+                    username: accessInfo.loginname
+                });
+            }
         }
     };
 </script>
