@@ -10,7 +10,6 @@ const routers = [];
 function createServer(name, fullpath, jsonpath) {
     const errjson = { success: false, error_msg: '网络或服务器错误' }
     router.all(fullpath, (req, res) => {
-        console.log(req.path, fullpath)
         if (req.path === '/api/v1/topics') {
             if (req.method === 'GET') {
                 fs.readFile(path.join(__dirname, `./jsons/topics.json`), 'utf-8', (err, data) => {
