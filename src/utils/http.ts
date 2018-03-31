@@ -21,7 +21,12 @@ export interface Options {
 let spin = true;
 // 请求拦截
 axios.interceptors.request.use(function (config) {
-    spin && Loading.open();
+    if ((Window as any).responseCount === undefined) {
+        (Window as any).responseCount = 0;
+    }
+    if (!(Window as any).responseCount++) {
+        spin && Loading.open();
+    }
     return config;
 }, function (error) {
     return Promise.reject(error);
@@ -30,7 +35,9 @@ axios.interceptors.request.use(function (config) {
 // 响应拦截（一般拦截登录，还有loading等）
 axios.interceptors.response.use(function (response) {
     // Do something with response data
-    spin && Loading.close();
+    if (!--(Window as any).responseCount) {
+        spin && Loading.close();
+    }
     if (response.status >= 200 && response.status < 300) {
         return Promise.resolve(response);
     } else {
@@ -41,7 +48,9 @@ axios.interceptors.response.use(function (response) {
         return Promise.reject(error);
     }
 }, function (error) {
-    spin && Loading.close();
+    if (!--(Window as any).responseCount) {
+        spin && Loading.close();
+    }
     let err = {
         success: false,
         error_msg: '系统错误，请稍后重试！'

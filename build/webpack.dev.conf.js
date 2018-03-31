@@ -41,7 +41,7 @@ function startBrowserProcess(url) {
 
   // Fallback to opn
   // (It will always open new tab)
-  if (config.dev.autoOpenBrowser) {
+  if (shouldTryOpenChromeWithAppleScript && config.dev.autoOpenBrowser) {
     try {
       opn(url).catch(() => {}); // Prevent `unhandledRejection` error.
       return true;
@@ -71,7 +71,7 @@ const devWebpackConfig = merge(baseWebpackConfig, {
     host: HOST || config.dev.host,
     port: PORT || config.dev.port,
     // open: config.dev.autoOpenBrowser,
-    open: false,
+    open: process.platform !== 'darwin',
     overlay: config.dev.errorOverlay
       ? { warnings: false, errors: true }
       : false,
@@ -132,7 +132,9 @@ module.exports = new Promise((resolve, reject) => {
             // console.log(stats.compilation.errors)
             // process.exit(1)
           }
-          startBrowserProcess(`http://${devWebpackConfig.devServer.host}:${port}`)
+          if (process.platform === 'darwin') {
+            startBrowserProcess(`http://${devWebpackConfig.devServer.host}:${port}`)
+          }
         })
       }
       )
