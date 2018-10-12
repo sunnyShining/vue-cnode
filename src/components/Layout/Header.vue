@@ -3,7 +3,7 @@
         <div class="navbar-inner">
             <div class="container">
                 <router-link class="brand" to="/home">
-                    <img src="//o4j806krb.qnssl.com/public/images/cnodejs_light.svg" alt="logo" />
+                    <img src="//static2.cnodejs.org/public/images/cnodejs_light.svg" alt="logo" />
                 </router-link>
                 <ul class="nav pull-right">
                     <li><router-link to="/home">首页</router-link></li>

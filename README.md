@@ -20,4 +20,4 @@ yarn analyz
 
 ## 线上地址
 
-https://still-bayou-37837.herokuapp.com/vuecnode/index.html
+https://sunnyshining.herokuapp.com/vuecnode/index.html#/home

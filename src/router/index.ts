@@ -25,7 +25,7 @@ const NoFound = (r: any) => require.ensure([], () => r(require('@/pages/noFound/
 Vue.use(Router);
 
 export default new Router({
-	mode: 'history',
+	mode: 'hash',
   	routes: [
 	    {
 	      	path: '/home',
@@ -79,7 +79,7 @@ export default new Router({
 	    },
 	    {
         	path: '*',
-        	redirect: '/NoFound',
+        	redirect: '/home',
     	},
 	],
 });

@@ -69,25 +69,25 @@
                 <ol class="friendship-community">
                     <li>
                         <a href="https://ruby-china.org/" target="_blank" rel="noopener noreferrer">
-                            <img src="//o4j806krb.qnssl.com/public/images/ruby-china-20150529.png" alt="" />
+                            <img src="//static2.cnodejs.org/public/images/ruby-china-20150529.png" alt="" />
                         </a>
                     </li>
                     <div class="sep10"></div>
                     <li>
                         <a href="http://golangtc.com/" target="_blank" rel="noopener noreferrer">
-                            <img src="//o4j806krb.qnssl.com/public/images/golangtc-logo.png" alt="" />
+                            <img src="//static2.cnodejs.org/public/images/golangtc-logo.png" alt="" />
                         </a>
                     </li>
                     <div class="sep10"></div>
                     <li>
                         <a href="http://phphub.org/" target="_blank" rel="noopener noreferrer">
-                            <img src="//o4j806krb.qnssl.com/public/images/phphub-logo.png" alt="" />
+                            <img src="//static2.cnodejs.org/public/images/phphub-logo.png" alt="" />
                         </a>
                     </li>
                     <div class="sep10"></div>
                     <li>
                         <a href="https://testerhome.com/" target="_blank" rel="noopener noreferrer">
-                            <img src="//dn-cnode.qbox.me/FjLUc7IJ2--DqS706etPQ1EGajxK" alt="" />
+                            <img src="//static.cnodejs.org/FjLUc7IJ2--DqS706etPQ1EGajxK" alt="" />
                         </a>
                     </li>
                 </ol>
