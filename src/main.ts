@@ -3,7 +3,7 @@
 // (runtime-only or standalone) has been setsasfas in webpack.base.conf with an alias.
 
 import Vue from 'vue';
-import mavonEditor from 'mavon-editor';
+import mavonEditor123 from 'mavon-editor';
 import App from './App.vue';
 import router from './router';
 import store from './store/index';
@@ -23,7 +23,7 @@ if (process.env.NODE_ENV === 'development') {
 	Vue.config.devtools = true;
 }
 
-Vue.use(mavonEditor);
+Vue.use(mavonEditor123);
 Vue.use(ElementUI, { size: 'small' });
 /* eslint-disable no-new */
 new Vue({
