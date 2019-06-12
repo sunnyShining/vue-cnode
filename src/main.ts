@@ -3,9 +3,7 @@
 // (runtime-only or standalone) has been setsasfas in webpack.base.conf with an alias.
 
 import Vue from 'vue';
-
 import mavonEditor from 'mavon-editor';
-
 import App from './App.vue';
 import router from './router';
 import store from './store/index';
