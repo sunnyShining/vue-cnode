@@ -27,7 +27,7 @@ Vue.use(ElementUI, { size: 'small' });
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
-  router,
+  router：router111111,
   store,
   components: { App },
   template: '<App/>',
