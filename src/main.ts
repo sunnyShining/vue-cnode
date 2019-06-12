@@ -3,7 +3,7 @@
 import Vue from 'vue';
 import mavonEditor from 'mavon-editor';
 import App from './App.vue';
-import router22222 from './router';
+import router from './router';
 import store from './store/index';
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
@@ -27,7 +27,7 @@ Vue.use(ElementUI, { size: 'small' });
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
-  router:router22222,
+  router,
   store,
   components: { App },
   template: '<App/>',
