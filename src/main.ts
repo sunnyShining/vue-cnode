@@ -1,4 +1,4 @@
-//  12312weersdgdsgsdgsdThe Vue build version to load with the `import` command
+//  The Vue build version to load with the `import` command
 // (runtime-only or standalone) has been setsasfas in webpack.base.conf with an alias.
 import Vue from 'vue';
 import mavonEditor from 'mavon-editor';
