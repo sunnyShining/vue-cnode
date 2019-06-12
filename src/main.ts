@@ -3,7 +3,7 @@
 import Vue from 'vue';
 import mavonEditor from 'mavon-editor';
 import App from './App.vue';
-import router from './router';
+import router111111 from './router';
 import store from './store/index';
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
