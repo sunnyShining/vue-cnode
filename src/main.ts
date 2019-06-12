@@ -17,6 +17,7 @@ import './assets/css/font-awesome.less';
 import 'mavon-editor/dist/css/index.css';
 
 Vue.config.productionTip = false;
+
 Vue.config.devtools = false;
 
 if (process.env.NODE_ENV === 'development') {
